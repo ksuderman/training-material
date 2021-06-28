@@ -70,59 +70,93 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Language Selector">
-                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Language
-                        </a>
-                        <div class="dropdown-menu">
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fassembly%2Ftutorials%2Fgeneral-introduction%2Ftutorial.html&edit-text=&act=url" title="">
-                                Français
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fassembly%2Ftutorials%2Fgeneral-introduction%2Ftutorial.html&edit-text=&act=url" title="">
-                                日本語
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fassembly%2Ftutorials%2Fgeneral-introduction%2Ftutorial.html&edit-text=&act=url" title="">
-                                Español
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fassembly%2Ftutorials%2Fgeneral-introduction%2Ftutorial.html&edit-text=&act=url" title="">
-                                Português
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fassembly%2Ftutorials%2Fgeneral-introduction%2Ftutorial.html&edit-text=&act=url" title="">
-                                العربية
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fassembly%2Ftutorials%2Fgeneral-introduction%2Ftutorial.html&edit-text=&act=url" title="">
-                                And more!
-                            </a>
-                        </div>
-                    </li>
-
-                    <li class="nav-item dropdown">
     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
         <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
     </a>
     <div class="dropdown-menu dropdown-menu-right">
+        <!-- disable Tess for now
         <form method="get" action="https://tess.elixir-europe.org/materials">
             <input type="text" id="search" name="q" value="" style="margin-left: 0.5em;/*! border-radius: 0px; */">
             <input type="hidden" value="Galaxy Training" name="content_provider">
             <input type="submit" value="Search on TeSS" style="width: 92%;border-radius: 0px;margin: 0.5em;background: #f47d20;border: 0px;padding: 0.25em;" class="">
         </form>
+        -->
 
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQ">
-            FAQ
+        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQs">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
         </a>
+        
+        <a class="dropdown-item" href="/training-material/topics/assembly/faqs/" title="Check our FAQs for the Assembly topic">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
+        </a>
+        
         <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
-            Discuss on Galaxy Help
+            <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
+        </a>
+        <a class="dropdown-item" href="https://gitter.im/Galaxy-Training-Network/Lobby" title="Discuss on gitter">
+           <i class="fab fa-gitter" aria-hidden="true"></i><span class="visually-hidden">gitter</span> Discuss on Gitter
+        </a>
+    </div>
+</li>
+
+
+                    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Extras">
+        <i class="far fa-star" aria-hidden="true"></i><span class="visually-hidden">galaxy-star</span> Extras
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+
+        
+        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/assembly/tutorials/general-introduction/tutorial.md" title="Edit on GitHub">
+          <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
+        </a>
+
+        <a class="dropdown-item" href="/training-material/stats.html" title="Show view statistics about this rrepository">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN statistics
+        </a>
+
+        <a class="dropdown-item" href="https://plausible.galaxyproject.eu/training.galaxyproject.org?period=12mo&page=/training-material/topics/assembly/tutorials/general-introduction/tutorial.html" title="Show view statistics of this page">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
         </a>
 
         <div class="dropdown-item">
             <div>
-                Theme
+                <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Translate this page
+            </div>
+
+            <div id="lang-selector">
+                
+                <strong>Automatic Translations</strong>
+
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/assembly/tutorials/general-introduction/tutorial.html&edit-text=&act=url">
+                Français
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/assembly/tutorials/general-introduction/tutorial.html&edit-text=&act=url">
+                日本語
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/assembly/tutorials/general-introduction/tutorial.html&edit-text=&act=url">
+                Español
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/assembly/tutorials/general-introduction/tutorial.html&edit-text=&act=url">
+                Português
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/assembly/tutorials/general-introduction/tutorial.html&edit-text=&act=url">
+                العربية
+                </a>
+                
+                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fassembly%2Ftutorials%2Fgeneral-introduction%2Ftutorial.html&edit-text=&act=url" title="">
+                And more!
+                </a>
+            </div>
+        </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
             </div>
 
             <div id="theme-selector" data-toggle="buttons">
@@ -138,6 +172,9 @@
                 <label data-value="rainbow" class="btn btn-secondary">
                     <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
                 </label>
+                <label data-value="progress" class="btn btn-secondary">
+                    <input type="radio" name="options" id="progress" autocomplete="off">🏳️‍🌈
+                </label>
                 <label data-value="halloween" class="btn btn-secondary">
                     <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
                 </label>
@@ -147,15 +184,50 @@
             </div>
 
         </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
+            </div>
+
+            
+            <div id="archive-selector">
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2021-02-01/topics/assembly/tutorials/general-introduction/tutorial.html" title="Version 2021-02-01">2021-02-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2020-12-01/topics/assembly/tutorials/general-introduction/tutorial.html" title="Version 2020-12-01">2020-12-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2020-11-01/topics/assembly/tutorials/general-introduction/tutorial.html" title="Version 2020-11-01">2020-11-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
+            </div>
+
+        </div>
+
     </div>
 </li>
 
-
+                    <!--
                     <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/galaxyproject/training-material/edit/master/topics/assembly/tutorials/general-introduction/tutorial.md">
+                        <a class="nav-link" href="https://github.com/galaxyproject/training-material/edit/main/topics/assembly/tutorials/general-introduction/tutorial.md">
                             <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit
                         </a>
                     </li>
+                    -->
+
+                     <!-- Search bar-->
+                    <li class="nav-item">
+                      <div id="navbarSupportedContent">
+                        <!-- Search form -->
+                        <form class="form-inline mr-auto" method="GET" action="/training-material/search">
+                          <i class="fas fa-search nav-link" aria-hidden="true"></i>
+                          <div class="md-form mb-2">
+                            <input name="query" class="form-control nicer" type="text" placeholder="Search Tutorials" aria-label="Search">
+                          </div>
+                        </form>
+                      </div>
+                    </li>
+
                 </ul>
             </div>
         </div>
@@ -211,7 +283,7 @@
   },
   "interactivityType": "mixed",
   "isAccessibleForFree": true,
-  "license": "https://github.com/galaxyproject/training-material/blob/master/LICENSE.md",
+  "license": "https://github.com/galaxyproject/training-material/blob/main/LICENSE.md",
   "producer": {
     "@type": "Organization",
     "email": "galaxytrainingnetwork@gmail.com",
@@ -311,7 +383,7 @@
 }
     </script>
 
-    <section class="tutorial">
+    <section class="tutorial topic-assembly">
         <h1 data-toc-skip>An Introduction to Genome Assembly</h1>
         
 
@@ -392,24 +464,24 @@
             
 
             
-            <p><strong><i class="fas fa-hourglass-half" aria-hidden="true"></i><span class="visually-hidden">time</span> Time estimation:</strong> 30 minutes</p>
+            <div><strong><i class="fas fa-hourglass-half" aria-hidden="true"></i><span class="visually-hidden">time</span> Time estimation:</strong> 30 minutes</div>
             
 
             
-            <p><strong><i class="fas fa-graduation-cap" aria-hidden="true"></i><span class="visually-hidden">level</span> Level: </strong>
+            <div><strong><i class="fas fa-graduation-cap" aria-hidden="true"></i><span class="visually-hidden">level</span> Level: </strong>
              Introductory 
 <span class="level introductory" title="Introductory Tutorial">
   <i class="fas fa-graduation-cap" aria-hidden="true"></i><span class="visually-hidden">level</span> <i class="fas fa-graduation-cap" aria-hidden="true"></i><span class="visually-hidden">level</span> <i class="fas fa-graduation-cap" aria-hidden="true"></i><span class="visually-hidden">level</span>
 </span>
 
-</p>
+</div>
             
 
             
             
 
             
-            <p id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials</strong></p>
+            <div id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials</strong></div>
             <ul>
                 <div class="supporting_material">
                 
@@ -438,11 +510,15 @@
 
                 
                     <li class="btn btn-default supporting_material">
-<a class="topic-icon" href="https://github.com/galaxyproject/training-material/tree/master/topics/assembly/tutorials/general-introduction/tours/">
+<a class="topic-icon" href="https://github.com/galaxyproject/training-material/tree/main/topics/assembly/tutorials/general-introduction/tours/">
     <i class="fas fa-magic" aria-hidden="true"></i><span class="visually-hidden">interactive_tour</span> Tours
 </a>
 
 </li>
+                
+
+                
+                
                 
 
                 
@@ -454,13 +530,11 @@
     <ul class="dropdown-menu">
     
         <li>
-            <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/tree/master/topics/assembly/docker" title="Docker image for this tutorial">
+            <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/tree/main/topics/assembly/docker" title="Docker image for this tutorial">
                 <i class="fab fa-docker" aria-hidden="true"></i><span class="visually-hidden">docker_image</span> Docker image
             </a>
         </li>
     
-    
-        
     
         
     
@@ -555,6 +629,8 @@
         
     
         
+    
+        
         <a class="dropdown-item" href="http://galaxy.migale.inra.fr/" title="Migale">
             Migale
         </a>
@@ -581,6 +657,10 @@
         
     
         
+        <a class="dropdown-item" href="https://usegalaxy.be/" title="UseGalaxy.be">
+            UseGalaxy.be
+        </a>
+        
     
         
     
@@ -604,6 +684,8 @@
     
         
     
+        
+    
     </ul>
 
 
@@ -613,7 +695,7 @@
             </ul>
             
 
-            <p><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Dec 28, 2020 </p>
+            <div><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Mar 12, 2021 </div>
         </blockquote>
 
         <div class="container">
@@ -663,18 +745,8 @@
     <li>
       <p>Create and name a new history for this tutorial.</p>
 
-      <blockquote class="tip">
-
-        <h3 id="tip-tip-creating-a-new-history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Creating a new history</h3>
-
-        <p>Click the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> icon at the top of the history panel</p>
-
-        <p>If the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> is missing:</p>
-        <ol>
-          <li>Click on the <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-gear</span> icon (<strong>History options</strong>) on the top of the history panel</li>
-          <li>Select the option <strong>Create New</strong> from the menu</li>
-        </ol>
-      </blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-creating-a-new-history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Creating a new history</h3>  <p>Click the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> icon at the top of the history panel.</p>  <p>If the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> is missing:</p>  <ol>  <li>Click on the <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-gear</span> icon (<strong>History options</strong>) on the top of the history panel</li>  <li>Select the option <strong>Create New</strong> from the menu</li></ol></blockquote>
     </li>
     <li>
       <p>Import from <a href="https://doi.org/10.5281/zenodo.582600">Zenodo</a> or from the data library the files:</p>
@@ -702,15 +774,8 @@ https://zenodo.org/record/582600/files/wildtype.fna
 
       <p>As a default, <span class="notranslate">Galaxy</span> uses the link as the name of the new dataset. It also does not link the dataset to a database or a reference genome.</p>
 
-      <blockquote class="tip">
-
-        <h3 id="tip-tip-renaming-a-dataset"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Renaming a dataset</h3>
-        <ul>
-          <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>
-          <li>In the central panel, change the <strong>Name</strong> field</li>
-          <li>Click the <strong>Save</strong> button</li>
-        </ul>
-      </blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-renaming-a-dataset"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Renaming a dataset</h3>  <ul>  <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>  <li>In the central panel, change the <strong>Name</strong> field</li>  <li>Click the <strong>Save</strong> button</li></ul></blockquote>
     </li>
     <li>
       <p>Inspect the content of a file.</p>
@@ -1097,6 +1162,13 @@ https://zenodo.org/record/582600/files/wildtype.fna
                     </blockquote>
                     
 
+                    <h1>Frequently Asked Questions</h1>
+                    Have questions about this tutorial? Check out the  <a href="/training-material/topics/assembly/faqs/">FAQ page for the Assembly topic</a> to see if your question is listed there.
+                    If not, please ask your question on the <a href="https://gitter.im/Galaxy-Training-Network/Lobby">GTN Gitter Channel</a> or the
+                    <a href="https://help.galaxyproject.org">Galaxy Help Forum</a>
+
+                    
+
                     
 
                     
@@ -1137,7 +1209,7 @@ https://zenodo.org/record/582600/files/wildtype.fna
                     <h1>Citing this Tutorial</h1>
                     <p>
                         <ol>
-                            <li id="citation-text">Simon Gladman, 2020 <b>An Introduction to Genome Assembly (Galaxy Training Materials)</b>. <a href="/training-material/topics/assembly/tutorials/general-introduction/tutorial.html">/training-material/topics/assembly/tutorials/general-introduction/tutorial.html</a> Online; accessed TODAY
+                            <li id="citation-text">Simon Gladman, 2021 <b>An Introduction to Genome Assembly (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/assembly/tutorials/general-introduction/tutorial.html">https://training.galaxyproject.org/training-material/topics/assembly/tutorials/general-introduction/tutorial.html</a> Online; accessed TODAY
                             </li>
                             <li>
                             Batut et al., 2018 <b>Community-Driven Data Analysis Training for Biology</b> Cell Systems <a href="https://doi.org/10.1016%2Fj.cels.2018.05.012">10.1016/j.cels.2018.05.012</a>
@@ -1154,10 +1226,10 @@ https://zenodo.org/record/582600/files/wildtype.fna
 <code id="citation-code">@misc{assembly-general-introduction,
     author = "Simon Gladman",
     title = "An Introduction to Genome Assembly (Galaxy Training Materials)",
-    year = "2020",
-    month = "12",
-    day = "28"
-    url = "\url{/training-material/topics/assembly/tutorials/general-introduction/tutorial.html}",
+    year = "2021",
+    month = "03",
+    day = "12"
+    url = "\url{https://training.galaxyproject.org/training-material/topics/assembly/tutorials/general-introduction/tutorial.html}",
     note = "[Online; accessed TODAY]"
 }
 @article{Batut_2018,
@@ -1185,15 +1257,15 @@ document.getElementById("citation-code").innerHTML = document.getElementById("ci
 document.getElementById("citation-text").innerHTML = document.getElementById("citation-text").innerHTML.replace("TODAY", d.toDateString());
 </script>
 
+                    <h3><i class="far fa-thumbs-up" aria-hidden="true"></i><span class="visually-hidden">congratulations</span> Congratulations on successfully completing this tutorial!</h3>
+
+                    
+
+                    
+
                 </div>
             </div>
         </div>
-
-        <h3><i class="far fa-thumbs-up" aria-hidden="true"></i><span class="visually-hidden">congratulations</span> Congratulations on successfully completing this tutorial!</h3>
-
-        
-
-        
     </section>
 </div>
 
@@ -1207,7 +1279,7 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
         </p>
         <p>
             Found a typo? Something is wrong in this tutorial? Edit it on
-            <a href="https://github.com/galaxyproject/training-material/tree/master/topics/assembly/tutorials/general-introduction/tutorial.md">GitHub</a>.
+            <a href="https://github.com/galaxyproject/training-material/tree/main/topics/assembly/tutorials/general-introduction/tutorial.md">GitHub</a>.
         </p>
         <p>
     The content of the tutorials and website is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.

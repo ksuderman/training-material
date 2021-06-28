@@ -70,59 +70,93 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Language Selector">
-                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Language
-                        </a>
-                        <div class="dropdown-menu">
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fintroduction%2Ftutorials%2Fgalaxy-intro-peaks2genes%2Ftutorial.html&edit-text=&act=url" title="">
-                                Français
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fintroduction%2Ftutorials%2Fgalaxy-intro-peaks2genes%2Ftutorial.html&edit-text=&act=url" title="">
-                                日本語
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fintroduction%2Ftutorials%2Fgalaxy-intro-peaks2genes%2Ftutorial.html&edit-text=&act=url" title="">
-                                Español
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fintroduction%2Ftutorials%2Fgalaxy-intro-peaks2genes%2Ftutorial.html&edit-text=&act=url" title="">
-                                Português
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fintroduction%2Ftutorials%2Fgalaxy-intro-peaks2genes%2Ftutorial.html&edit-text=&act=url" title="">
-                                العربية
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fintroduction%2Ftutorials%2Fgalaxy-intro-peaks2genes%2Ftutorial.html&edit-text=&act=url" title="">
-                                And more!
-                            </a>
-                        </div>
-                    </li>
-
-                    <li class="nav-item dropdown">
     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
         <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
     </a>
     <div class="dropdown-menu dropdown-menu-right">
+        <!-- disable Tess for now
         <form method="get" action="https://tess.elixir-europe.org/materials">
             <input type="text" id="search" name="q" value="" style="margin-left: 0.5em;/*! border-radius: 0px; */">
             <input type="hidden" value="Galaxy Training" name="content_provider">
             <input type="submit" value="Search on TeSS" style="width: 92%;border-radius: 0px;margin: 0.5em;background: #f47d20;border: 0px;padding: 0.25em;" class="">
         </form>
+        -->
 
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQ">
-            FAQ
+        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQs">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
         </a>
+        
+        <a class="dropdown-item" href="/training-material/topics/introduction/faqs/" title="Check our FAQs for the Introduction to Galaxy Analyses topic">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
+        </a>
+        
         <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
-            Discuss on Galaxy Help
+            <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
+        </a>
+        <a class="dropdown-item" href="https://gitter.im/Galaxy-Training-Network/Lobby" title="Discuss on gitter">
+           <i class="fab fa-gitter" aria-hidden="true"></i><span class="visually-hidden">gitter</span> Discuss on Gitter
+        </a>
+    </div>
+</li>
+
+
+                    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Extras">
+        <i class="far fa-star" aria-hidden="true"></i><span class="visually-hidden">galaxy-star</span> Extras
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+
+        
+        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/introduction/tutorials/galaxy-intro-peaks2genes/tutorial.md" title="Edit on GitHub">
+          <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
+        </a>
+
+        <a class="dropdown-item" href="/training-material/stats.html" title="Show view statistics about this rrepository">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN statistics
+        </a>
+
+        <a class="dropdown-item" href="https://plausible.galaxyproject.eu/training.galaxyproject.org?period=12mo&page=/training-material/topics/introduction/tutorials/galaxy-intro-peaks2genes/tutorial.html" title="Show view statistics of this page">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
         </a>
 
         <div class="dropdown-item">
             <div>
-                Theme
+                <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Translate this page
+            </div>
+
+            <div id="lang-selector">
+                
+                <strong>Automatic Translations</strong>
+
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/introduction/tutorials/galaxy-intro-peaks2genes/tutorial.html&edit-text=&act=url">
+                Français
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/introduction/tutorials/galaxy-intro-peaks2genes/tutorial.html&edit-text=&act=url">
+                日本語
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/introduction/tutorials/galaxy-intro-peaks2genes/tutorial.html&edit-text=&act=url">
+                Español
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/introduction/tutorials/galaxy-intro-peaks2genes/tutorial.html&edit-text=&act=url">
+                Português
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/introduction/tutorials/galaxy-intro-peaks2genes/tutorial.html&edit-text=&act=url">
+                العربية
+                </a>
+                
+                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fintroduction%2Ftutorials%2Fgalaxy-intro-peaks2genes%2Ftutorial.html&edit-text=&act=url" title="">
+                And more!
+                </a>
+            </div>
+        </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
             </div>
 
             <div id="theme-selector" data-toggle="buttons">
@@ -138,6 +172,9 @@
                 <label data-value="rainbow" class="btn btn-secondary">
                     <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
                 </label>
+                <label data-value="progress" class="btn btn-secondary">
+                    <input type="radio" name="options" id="progress" autocomplete="off">🏳️‍🌈
+                </label>
                 <label data-value="halloween" class="btn btn-secondary">
                     <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
                 </label>
@@ -147,15 +184,50 @@
             </div>
 
         </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
+            </div>
+
+            
+            <div id="archive-selector">
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2021-02-01/topics/introduction/tutorials/galaxy-intro-peaks2genes/tutorial.html" title="Version 2021-02-01">2021-02-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2020-12-01/topics/introduction/tutorials/galaxy-intro-peaks2genes/tutorial.html" title="Version 2020-12-01">2020-12-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2020-11-01/topics/introduction/tutorials/galaxy-intro-peaks2genes/tutorial.html" title="Version 2020-11-01">2020-11-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
+            </div>
+
+        </div>
+
     </div>
 </li>
 
-
+                    <!--
                     <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/galaxyproject/training-material/edit/master/topics/introduction/tutorials/galaxy-intro-peaks2genes/tutorial.md">
+                        <a class="nav-link" href="https://github.com/galaxyproject/training-material/edit/main/topics/introduction/tutorials/galaxy-intro-peaks2genes/tutorial.md">
                             <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit
                         </a>
                     </li>
+                    -->
+
+                     <!-- Search bar-->
+                    <li class="nav-item">
+                      <div id="navbarSupportedContent">
+                        <!-- Search form -->
+                        <form class="form-inline mr-auto" method="GET" action="/training-material/search">
+                          <i class="fas fa-search nav-link" aria-hidden="true"></i>
+                          <div class="md-form mb-2">
+                            <input name="query" class="form-control nicer" type="text" placeholder="Search Tutorials" aria-label="Search">
+                          </div>
+                        </form>
+                      </div>
+                    </li>
+
                 </ul>
             </div>
         </div>
@@ -211,7 +283,7 @@
   },
   "interactivityType": "mixed",
   "isAccessibleForFree": true,
-  "license": "https://github.com/galaxyproject/training-material/blob/master/LICENSE.md",
+  "license": "https://github.com/galaxyproject/training-material/blob/main/LICENSE.md",
   "producer": {
     "@type": "Organization",
     "email": "galaxytrainingnetwork@gmail.com",
@@ -325,7 +397,7 @@
 }
     </script>
 
-    <section class="tutorial">
+    <section class="tutorial topic-introduction">
         <h1 data-toc-skip>From peaks to genes</h1>
         
 
@@ -374,24 +446,24 @@
             
 
             
-            <p><strong><i class="fas fa-hourglass-half" aria-hidden="true"></i><span class="visually-hidden">time</span> Time estimation:</strong> 3 hours</p>
+            <div><strong><i class="fas fa-hourglass-half" aria-hidden="true"></i><span class="visually-hidden">time</span> Time estimation:</strong> 3 hours</div>
             
 
             
-            <p><strong><i class="fas fa-graduation-cap" aria-hidden="true"></i><span class="visually-hidden">level</span> Level: </strong>
+            <div><strong><i class="fas fa-graduation-cap" aria-hidden="true"></i><span class="visually-hidden">level</span> Level: </strong>
              Introductory 
 <span class="level introductory" title="Introductory Tutorial">
   <i class="fas fa-graduation-cap" aria-hidden="true"></i><span class="visually-hidden">level</span> <i class="fas fa-graduation-cap" aria-hidden="true"></i><span class="visually-hidden">level</span> <i class="fas fa-graduation-cap" aria-hidden="true"></i><span class="visually-hidden">level</span>
 </span>
 
-</p>
+</div>
             
 
             
             
 
             
-            <p id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials</strong></p>
+            <div id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials</strong></div>
             <ul>
                 <div class="supporting_material">
                 
@@ -421,6 +493,10 @@
                 
 
                 
+                
+                
+
+                
                     <li class="btn btn-default supporting_material">
 
     <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Where to run the tutorial">
@@ -429,15 +505,11 @@
     <ul class="dropdown-menu">
     
         <li>
-            <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/tree/master/topics/introduction/docker" title="Docker image for this tutorial">
+            <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/tree/main/topics/introduction/docker" title="Docker image for this tutorial">
                 <i class="fab fa-docker" aria-hidden="true"></i><span class="visually-hidden">docker_image</span> Docker image
             </a>
         </li>
     
-    
-        
-    
-        
     
         
     
@@ -477,6 +549,8 @@
         <a class="dropdown-item" href="https://climate.usegalaxy.eu/" title="Climate Science Workbench">
             Climate Science Workbench
         </a>
+        
+    
         
     
         
@@ -550,6 +624,8 @@
         
     
         
+    
+        
         <a class="dropdown-item" href="https://ml.usegalaxy.eu/" title="Machine Learning Workbench">
             Machine Learning Workbench
         </a>
@@ -588,6 +664,10 @@
         
     
         
+        <a class="dropdown-item" href="https://plants.usegalaxy.eu/" title="Plant Anaylsis Workbench">
+            Plant Anaylsis Workbench
+        </a>
+        
     
         
     
@@ -607,6 +687,10 @@
     
         
     
+        
+        <a class="dropdown-item" href="https://usegalaxy.be/" title="UseGalaxy.be">
+            UseGalaxy.be
+        </a>
         
     
         
@@ -642,6 +726,8 @@
         
     
         
+    
+        
         <a class="dropdown-item" href="https://virology.usegalaxy.eu/" title="Virology">
             Virology
         </a>
@@ -656,7 +742,7 @@
             </ul>
             
 
-            <p><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Jul 27, 2020 </p>
+            <div><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Jun 28, 2021 </div>
         </blockquote>
 
         <div class="container">
@@ -726,14 +812,8 @@ The closest thing we could find is a file in GEO containing a list of the region
 
 <p>The goal of this exercise is to <strong>turn this list of genomic regions into a list of possible target genes</strong>.</p>
 
-<blockquote class="comment">
-  <h3 id="comment-note-results-may-vary"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> Note: results may vary</h3>
-
-  <p>Your results may be slightly different from the ones presented in this tutorial
-due to differing versions of tools, reference data, exte<span class="notranslate">rna</span>l databases, or
-because of stochastic processes in the algorithms.</p>
-
-</blockquote>
+<!--SNIPPET-->
+<blockquote class="comment">  <h3 data-toc-skip="" id="-results-may-vary"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden"></span> Results may vary</h3>  <p>Your results may be slightly different from the ones presented in this tutorial due to differing versions of tools, reference data, exte<span class="notranslate">rna</span>l databases, or because of stochastic processes in the algorithms.</p></blockquote>
 
 <blockquote class="agenda">
   <h3 id="agenda">Agenda</h3>
@@ -791,18 +871,8 @@ because of stochastic processes in the algorithms.</p>
     <li>
       <p>Make sure you have an empty analysis history.</p>
 
-      <blockquote class="tip">
-
-        <h3 id="tip-tip-creating-a-new-history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Creating a new history</h3>
-
-        <p>Click the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> icon at the top of the history panel</p>
-
-        <p>If the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> is missing:</p>
-        <ol>
-          <li>Click on the <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-gear</span> icon (<strong>History options</strong>) on the top of the history panel</li>
-          <li>Select the option <strong>Create New</strong> from the menu</li>
-        </ol>
-      </blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-creating-a-new-history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Creating a new history</h3>  <p>Click the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> icon at the top of the history panel.</p>  <p>If the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> is missing:</p>  <ol>  <li>Click on the <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-gear</span> icon (<strong>History options</strong>) on the top of the history panel</li>  <li>Select the option <strong>Create New</strong> from the menu</li></ol></blockquote>
     </li>
     <li>
       <p><strong>Rename your history</strong> to make it easy to recognize</p>
@@ -852,31 +922,9 @@ the gray (preparing/queued) and yellow (running) states to become green (success
       <p><img src="../../images/intro_01.png" alt="History section" /></p>
 
       <p>Directly uploading files is not the only way to get data into <span class="notranslate">Galaxy</span></p>
-      <blockquote class="tip">
 
-        <h3 id="tip-tip-importing-data-via-links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Importing data via links</h3>
-
-        <ul>
-          <li>Copy the link location</li>
-          <li>
-            <p>Open the <span class="notranslate">Galaxy</span> Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-upload</span> on the top-right of the tool panel)</p>
-          </li>
-          <li>Select <strong>Paste/Fetch Data</strong></li>
-          <li>
-            <p>Paste the link into the text field</p>
-          </li>
-          <li>
-            <p>Change <strong>Type</strong> from “Auto-detect” to <code class="language-plaintext highlighter-rouge">interval</code></p>
-          </li>
-          <li>
-            <p>Press <strong>Start</strong></p>
-          </li>
-          <li><strong>Close</strong> the window</li>
-        </ul>
-
-        <p>By default, <span class="notranslate">Galaxy</span> uses the URL as the name, so rename the files with a more useful name.</p>
-
-      </blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-importing-via-links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing via links</h3>  <ul>  <li>Copy the link location</li>  <li>    <p>Open the <span class="notranslate">Galaxy</span> Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-upload</span> on the top-right of the tool panel)</p>  </li>  <li>Select <strong>Paste/Fetch Data</strong></li>  <li>    <p>Paste the link into the text field</p>  </li>  <li>    <p>Change <strong>Type</strong> from “Auto-detect” to <code class="language-plaintext highlighter-rouge">interval</code></p>  </li>  <li>    <p>Press <strong>Start</strong></p>  </li>  <li>    <p><strong>Close</strong> the window</p>  </li>  <li>By default, <span class="notranslate">Galaxy</span> uses the URL as the name, so rename the files with a more useful name.</li></ul></blockquote>
 
       <blockquote class="tip">
         <h3 id="tip-tip-importing-data-to-galaxy"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Importing data to <span class="notranslate">Galaxy</span></h3>
@@ -924,22 +972,11 @@ the gray (preparing/queued) and yellow (running) states to become green (success
     </li>
     <li>Search for <code class="language-plaintext highlighter-rouge">mm9</code> in <strong>Database/Build</strong> attribute and select <code class="language-plaintext highlighter-rouge">Mouse July 2007 (NCBI37/mm9)</code> (the paper tells us the peaks are from <code class="language-plaintext highlighter-rouge">mm9</code>)</li>
     <li>Click on <strong>Save</strong> on the top</li>
-    <li>Add a tag called <code class="language-plaintext highlighter-rouge">#peaks</code> to the dataset to make it easier to track in the history
-      <blockquote class="tip">
+    <li>
+      <p>Add a tag called <code class="language-plaintext highlighter-rouge">#peaks</code> to the dataset to make it easier to track in the history</p>
 
-        <h3 id="tip-tip-adding-a-tag"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Adding a tag</h3>
-        <ul>
-          <li>Click on the dataset</li>
-          <li>Click on <i class="fas fa-tags" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-tags</span> <strong>Edit dataset tags</strong></li>
-          <li>
-            <p>Add a tag starting with <code class="language-plaintext highlighter-rouge">#</code></p>
-
-            <p>Tags starting with <code class="language-plaintext highlighter-rouge">#</code> will be automatically propagated to the outputs of tools using this dataset.</p>
-          </li>
-          <li>Check that the tag is appearing below the dataset name</li>
-        </ul>
-
-      </blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-adding-a-tag"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Adding a tag</h3>  <ul>  <li>Click on the dataset</li>  <li>Click on <i class="fas fa-tags" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-tags</span> <strong>Edit dataset tags</strong></li>  <li>    <p>Add a tag starting with <code class="language-plaintext highlighter-rouge">#</code></p>    <p>Tags starting with <code class="language-plaintext highlighter-rouge">#</code> will be automatically propagated to the outputs of tools using this dataset.</p>  </li>  <li>Check that the tag is appearing below the dataset name</li></ul></blockquote>
 
       <p>The dataset should now look like below in the history</p>
 
@@ -994,15 +1031,8 @@ we also need a list of genes in mice, which we can obtain from UCSC.</p>
     <li>
       <p>Rename our dataset to something more recognizable like <code class="language-plaintext highlighter-rouge">Genes</code></p>
 
-      <blockquote class="tip">
-
-        <h3 id="tip-tip-renaming-a-dataset"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Renaming a dataset</h3>
-        <ul>
-          <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>
-          <li>In the central panel, change the <strong>Name</strong> field  to <code class="language-plaintext highlighter-rouge">Genes</code></li>
-          <li>Click the <strong>Save</strong> button</li>
-        </ul>
-      </blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-renaming-a-dataset"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Renaming a dataset</h3>  <ul>  <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>  <li>In the central panel, change the <strong>Name</strong> field  to <code class="language-plaintext highlighter-rouge">Genes</code></li>  <li>Click the <strong>Save</strong> button</li></ul></blockquote>
     </li>
     <li>Add a tag called <code class="language-plaintext highlighter-rouge">#genes</code> to the dataset to make it easier to track in the history</li>
   </ol>
@@ -1443,18 +1473,8 @@ Wouldn’t it be nice to just convert this history into a <span class="notransla
     <li>
       <p>Create a new history and give it a new name like <code class="language-plaintext highlighter-rouge"><span class="notranslate">Galaxy</span> Introduction Part 2</code></p>
 
-      <blockquote class="tip">
-
-        <h3 id="tip-tip-creating-a-new-history-1"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Creating a new history</h3>
-
-        <p>Click the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> icon at the top of the history panel</p>
-
-        <p>If the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> is missing:</p>
-        <ol>
-          <li>Click on the <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-gear</span> icon (<strong>History options</strong>) on the top of the history panel</li>
-          <li>Select the option <strong>Create New</strong> from the menu</li>
-        </ol>
-      </blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-creating-a-new-history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Creating a new history</h3>  <p>Click the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> icon at the top of the history panel.</p>  <p>If the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> is missing:</p>  <ol>  <li>Click on the <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-gear</span> icon (<strong>History options</strong>) on the top of the history panel</li>  <li>Select the option <strong>Create New</strong> from the menu</li></ol></blockquote>
     </li>
     <li>
       <p>Click on the <strong>View all histories</strong> (<i class="fas fa-columns" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-columns</span> icon) at the top right of your history</p>
@@ -1462,7 +1482,7 @@ Wouldn’t it be nice to just convert this history into a <span class="notransla
       <p>You should see both of your histories side-by-side now</p>
     </li>
     <li>Drag and drop the edited peak file (<code class="language-plaintext highlighter-rouge">Peak regions</code>, after the replace steps), which contains the summit information, to your new history.</li>
-    <li>Click on <strong>Analyze Data</strong> in the top menu bar to go back to your analysis window</li>
+    <li>Click on the Home icon <i class="fas fa-home" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-home</span> (or <strong>Analyze Data</strong> on older <span class="notranslate">Galaxy</span> versions) in the top menu bar to go back to your analysis window</li>
   </ol>
 
 </blockquote>
@@ -1506,7 +1526,7 @@ Wouldn’t it be nice to just convert this history into a <span class="notransla
 <blockquote class="notranslate hands_on">
   <h3 id="hands_on-hands-on-cut-out-columns"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Cut out columns</h3>
   <ol>
-    <li><span class="tool" data-tool="cut1" title="Tested with cut1"><strong>Cut</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: cut1</span></span>  columns from a table with the following settings:
+    <li><span class="tool" data-tool="Cut1" title="Tested with Cut1"><strong>Cut</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: Cut1</span></span>  columns from a table with the following settings:
       <ul>
         <li><em>“Cut columns”</em>: <code class="language-plaintext highlighter-rouge">c1,c8,c9</code></li>
         <li><em>“Delimited by Tab”</em>: <code class="language-plaintext highlighter-rouge">Tab</code></li>
@@ -1518,16 +1538,8 @@ Wouldn’t it be nice to just convert this history into a <span class="notransla
     <li>
       <p>Change the format to <code class="language-plaintext highlighter-rouge">interval</code> (use the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span>) since that’s what the tool <strong>Intersect</strong> expects.</p>
 
-      <blockquote class="tip">
-
-        <h3 id="tip-tip-changing-the-datatype"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Changing the datatype</h3>
-        <ul>
-          <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>
-          <li>In the central panel, click on the <i class="fas fa-database" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-chart-select-data</span> <strong>Datatypes</strong> tab on the top</li>
-          <li>Select <code class="language-plaintext highlighter-rouge">interval</code></li>
-          <li>Click the <strong>Change datatype</strong> button</li>
-        </ul>
-      </blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-changing-the-datatype"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Changing the datatype</h3>  <ul>  <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>  <li>In the central panel, click on the <i class="fas fa-database" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-chart-select-data</span> <strong>Datatypes</strong> tab on the top</li>  <li>Select <code class="language-plaintext highlighter-rouge">interval</code></li>  <li>Click the <strong>Change datatype</strong> button</li></ul></blockquote>
 
       <p>The output should look like below:</p>
 
@@ -1555,51 +1567,11 @@ Wouldn’t it be nice to just convert this history into a <span class="notransla
       <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://zenodo.org/record/1025586/files/mm9.RefSeq_genes_from_UCSC.<span class="notranslate">bed</span>
 </code></pre></div>      </div>
 
-      <blockquote class="tip">
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-importing-via-links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing via links</h3>  <ul>  <li>Copy the link location</li>  <li>    <p>Open the <span class="notranslate">Galaxy</span> Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-upload</span> on the top-right of the tool panel)</p>  </li>  <li>Select <strong>Paste/Fetch Data</strong></li>  <li>    <p>Paste the link into the text field</p>  </li>  <li>    <p>Change <strong>Genome</strong> to <code class="language-plaintext highlighter-rouge">mm9</code></p>  </li>  <li>    <p>Press <strong>Start</strong></p>  </li>  <li>    <p><strong>Close</strong> the window</p>  </li>  <li>By default, <span class="notranslate">Galaxy</span> uses the URL as the name, so rename the files with a more useful name.</li></ul></blockquote>
 
-        <h3 id="tip-tip-importing-data-via-links-1"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Importing data via links</h3>
-
-        <ul>
-          <li>Copy the link location</li>
-          <li>
-            <p>Open the <span class="notranslate">Galaxy</span> Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-upload</span> on the top-right of the tool panel)</p>
-          </li>
-          <li>Select <strong>Paste/Fetch Data</strong></li>
-          <li>
-            <p>Paste the link into the text field</p>
-          </li>
-          <li>
-            <p>Change <strong>Genome</strong> to <code class="language-plaintext highlighter-rouge">mm9</code></p>
-          </li>
-          <li>
-            <p>Press <strong>Start</strong></p>
-          </li>
-          <li><strong>Close</strong> the window</li>
-        </ul>
-
-        <p>By default, <span class="notranslate">Galaxy</span> uses the URL as the name, so rename the files with a more useful name.</p>
-
-      </blockquote>
-
-      <blockquote class="tip">
-
-        <h3 id="tip-tip-importing-data-from-a-data-library"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Importing data from a data library</h3>
-
-        <p>As an alte<span class="notranslate">rna</span>tive to uploading the data from a URL or your computer, the files may also have been made available from a <em>shared data library</em>:</p>
-
-        <ul>
-          <li>
-            <p>Go into <strong>Shared data</strong> (top panel) then <strong>Data libraries</strong></p>
-          </li>
-          <li>
-            <p>Click on “Training data” and then “Introduction - From peaks to genes”</p>
-          </li>
-          <li>Select the desired files</li>
-          <li>Click on the <strong>To History</strong> button near the top and select <strong>as Datasets</strong> from the dropdown menu</li>
-          <li>In the pop-up window, select the history you want to import the files to (or create a new one)</li>
-          <li>Click on <strong>Import</strong></li>
-        </ul>
-      </blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-importing-data-from-a-data-library"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing data from a data library</h3>  <p>As an alte<span class="notranslate">rna</span>tive to uploading the data from a URL or your computer, the files may also have been made available from a <em>shared data library</em>:</p>  <ul>  <li>    <p>Go into <strong>Shared data</strong> (top panel) then <strong>Data libraries</strong></p>  </li>  <li>    <p>Click on “Training data” and then “Introduction - From peaks to genes”</p>  </li>  <li>Select the desired files</li>  <li>Click on the <strong>To History</strong> button near the top and select <strong>as Datasets</strong> from the dropdown menu</li>  <li>In the pop-up window, select the history you want to import the files to (or create a new one)</li>  <li>Click on <strong>Import</strong></li></ul></blockquote>
 
       <p>As default, <span class="notranslate">Galaxy</span> takes the link as name, so rename them.</p>
     </li>
@@ -1738,6 +1710,11 @@ But wouldn’t it be more interesting to know the number of peaks in each unique
                     </blockquote>
                     
 
+                    <h1>Frequently Asked Questions</h1>
+                    Have questions about this tutorial? Check out the  <a href="/training-material/topics/introduction/faqs/">FAQ page for the Introduction to Galaxy Analyses topic</a> to see if your question is listed there.
+                    If not, please ask your question on the <a href="https://gitter.im/Galaxy-Training-Network/Lobby">GTN Gitter Channel</a> or the
+                    <a href="https://help.galaxyproject.org">Galaxy Help Forum</a>
+
                     
 
                     
@@ -1750,6 +1727,8 @@ But wouldn’t it be more interesting to know the number of peaks in each unique
     
 
 </li></ol>
+                    
+
                     
 
                     <h1>Feedback</h1>
@@ -1788,7 +1767,7 @@ But wouldn’t it be more interesting to know the number of peaks in each unique
                     <h1>Citing this Tutorial</h1>
                     <p>
                         <ol>
-                            <li id="citation-text">Anne Pajon, Clemens Blank, Bérénice Batut, Björn Grüning, Nicola Soranzo, Dilmurat Yusuf, Sarah Peter, Helena Rasche, 2020 <b>From peaks to genes (Galaxy Training Materials)</b>. <a href="/training-material/topics/introduction/tutorials/galaxy-intro-peaks2genes/tutorial.html">/training-material/topics/introduction/tutorials/galaxy-intro-peaks2genes/tutorial.html</a> Online; accessed TODAY
+                            <li id="citation-text">Anne Pajon, Clemens Blank, Bérénice Batut, Björn Grüning, Nicola Soranzo, Dilmurat Yusuf, Sarah Peter, Helena Rasche, 2021 <b>From peaks to genes (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/introduction/tutorials/galaxy-intro-peaks2genes/tutorial.html">https://training.galaxyproject.org/training-material/topics/introduction/tutorials/galaxy-intro-peaks2genes/tutorial.html</a> Online; accessed TODAY
                             </li>
                             <li>
                             Batut et al., 2018 <b>Community-Driven Data Analysis Training for Biology</b> Cell Systems <a href="https://doi.org/10.1016%2Fj.cels.2018.05.012">10.1016/j.cels.2018.05.012</a>
@@ -1805,10 +1784,10 @@ But wouldn’t it be more interesting to know the number of peaks in each unique
 <code id="citation-code">@misc{introduction-galaxy-intro-peaks2genes,
     author = "Anne Pajon and Clemens Blank and Bérénice Batut and Björn Grüning and Nicola Soranzo and Dilmurat Yusuf and Sarah Peter and Helena Rasche",
     title = "From peaks to genes (Galaxy Training Materials)",
-    year = "2020",
-    month = "07",
-    day = "27"
-    url = "\url{/training-material/topics/introduction/tutorials/galaxy-intro-peaks2genes/tutorial.html}",
+    year = "2021",
+    month = "06",
+    day = "28"
+    url = "\url{https://training.galaxyproject.org/training-material/topics/introduction/tutorials/galaxy-intro-peaks2genes/tutorial.html}",
     note = "[Online; accessed TODAY]"
 }
 @article{Batut_2018,
@@ -1836,15 +1815,15 @@ document.getElementById("citation-code").innerHTML = document.getElementById("ci
 document.getElementById("citation-text").innerHTML = document.getElementById("citation-text").innerHTML.replace("TODAY", d.toDateString());
 </script>
 
+                    <h3><i class="far fa-thumbs-up" aria-hidden="true"></i><span class="visually-hidden">congratulations</span> Congratulations on successfully completing this tutorial!</h3>
+
+                    
+
+                    
+
                 </div>
             </div>
         </div>
-
-        <h3><i class="far fa-thumbs-up" aria-hidden="true"></i><span class="visually-hidden">congratulations</span> Congratulations on successfully completing this tutorial!</h3>
-
-        
-
-        
     </section>
 </div>
 
@@ -1858,7 +1837,7 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
         </p>
         <p>
             Found a typo? Something is wrong in this tutorial? Edit it on
-            <a href="https://github.com/galaxyproject/training-material/tree/master/topics/introduction/tutorials/galaxy-intro-peaks2genes/tutorial.md">GitHub</a>.
+            <a href="https://github.com/galaxyproject/training-material/tree/main/topics/introduction/tutorials/galaxy-intro-peaks2genes/tutorial.md">GitHub</a>.
         </p>
         <p>
     The content of the tutorials and website is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.

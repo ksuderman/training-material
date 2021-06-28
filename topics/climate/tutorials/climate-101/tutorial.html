@@ -70,59 +70,93 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Language Selector">
-                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Language
-                        </a>
-                        <div class="dropdown-menu">
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fclimate%2Ftutorials%2Fclimate-101%2Ftutorial.html&edit-text=&act=url" title="">
-                                Français
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fclimate%2Ftutorials%2Fclimate-101%2Ftutorial.html&edit-text=&act=url" title="">
-                                日本語
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fclimate%2Ftutorials%2Fclimate-101%2Ftutorial.html&edit-text=&act=url" title="">
-                                Español
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fclimate%2Ftutorials%2Fclimate-101%2Ftutorial.html&edit-text=&act=url" title="">
-                                Português
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fclimate%2Ftutorials%2Fclimate-101%2Ftutorial.html&edit-text=&act=url" title="">
-                                العربية
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fclimate%2Ftutorials%2Fclimate-101%2Ftutorial.html&edit-text=&act=url" title="">
-                                And more!
-                            </a>
-                        </div>
-                    </li>
-
-                    <li class="nav-item dropdown">
     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
         <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
     </a>
     <div class="dropdown-menu dropdown-menu-right">
+        <!-- disable Tess for now
         <form method="get" action="https://tess.elixir-europe.org/materials">
             <input type="text" id="search" name="q" value="" style="margin-left: 0.5em;/*! border-radius: 0px; */">
             <input type="hidden" value="Galaxy Training" name="content_provider">
             <input type="submit" value="Search on TeSS" style="width: 92%;border-radius: 0px;margin: 0.5em;background: #f47d20;border: 0px;padding: 0.25em;" class="">
         </form>
+        -->
 
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQ">
-            FAQ
+        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQs">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
         </a>
+        
+        <a class="dropdown-item" href="/training-material/topics/climate/faqs/" title="Check our FAQs for the Climate topic">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
+        </a>
+        
         <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
-            Discuss on Galaxy Help
+            <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
+        </a>
+        <a class="dropdown-item" href="https://gitter.im/Galaxy-Training-Network/Lobby" title="Discuss on gitter">
+           <i class="fab fa-gitter" aria-hidden="true"></i><span class="visually-hidden">gitter</span> Discuss on Gitter
+        </a>
+    </div>
+</li>
+
+
+                    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Extras">
+        <i class="far fa-star" aria-hidden="true"></i><span class="visually-hidden">galaxy-star</span> Extras
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+
+        
+        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/climate/tutorials/climate-101/tutorial.md" title="Edit on GitHub">
+          <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
+        </a>
+
+        <a class="dropdown-item" href="/training-material/stats.html" title="Show view statistics about this rrepository">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN statistics
+        </a>
+
+        <a class="dropdown-item" href="https://plausible.galaxyproject.eu/training.galaxyproject.org?period=12mo&page=/training-material/topics/climate/tutorials/climate-101/tutorial.html" title="Show view statistics of this page">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
         </a>
 
         <div class="dropdown-item">
             <div>
-                Theme
+                <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Translate this page
+            </div>
+
+            <div id="lang-selector">
+                
+                <strong>Automatic Translations</strong>
+
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/climate/tutorials/climate-101/tutorial.html&edit-text=&act=url">
+                Français
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/climate/tutorials/climate-101/tutorial.html&edit-text=&act=url">
+                日本語
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/climate/tutorials/climate-101/tutorial.html&edit-text=&act=url">
+                Español
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/climate/tutorials/climate-101/tutorial.html&edit-text=&act=url">
+                Português
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/climate/tutorials/climate-101/tutorial.html&edit-text=&act=url">
+                العربية
+                </a>
+                
+                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fclimate%2Ftutorials%2Fclimate-101%2Ftutorial.html&edit-text=&act=url" title="">
+                And more!
+                </a>
+            </div>
+        </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
             </div>
 
             <div id="theme-selector" data-toggle="buttons">
@@ -138,6 +172,9 @@
                 <label data-value="rainbow" class="btn btn-secondary">
                     <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
                 </label>
+                <label data-value="progress" class="btn btn-secondary">
+                    <input type="radio" name="options" id="progress" autocomplete="off">🏳️‍🌈
+                </label>
                 <label data-value="halloween" class="btn btn-secondary">
                     <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
                 </label>
@@ -147,15 +184,50 @@
             </div>
 
         </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
+            </div>
+
+            
+            <div id="archive-selector">
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2021-02-01/topics/climate/tutorials/climate-101/tutorial.html" title="Version 2021-02-01">2021-02-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2020-12-01/topics/climate/tutorials/climate-101/tutorial.html" title="Version 2020-12-01">2020-12-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2020-11-01/topics/climate/tutorials/climate-101/tutorial.html" title="Version 2020-11-01">2020-11-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
+            </div>
+
+        </div>
+
     </div>
 </li>
 
-
+                    <!--
                     <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/galaxyproject/training-material/edit/master/topics/climate/tutorials/climate-101/tutorial.md">
+                        <a class="nav-link" href="https://github.com/galaxyproject/training-material/edit/main/topics/climate/tutorials/climate-101/tutorial.md">
                             <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit
                         </a>
                     </li>
+                    -->
+
+                     <!-- Search bar-->
+                    <li class="nav-item">
+                      <div id="navbarSupportedContent">
+                        <!-- Search form -->
+                        <form class="form-inline mr-auto" method="GET" action="/training-material/search">
+                          <i class="fas fa-search nav-link" aria-hidden="true"></i>
+                          <div class="md-form mb-2">
+                            <input name="query" class="form-control nicer" type="text" placeholder="Search Tutorials" aria-label="Search">
+                          </div>
+                        </form>
+                      </div>
+                    </li>
+
                 </ul>
             </div>
         </div>
@@ -211,7 +283,7 @@
   },
   "interactivityType": "mixed",
   "isAccessibleForFree": true,
-  "license": "https://github.com/galaxyproject/training-material/blob/master/LICENSE.md",
+  "license": "https://github.com/galaxyproject/training-material/blob/main/LICENSE.md",
   "producer": {
     "@type": "Organization",
     "email": "galaxytrainingnetwork@gmail.com",
@@ -282,7 +354,7 @@
 }
     </script>
 
-    <section class="tutorial">
+    <section class="tutorial topic-climate">
         <h1 data-toc-skip>Getting your hands-on climate data</h1>
         
 
@@ -337,7 +409,7 @@
             
 
             
-            <p><strong><i class="fas fa-hourglass-half" aria-hidden="true"></i><span class="visually-hidden">time</span> Time estimation:</strong> 1 hour</p>
+            <div><strong><i class="fas fa-hourglass-half" aria-hidden="true"></i><span class="visually-hidden">time</span> Time estimation:</strong> 1 hour</div>
             
 
             
@@ -346,7 +418,7 @@
             
 
             
-            <p id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials</strong></p>
+            <div id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials</strong></div>
             <ul>
                 <div class="supporting_material">
                 
@@ -369,6 +441,10 @@
                 
 
                 
+                
+                
+
+                
                     <li class="btn btn-default supporting_material">
 
     <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Where to run the tutorial">
@@ -377,7 +453,7 @@
     <ul class="dropdown-menu">
     
         <li>
-            <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/tree/master/topics/climate/docker" title="Docker image for this tutorial">
+            <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/tree/main/topics/climate/docker" title="Docker image for this tutorial">
                 <i class="fab fa-docker" aria-hidden="true"></i><span class="visually-hidden">docker_image</span> Docker image
             </a>
         </li>
@@ -392,7 +468,7 @@
             </ul>
             
 
-            <p><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Oct 21, 2020 </p>
+            <div><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Mar 23, 2021 </div>
         </blockquote>
 
         <div class="container">
@@ -411,7 +487,7 @@
 
 </blockquote>
 
-<p>The practical aims at familiarzing you with Climate Science and the terminology used by climate scientists. The target audience is not a climate scientist but 
+<p>The practical aims at familiarzing you with Climate Science and the terminology used by climate scientists. The target audience is not a climate scientist but
 anyone interested in learning about climate.</p>
 
 <blockquote class="agenda">
@@ -448,11 +524,11 @@ anyone interested in learning about climate.</p>
   <p><a href="https://climate.copernicus.eu/">European Copernicus Climate Change Service (C3S)</a> provide authoritative information about the past, present
 and future climate. C3S is one of the many services provided by Copernicus, the European Union’s Earth Observation Programme, looking
 at our planet and its environment for the ultimate benefit of all European citizens.
-The C3S <a href="https://cds.climate.copernicus.eu/#!/home">Climate Data Store (CDS)</a> provides a single point of access to a wide range of 
+The C3S <a href="https://cds.climate.copernicus.eu/#!/home">Climate Data Store (CDS)</a> provides a single point of access to a wide range of
 quality-assured climate datasets distributed in the cloud.
 Access to the CDS data is open, free and unrestricted.
-We will be using freely available datasets from the CDS, including 
-observations, historical climate data records, estimates of Essential Climate Variables (ECVs) derived from Earth observations, 
+We will be using freely available datasets from the CDS, including
+observations, historical climate data records, estimates of Essential Climate Variables (ECVs) derived from Earth observations,
 global and regional climate reanalyses of past observations, seasonal forecasts and climate projections.</p>
 </blockquote>
 
@@ -463,7 +539,7 @@ global and regional climate reanalyses of past observations, seasonal forecasts 
   <li><a href="https://cds.climate.copernicus.eu/cdsapp#!/dataset/ecv-for-climate-change?tab=overview">Essential climate variables for assessment of climate variability from 1979 to present</a></li>
 </ul>
 
-<p>To reduce the volume of data, the data resolution (in space and/or time) has been significantly reduced and/or data has been selected on sample locations (Paris, Oslo and 
+<p>To reduce the volume of data, the data resolution (in space and/or time) has been significantly reduced and/or data has been selected on sample locations (Paris, Oslo and
 Freiburg). The data format may also have been changed (for instance to tabular) to ease processing.</p>
 
 <h2 id="get-data">Get data</h2>
@@ -472,19 +548,11 @@ Freiburg). The data format may also have been changed (for instance to tabular) 
   <h3 id="hands_on-hands-on-data-upload"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Data upload</h3>
 
   <ol>
-    <li>Create a new history for this tutorial. If you are not inspired, you can name it <em>climate101</em>.
-      <blockquote class="tip">
+    <li>
+      <p>Create a new history for this tutorial. If you are not inspired, you can name it <em>climate101</em>.</p>
 
-        <h3 id="tip-tip-creating-a-new-history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Creating a new history</h3>
-
-        <p>Click the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> icon at the top of the history panel</p>
-
-        <p>If the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> is missing:</p>
-        <ol>
-          <li>Click on the <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-gear</span> icon (<strong>History options</strong>) on the top of the history panel</li>
-          <li>Select the option <strong>Create New</strong> from the menu</li>
-        </ol>
-      </blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-creating-a-new-history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Creating a new history</h3>  <p>Click the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> icon at the top of the history panel.</p>  <p>If the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> is missing:</p>  <ol>  <li>Click on the <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-gear</span> icon (<strong>History options</strong>) on the top of the history panel</li>  <li>Select the option <strong>Create New</strong> from the menu</li></ol></blockquote>
     </li>
     <li>
       <p>Import the files from <a href="https://doi.org/10.5281/zenodo.3776500">Zenodo</a> or from the shared data library</p>
@@ -493,75 +561,22 @@ Freiburg). The data format may also have been changed (for instance to tabular) 
 https://zenodo.org/record/3776500/files/ts_cities.csv
 </code></pre></div>      </div>
 
-      <blockquote class="tip">
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-importing-via-links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing via links</h3>  <ul>  <li>Copy the link location</li>  <li>    <p>Open the <span class="notranslate">Galaxy</span> Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-upload</span> on the top-right of the tool panel)</p>  </li>  <li>Select <strong>Paste/Fetch Data</strong></li>  <li>    <p>Paste the link into the text field</p>  </li>  <li>    <p>Press <strong>Start</strong></p>  </li>  <li>    <p><strong>Close</strong> the window</p>  </li>  <li>By default, <span class="notranslate">Galaxy</span> uses the URL as the name, so rename the files with a more useful name.</li></ul></blockquote>
 
-        <h3 id="tip-tip-importing-data-via-links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Importing data via links</h3>
-
-        <ul>
-          <li>Copy the link location</li>
-          <li>
-            <p>Open the <span class="notranslate">Galaxy</span> Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-upload</span> on the top-right of the tool panel)</p>
-          </li>
-          <li>Select <strong>Paste/Fetch Data</strong></li>
-          <li>
-            <p>Paste the link into the text field</p>
-          </li>
-          <li>
-            <p>Press <strong>Start</strong></p>
-          </li>
-          <li><strong>Close</strong> the window</li>
-        </ul>
-
-        <p>By default, <span class="notranslate">Galaxy</span> uses the URL as the name, so rename the files with a more useful name.</p>
-
-      </blockquote>
-
-      <blockquote class="tip">
-
-        <h3 id="tip-tip-importing-data-from-a-data-library"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Importing data from a data library</h3>
-
-        <p>As an alte<span class="notranslate">rna</span>tive to uploading the data from a URL or your computer, the files may also have been made available from a <em>shared data library</em>:</p>
-
-        <ul>
-          <li>
-            <p>Go into <strong>Shared data</strong> (top panel) then <strong>Data libraries</strong></p>
-          </li>
-          <li>
-            <p>Find the correct folder (ask your instructor)</p>
-          </li>
-          <li>Select the desired files</li>
-          <li>Click on the <strong>To History</strong> button near the top and select <strong>as Datasets</strong> from the dropdown menu</li>
-          <li>In the pop-up window, select the history you want to import the files to (or create a new one)</li>
-          <li>Click on <strong>Import</strong></li>
-        </ul>
-      </blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-importing-data-from-a-data-library"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing data from a data library</h3>  <p>As an alte<span class="notranslate">rna</span>tive to uploading the data from a URL or your computer, the files may also have been made available from a <em>shared data library</em>:</p>  <ul>  <li>    <p>Go into <strong>Shared data</strong> (top panel) then <strong>Data libraries</strong></p>  </li>  <li>    <p>Find the correct folder (ask your instructor)</p>  </li>  <li>Select the desired files</li>  <li>Click on the <strong>To History</strong> button near the top and select <strong>as Datasets</strong> from the dropdown menu</li>  <li>In the pop-up window, select the history you want to import the files to (or create a new one)</li>  <li>Click on <strong>Import</strong></li></ul></blockquote>
     </li>
     <li>
       <p>Check that the datatype is <strong>tabular</strong></p>
 
-      <blockquote class="tip">
-
-        <h3 id="tip-tip-changing-the-datatype"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Changing the datatype</h3>
-        <ul>
-          <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>
-          <li>In the central panel, click on the <i class="fas fa-database" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-chart-select-data</span> <strong>Datatypes</strong> tab on the top</li>
-          <li>Select <code class="language-plaintext highlighter-rouge">datatypes</code></li>
-          <li>Click the <strong>Change datatype</strong> button</li>
-        </ul>
-      </blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-changing-the-datatype"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Changing the datatype</h3>  <ul>  <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>  <li>In the central panel, click on the <i class="fas fa-database" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-chart-select-data</span> <strong>Datatypes</strong> tab on the top</li>  <li>Select <code class="language-plaintext highlighter-rouge">datatypes</code></li>  <li>Click the <strong>Change datatype</strong> button</li></ul></blockquote>
 
       <p>If it is not <code class="language-plaintext highlighter-rouge">tabular</code> make sure to convert it using the <span class="notranslate">Galaxy</span> built-in format converters.</p>
 
-      <blockquote class="tip">
-
-        <h3 id="tip-tip-converting-the-file-format"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Converting the file format</h3>
-        <ul>
-          <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>
-          <li>In the central panel, click on the <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-gear</span> <strong>Convert</strong> tab on the top</li>
-          <li>Select <code class="language-plaintext highlighter-rouge">Convert CSV to Tabular</code></li>
-          <li>Click the <strong>Convert datatype</strong> button</li>
-        </ul>
-      </blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-converting-the-file-format"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Converting the file format</h3>  <ul>  <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>  <li>In the central panel, click on the <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-gear</span> <strong>Convert</strong> tab on the top</li>  <li>Select <code class="language-plaintext highlighter-rouge">Convert CSV to Tabular</code></li>  <li>Click the <strong>Convert datatype</strong> button</li></ul></blockquote>
     </li>
     <li>
       <p>Rename Datasets</p>
@@ -569,34 +584,14 @@ https://zenodo.org/record/3776500/files/ts_cities.csv
       <p>As “<code class="language-plaintext highlighter-rouge">https://zenodo.org/record/3776500/files/tg_ens_mean_0.1deg_reg_v20.0e_Paris_daily.csv</code>” is not a beautiful name and can give errors for some tools, it is a good practice to change the dataset name by something more meaningfull.
 For example by removing <code class="language-plaintext highlighter-rouge">https://zenodo.org/record/3776500/files/</code> to obtain <code class="language-plaintext highlighter-rouge">tg_ens_mean_0.1deg_reg_v20.0e_Paris_daily.csv</code> and <code class="language-plaintext highlighter-rouge">ts_cities.csv</code>, respectively.</p>
 
-      <blockquote class="tip">
-
-        <h3 id="tip-tip-renaming-a-dataset"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Renaming a dataset</h3>
-        <ul>
-          <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>
-          <li>In the central panel, change the <strong>Name</strong> field</li>
-          <li>Click the <strong>Save</strong> button</li>
-        </ul>
-      </blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-renaming-a-dataset"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Renaming a dataset</h3>  <ul>  <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>  <li>In the central panel, change the <strong>Name</strong> field</li>  <li>Click the <strong>Save</strong> button</li></ul></blockquote>
     </li>
     <li>
       <p>Add a tag to the dataset corresponding to <code class="language-plaintext highlighter-rouge">copernicus</code></p>
 
-      <blockquote class="tip">
-
-        <h3 id="tip-tip-adding-a-tag"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Adding a tag</h3>
-        <ul>
-          <li>Click on the dataset</li>
-          <li>Click on <i class="fas fa-tags" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-tags</span> <strong>Edit dataset tags</strong></li>
-          <li>
-            <p>Add a tag starting with <code class="language-plaintext highlighter-rouge">#</code></p>
-
-            <p>Tags starting with <code class="language-plaintext highlighter-rouge">#</code> will be automatically propagated to the outputs of tools using this dataset.</p>
-          </li>
-          <li>Check that the tag is appearing below the dataset name</li>
-        </ul>
-
-      </blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-adding-a-tag"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Adding a tag</h3>  <ul>  <li>Click on the dataset</li>  <li>Click on <i class="fas fa-tags" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-tags</span> <strong>Edit dataset tags</strong></li>  <li>    <p>Add a tag starting with <code class="language-plaintext highlighter-rouge">#</code></p>    <p>Tags starting with <code class="language-plaintext highlighter-rouge">#</code> will be automatically propagated to the outputs of tools using this dataset.</p>  </li>  <li>Check that the tag is appearing below the dataset name</li></ul></blockquote>
     </li>
   </ol>
 
@@ -604,7 +599,7 @@ For example by removing <code class="language-plaintext highlighter-rouge">https
 
 <h1 id="what-is-climate">What is climate?</h1>
 
-<p>According to <a href="https://en.wikipedia.org/wiki/Climate">wikipedia</a>, 
+<p>According to <a href="https://en.wikipedia.org/wiki/Climate">wikipedia</a>,
 Climate is defined as the average state of everyday’s weather condition <strong>over a period of 30 years</strong>. It is measured by assessing
 the patterns of variation in temperature, humidity, atmospheric pressure, wind, precipitation, atmospheric particle count and
 other meteorological variables in a given region over a long period of time (usually 20 or 30 years).
@@ -612,12 +607,12 @@ Climate differs from weather, in that weather only describes the short-term cond
 
 <h2 id="climate-versus-weather">Climate versus Weather</h2>
 
-<p>Quantities that climate scientists are interested in are similar to those used to assess the weather (temperature, precipitation, etc.). 
-But there is a big difference between climate and weather: <strong>weather</strong> varies from hour to hour and from day to day whereas <strong>climate</strong> 
+<p>Quantities that climate scientists are interested in are similar to those used to assess the weather (temperature, precipitation, etc.).
+But there is a big difference between climate and weather: <strong>weather</strong> varies from hour to hour and from day to day whereas <strong>climate</strong>
 is defined as the average of weather over several decades or longer.</p>
 
-<p>The figure below shows a woman walking her dog and we can use it to make an analogy to illustrate the difference between weather and climate. 
-if you focus your attention on the dog, you can see that it is all over the place, sometimes upwards, sometimes downwards: this can represent the weather and its 
+<p>The figure below shows a woman walking her dog and we can use it to make an analogy to illustrate the difference between weather and climate.
+if you focus your attention on the dog, you can see that it is all over the place, sometimes upwards, sometimes downwards: this can represent the weather and its
 variability. The dog (weather) is not following a fully random pattern and varies around a main direction (trend) that is given by the woman: the woman is representing
 the climate and gives us an indication of where both the woman and dog are likely to be in the future.</p>
 
@@ -680,7 +675,7 @@ Use the <strong>tools search box</strong> at the top of the tool panel to find <
             </li>
           </ul>
         </li>
-        <li>The minimum temperature (-11.6799995 degrees celcius) was observed on January 16 1985. 
+        <li>The minimum temperature (-11.6799995 degrees celcius) was observed on January 16 1985.
  You can use different <span class="notranslate">Galaxy</span> tools to find out the solution and here we show you how to use <strong>Datamash</strong>  <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with the following parameters:
           <ul>
             <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“Input tabular dataset”</em>: <code class="language-plaintext highlighter-rouge">tg_ens_mean_0.1deg_reg_v20.0e_Paris_daily.csv</code></li>
@@ -734,7 +729,7 @@ Use the <strong>tools search box</strong> at the top of the tool panel to find <
 <blockquote class="notranslate hands_on">
   <h3 id="hands_on-hands-on-what-is-the-monthly-climatological-temperature-in-paris"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: What is the monthly climatological temperature in Paris?</h3>
 
-  <p>To answer to this question, we will compute the global average temperatures over the entire period 1950 and 2019 for each month (January, February, etc.). Indeed, 
+  <p>To answer to this question, we will compute the global average temperatures over the entire period 1950 and 2019 for each month (January, February, etc.). Indeed,
   this period of time is sufficiently long for computing monthly climatological temperature (more than 30 years).</p>
   <blockquote class="question">
     <h3 id="question-questions-1"><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Questions</h3>
@@ -924,8 +919,8 @@ temperature. The baseline temperature is typically computed by averaging 30 or m
 <blockquote class="tip">
   <h3 id="tip-tip-copernicus-climate-bulletin"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Copernicus Climate Bulletin</h3>
 
-  <p><a href="https://climate.copernicus.eu/climate-bulletins">Copernicus Climate Bulletins</a> presents the current condition of the climate using key climate change indicators. 
-They also provide data, analysis of the maps and guidance on how they are produced. Datasets for temperature anomalies can be found and are 
+  <p><a href="https://climate.copernicus.eu/climate-bulletins">Copernicus Climate Bulletins</a> presents the current condition of the climate using key climate change indicators.
+They also provide data, analysis of the maps and guidance on how they are produced. Datasets for temperature anomalies can be found and are
 regularly updated (with recent dates). For instance, in March 2020, the corresponding dataset can be found <a href="https://climate.copernicus.eu/sites/default/files/2020-04/ts_1month_anomaly_Global_ea_2t_202003_v01.csv">here</a>.</p>
 
 </blockquote>
@@ -949,7 +944,7 @@ regularly updated (with recent dates). For instance, in March 2020, the correspo
 <blockquote class="notranslate hands_on">
   <h3 id="hands_on-hands-on-essential-climate-variables"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Essential Climate Variables</h3>
 
-  <p>We will look at the <a href="https://gcos.wmo.int/en/essential-climate-variables/surface-vapour/">Water Vapor Essential Climate Variable </a>: 
+  <p>We will look at the <a href="https://gcos.wmo.int/en/essential-climate-variables/surface-vapour/">Water Vapor Essential Climate Variable </a>:
 <em>The humidity of air near the surface of the Earth affects the comfort and health of humans, livestock and wildlife, the swarming behaviour of insects and the occurrence of plant disease. The humidity of air near the surface affects evaporation and the strength of the hydrological and energy cycles. Evaporation from the surface of the earth is the source of water in the atmosphere and so is responsible for important feedbacks in the climate system due to clouds and radiation.</em></p>
 
   <ol>
@@ -1015,7 +1010,7 @@ When it comes to future climate, we usually need to make some assumptions (such 
 
 <h1 id="conclusion">Conclusion</h1>
 
-<p class="no_toc">We have learnt to differentiate climate from weather and got an overview of the terminology used by climate scientists to identify the 
+<p class="no_toc">We have learnt to differentiate climate from weather and got an overview of the terminology used by climate scientists to identify the
 various source of climate data.</p>
 
 
@@ -1035,6 +1030,13 @@ various source of climate data.</p>
                             
                         </ul>
                     </blockquote>
+                    
+
+                    <h1>Frequently Asked Questions</h1>
+                    Have questions about this tutorial? Check out the  <a href="/training-material/topics/climate/faqs/">FAQ page for the Climate topic</a> to see if your question is listed there.
+                    If not, please ask your question on the <a href="https://gitter.im/Galaxy-Training-Network/Lobby">GTN Gitter Channel</a> or the
+                    <a href="https://help.galaxyproject.org">Galaxy Help Forum</a>
+
                     
 
                     
@@ -1077,7 +1079,7 @@ various source of climate data.</p>
                     <h1>Citing this Tutorial</h1>
                     <p>
                         <ol>
-                            <li id="citation-text">Anne Fouilloux, 2020 <b>Getting your hands-on climate data (Galaxy Training Materials)</b>. <a href="/training-material/topics/climate/tutorials/climate-101/tutorial.html">/training-material/topics/climate/tutorials/climate-101/tutorial.html</a> Online; accessed TODAY
+                            <li id="citation-text">Anne Fouilloux, 2021 <b>Getting your hands-on climate data (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/climate/tutorials/climate-101/tutorial.html">https://training.galaxyproject.org/training-material/topics/climate/tutorials/climate-101/tutorial.html</a> Online; accessed TODAY
                             </li>
                             <li>
                             Batut et al., 2018 <b>Community-Driven Data Analysis Training for Biology</b> Cell Systems <a href="https://doi.org/10.1016%2Fj.cels.2018.05.012">10.1016/j.cels.2018.05.012</a>
@@ -1094,10 +1096,10 @@ various source of climate data.</p>
 <code id="citation-code">@misc{climate-climate-101,
     author = "Anne Fouilloux",
     title = "Getting your hands-on climate data (Galaxy Training Materials)",
-    year = "2020",
-    month = "10",
-    day = "21"
-    url = "\url{/training-material/topics/climate/tutorials/climate-101/tutorial.html}",
+    year = "2021",
+    month = "03",
+    day = "23"
+    url = "\url{https://training.galaxyproject.org/training-material/topics/climate/tutorials/climate-101/tutorial.html}",
     note = "[Online; accessed TODAY]"
 }
 @article{Batut_2018,
@@ -1125,15 +1127,15 @@ document.getElementById("citation-code").innerHTML = document.getElementById("ci
 document.getElementById("citation-text").innerHTML = document.getElementById("citation-text").innerHTML.replace("TODAY", d.toDateString());
 </script>
 
+                    <h3><i class="far fa-thumbs-up" aria-hidden="true"></i><span class="visually-hidden">congratulations</span> Congratulations on successfully completing this tutorial!</h3>
+
+                    
+
+                    
+
                 </div>
             </div>
         </div>
-
-        <h3><i class="far fa-thumbs-up" aria-hidden="true"></i><span class="visually-hidden">congratulations</span> Congratulations on successfully completing this tutorial!</h3>
-
-        
-
-        
     </section>
 </div>
 
@@ -1147,7 +1149,7 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
         </p>
         <p>
             Found a typo? Something is wrong in this tutorial? Edit it on
-            <a href="https://github.com/galaxyproject/training-material/tree/master/topics/climate/tutorials/climate-101/tutorial.md">GitHub</a>.
+            <a href="https://github.com/galaxyproject/training-material/tree/main/topics/climate/tutorials/climate-101/tutorial.md">GitHub</a>.
         </p>
         <p>
     The content of the tutorials and website is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.

@@ -70,59 +70,93 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Language Selector">
-                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Language
-                        </a>
-                        <div class="dropdown-menu">
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Ftranscriptomics%2Ftutorials%2Fscrna-preprocessing-tenx%2Ftutorial.html&edit-text=&act=url" title="">
-                                Français
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Ftranscriptomics%2Ftutorials%2Fscrna-preprocessing-tenx%2Ftutorial.html&edit-text=&act=url" title="">
-                                日本語
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Ftranscriptomics%2Ftutorials%2Fscrna-preprocessing-tenx%2Ftutorial.html&edit-text=&act=url" title="">
-                                Español
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Ftranscriptomics%2Ftutorials%2Fscrna-preprocessing-tenx%2Ftutorial.html&edit-text=&act=url" title="">
-                                Português
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Ftranscriptomics%2Ftutorials%2Fscrna-preprocessing-tenx%2Ftutorial.html&edit-text=&act=url" title="">
-                                العربية
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Ftranscriptomics%2Ftutorials%2Fscrna-preprocessing-tenx%2Ftutorial.html&edit-text=&act=url" title="">
-                                And more!
-                            </a>
-                        </div>
-                    </li>
-
-                    <li class="nav-item dropdown">
     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
         <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
     </a>
     <div class="dropdown-menu dropdown-menu-right">
+        <!-- disable Tess for now
         <form method="get" action="https://tess.elixir-europe.org/materials">
             <input type="text" id="search" name="q" value="" style="margin-left: 0.5em;/*! border-radius: 0px; */">
             <input type="hidden" value="Galaxy Training" name="content_provider">
             <input type="submit" value="Search on TeSS" style="width: 92%;border-radius: 0px;margin: 0.5em;background: #f47d20;border: 0px;padding: 0.25em;" class="">
         </form>
+        -->
 
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQ">
-            FAQ
+        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQs">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
         </a>
+        
+        <a class="dropdown-item" href="/training-material/topics/transcriptomics/faqs/" title="Check our FAQs for the Transcriptomics topic">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
+        </a>
+        
         <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
-            Discuss on Galaxy Help
+            <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
+        </a>
+        <a class="dropdown-item" href="https://gitter.im/Galaxy-Training-Network/Lobby" title="Discuss on gitter">
+           <i class="fab fa-gitter" aria-hidden="true"></i><span class="visually-hidden">gitter</span> Discuss on Gitter
+        </a>
+    </div>
+</li>
+
+
+                    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Extras">
+        <i class="far fa-star" aria-hidden="true"></i><span class="visually-hidden">galaxy-star</span> Extras
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+
+        
+        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/transcriptomics/tutorials/scrna-preprocessing-tenx/tutorial.md" title="Edit on GitHub">
+          <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
+        </a>
+
+        <a class="dropdown-item" href="/training-material/stats.html" title="Show view statistics about this rrepository">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN statistics
+        </a>
+
+        <a class="dropdown-item" href="https://plausible.galaxyproject.eu/training.galaxyproject.org?period=12mo&page=/training-material/topics/transcriptomics/tutorials/scrna-preprocessing-tenx/tutorial.html" title="Show view statistics of this page">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
         </a>
 
         <div class="dropdown-item">
             <div>
-                Theme
+                <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Translate this page
+            </div>
+
+            <div id="lang-selector">
+                
+                <strong>Automatic Translations</strong>
+
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/transcriptomics/tutorials/scrna-preprocessing-tenx/tutorial.html&edit-text=&act=url">
+                Français
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/transcriptomics/tutorials/scrna-preprocessing-tenx/tutorial.html&edit-text=&act=url">
+                日本語
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/transcriptomics/tutorials/scrna-preprocessing-tenx/tutorial.html&edit-text=&act=url">
+                Español
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/transcriptomics/tutorials/scrna-preprocessing-tenx/tutorial.html&edit-text=&act=url">
+                Português
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/transcriptomics/tutorials/scrna-preprocessing-tenx/tutorial.html&edit-text=&act=url">
+                العربية
+                </a>
+                
+                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Ftranscriptomics%2Ftutorials%2Fscrna-preprocessing-tenx%2Ftutorial.html&edit-text=&act=url" title="">
+                And more!
+                </a>
+            </div>
+        </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
             </div>
 
             <div id="theme-selector" data-toggle="buttons">
@@ -138,6 +172,9 @@
                 <label data-value="rainbow" class="btn btn-secondary">
                     <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
                 </label>
+                <label data-value="progress" class="btn btn-secondary">
+                    <input type="radio" name="options" id="progress" autocomplete="off">🏳️‍🌈
+                </label>
                 <label data-value="halloween" class="btn btn-secondary">
                     <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
                 </label>
@@ -147,15 +184,50 @@
             </div>
 
         </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
+            </div>
+
+            
+            <div id="archive-selector">
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2021-02-01/topics/transcriptomics/tutorials/scrna-preprocessing-tenx/tutorial.html" title="Version 2021-02-01">2021-02-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2020-12-01/topics/transcriptomics/tutorials/scrna-preprocessing-tenx/tutorial.html" title="Version 2020-12-01">2020-12-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2020-11-01/topics/transcriptomics/tutorials/scrna-preprocessing-tenx/tutorial.html" title="Version 2020-11-01">2020-11-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
+            </div>
+
+        </div>
+
     </div>
 </li>
 
-
+                    <!--
                     <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/galaxyproject/training-material/edit/master/topics/transcriptomics/tutorials/scrna-preprocessing-tenx/tutorial.md">
+                        <a class="nav-link" href="https://github.com/galaxyproject/training-material/edit/main/topics/transcriptomics/tutorials/scrna-preprocessing-tenx/tutorial.md">
                             <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit
                         </a>
                     </li>
+                    -->
+
+                     <!-- Search bar-->
+                    <li class="nav-item">
+                      <div id="navbarSupportedContent">
+                        <!-- Search form -->
+                        <form class="form-inline mr-auto" method="GET" action="/training-material/search">
+                          <i class="fas fa-search nav-link" aria-hidden="true"></i>
+                          <div class="md-form mb-2">
+                            <input name="query" class="form-control nicer" type="text" placeholder="Search Tutorials" aria-label="Search">
+                          </div>
+                        </form>
+                      </div>
+                    </li>
+
                 </ul>
             </div>
         </div>
@@ -211,7 +283,7 @@
   },
   "interactivityType": "mixed",
   "isAccessibleForFree": true,
-  "license": "https://github.com/galaxyproject/training-material/blob/master/LICENSE.md",
+  "license": "https://github.com/galaxyproject/training-material/blob/main/LICENSE.md",
   "producer": {
     "@type": "Organization",
     "email": "galaxytrainingnetwork@gmail.com",
@@ -398,7 +470,7 @@
 }
     </script>
 
-    <section class="tutorial">
+    <section class="tutorial topic-transcriptomics">
         <h1 data-toc-skip>Pre-processing of 10X Single-Cell RNA Datasets</h1>
         
 
@@ -544,6 +616,12 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
                             
                             <li> Pre-processing of Single-Cell RNA Data:
                             
@@ -578,6 +656,12 @@
                     
                         
                     
+                        
+                    
+                        
+                    
+                        
+                    
                 
             </ul>
         
@@ -588,7 +672,7 @@
             
 
             
-            <p><strong><i class="fas fa-hourglass-half" aria-hidden="true"></i><span class="visually-hidden">time</span> Time estimation:</strong> 1 hour</p>
+            <div><strong><i class="fas fa-hourglass-half" aria-hidden="true"></i><span class="visually-hidden">time</span> Time estimation:</strong> 1 hour</div>
             
 
             
@@ -597,7 +681,7 @@
             
 
             
-            <p id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials</strong></p>
+            <div id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials</strong></div>
             <ul>
                 <div class="supporting_material">
                 
@@ -627,6 +711,10 @@
                 
 
                 
+                
+                
+
+                
                     <li class="btn btn-default supporting_material">
 
     <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Where to run the tutorial">
@@ -635,13 +723,11 @@
     <ul class="dropdown-menu">
     
         <li>
-            <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/tree/master/topics/transcriptomics/docker" title="Docker image for this tutorial">
+            <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/tree/main/topics/transcriptomics/docker" title="Docker image for this tutorial">
                 <i class="fab fa-docker" aria-hidden="true"></i><span class="visually-hidden">docker_image</span> Docker image
             </a>
         </li>
     
-    
-        
     
         
     
@@ -756,6 +842,12 @@
         
     
         
+        <a class="dropdown-item" href="https://plants.usegalaxy.eu/" title="Plant Anaylsis Workbench">
+            Plant Anaylsis Workbench
+        </a>
+        
+    
+        
     
         
     
@@ -809,6 +901,8 @@
     
         
     
+        
+    
     </ul>
 
 
@@ -818,7 +912,7 @@
             </ul>
             
 
-            <p><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Feb 9, 2021 </p>
+            <div><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Apr 23, 2021 </div>
         </blockquote>
 
         <div class="container">
@@ -940,41 +1034,14 @@ The cellular resolution and genome wide scope make it possible to draw new concl
     <li>
       <p>Create a new history and rename it (e.g. sc<span class="notranslate">RNA</span>-seq 10X dataset tutorial)</p>
 
-      <blockquote class="tip">
-
-        <h3 id="tip-tip-creating-a-new-history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Creating a new history</h3>
-
-        <p>Click the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> icon at the top of the history panel</p>
-
-        <p>If the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> is missing:</p>
-        <ol>
-          <li>Click on the <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-gear</span> icon (<strong>History options</strong>) on the top of the history panel</li>
-          <li>Select the option <strong>Create New</strong> from the menu</li>
-        </ol>
-      </blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-creating-a-new-history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Creating a new history</h3>  <p>Click the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> icon at the top of the history panel.</p>  <p>If the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> is missing:</p>  <ol>  <li>Click on the <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-gear</span> icon (<strong>History options</strong>) on the top of the history panel</li>  <li>Select the option <strong>Create New</strong> from the menu</li></ol></blockquote>
     </li>
     <li>
       <p>Import the sub-sampled FASTQ data from <a href="https://zenodo.org/record/3457880"><code class="language-plaintext highlighter-rouge">Zenodo</code></a> or from the data library (ask your instructor)</p>
 
-      <blockquote class="tip">
-
-        <h3 id="tip-tip-importing-data-from-a-data-library"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Importing data from a data library</h3>
-
-        <p>As an alte<span class="notranslate">rna</span>tive to uploading the data from a URL or your computer, the files may also have been made available from a <em>shared data library</em>:</p>
-
-        <ul>
-          <li>
-            <p>Go into <strong>Shared data</strong> (top panel) then <strong>Data libraries</strong></p>
-          </li>
-          <li>
-            <p>Find the correct folder (ask your instructor)</p>
-          </li>
-          <li>Select the desired files</li>
-          <li>Click on the <strong>To History</strong> button near the top and select <strong>as Datasets</strong> from the dropdown menu</li>
-          <li>In the pop-up window, select the history you want to import the files to (or create a new one)</li>
-          <li>Click on <strong>Import</strong></li>
-        </ul>
-      </blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-importing-data-from-a-data-library"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing data from a data library</h3>  <p>As an alte<span class="notranslate">rna</span>tive to uploading the data from a URL or your computer, the files may also have been made available from a <em>shared data library</em>:</p>  <ul>  <li>    <p>Go into <strong>Shared data</strong> (top panel) then <strong>Data libraries</strong></p>  </li>  <li>    <p>Find the correct folder (ask your instructor)</p>  </li>  <li>Select the desired files</li>  <li>Click on the <strong>To History</strong> button near the top and select <strong>as Datasets</strong> from the dropdown menu</li>  <li>In the pop-up window, select the history you want to import the files to (or create a new one)</li>  <li>Click on <strong>Import</strong></li></ul></blockquote>
 
       <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://zenodo.org/record/3457880/files/subset_pbmc_1k_v3_S1_L001_R1_001.fastq.gz
 https://zenodo.org/record/3457880/files/subset_pbmc_1k_v3_S1_L001_R2_001.fastq.gz
@@ -982,28 +1049,8 @@ https://zenodo.org/record/3457880/files/subset_pbmc_1k_v3_S1_L002_R1_001.fastq.g
 https://zenodo.org/record/3457880/files/subset_pbmc_1k_v3_S1_L002_R2_001.fastq.gz
 </code></pre></div>      </div>
 
-      <blockquote class="tip">
-
-        <h3 id="tip-tip-importing-data-via-links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Importing data via links</h3>
-
-        <ul>
-          <li>Copy the link location</li>
-          <li>
-            <p>Open the <span class="notranslate">Galaxy</span> Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-upload</span> on the top-right of the tool panel)</p>
-          </li>
-          <li>Select <strong>Paste/Fetch Data</strong></li>
-          <li>
-            <p>Paste the link into the text field</p>
-          </li>
-          <li>
-            <p>Press <strong>Start</strong></p>
-          </li>
-          <li><strong>Close</strong> the window</li>
-        </ul>
-
-        <p>By default, <span class="notranslate">Galaxy</span> uses the URL as the name, so rename the files with a more useful name.</p>
-
-      </blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-importing-via-links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing via links</h3>  <ul>  <li>Copy the link location</li>  <li>    <p>Open the <span class="notranslate">Galaxy</span> Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-upload</span> on the top-right of the tool panel)</p>  </li>  <li>Select <strong>Paste/Fetch Data</strong></li>  <li>    <p>Paste the link into the text field</p>  </li>  <li>    <p>Press <strong>Start</strong></p>  </li>  <li>    <p><strong>Close</strong> the window</p>  </li>  <li>By default, <span class="notranslate">Galaxy</span> uses the URL as the name, so rename the files with a more useful name.</li></ul></blockquote>
     </li>
     <li>
       <p>Import the Gene Annotations and Cell Barcodes from <a href="https://zenodo.org/record/3457880"><code class="language-plaintext highlighter-rouge">Zenodo</code></a> or from the data library (ask your instructor)</p>
@@ -1119,16 +1166,22 @@ https://zenodo.org/record/3457880/files/3M-february-2018.txt.gz
 
 <p>We will now proceed to demultiplex, map, and quantify both sets of <span class="notranslate">reads</span> using the correct chemistry discovered in the previous sub-section.</p>
 
+<blockquote class="comment">
+  <h3 id="comment-comment"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> Comment</h3>
+
+  <p><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/rna_starsolo/rna_starsolo/2.7.8a" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/rna_starsolo/rna_starsolo/2.7.8a"><strong><span class="notranslate">RNA</span> STARsolo</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/<span class="notranslate">rna</span>_starsolo/<span class="notranslate">rna</span>_starsolo/2.7.8a</span></span>  consumes a large amount of memory. During the Smörgåsbord training please use <code class="language-plaintext highlighter-rouge">Human (Homo Sapiens): hg19 chrX</code> as the reference genome if you follow this tutorial on <a href="https://usegalaxy.org">use<span class="notranslate">galaxy</span>.org</a>. This performs the <span class="notranslate">mapping</span> only against chromosome X. The full output dataset is available at <a href="https://zenodo.org/record/3581213/files/matrix.mtx">zenodo</a> and will be the starting point for the next tutorial.</p>
+</blockquote>
+
 <blockquote class="notranslate hands_on">
   <h3 id="hands_on-hands-on"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on</h3>
 
-  <p><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/rna_starsolo/rna_starsolo/2.7.7a" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/rna_starsolo/rna_starsolo/2.7.7a"><strong><span class="notranslate">RNA</span> STARsolo</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/<span class="notranslate">rna</span>_starsolo/<span class="notranslate">rna</span>_starsolo/2.7.7a</span></span>   with the following parameters:</p>
+  <p><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/rna_starsolo/rna_starsolo/2.7.8a" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/rna_starsolo/rna_starsolo/2.7.8a"><strong><span class="notranslate">RNA</span> STARsolo</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/<span class="notranslate">rna</span>_starsolo/<span class="notranslate">rna</span>_starsolo/2.7.8a</span></span>   with the following parameters:</p>
   <ul>
     <li><em>“Custom or built-in reference genome”</em>: <code class="language-plaintext highlighter-rouge">Use a built-in index</code>
       <ul>
         <li><em>“Reference genome with or without an annotation”</em>: <code class="language-plaintext highlighter-rouge">use genome reference without builtin gene-model</code>
           <ul>
-            <li><em>“Select reference genome”</em>: <code class="language-plaintext highlighter-rouge">Human (Homo Sapiens): hg19 Full</code></li>
+            <li><em>“Select reference genome”</em>: <code class="language-plaintext highlighter-rouge">Human (Homo Sapiens): hg19 Full</code> or <code class="language-plaintext highlighter-rouge">Human (Homo Sapiens): hg19 chrX</code></li>
             <li><em>“Gene model (gff3,gtf) file for splice junctions”</em>: <code class="language-plaintext highlighter-rouge">Homo_sapiens.GRCh37.75.gtf</code></li>
             <li><em>“Length of genomic sequence around annotated junctions”</em>: <code class="language-plaintext highlighter-rouge">100</code></li>
           </ul>
@@ -1142,22 +1195,23 @@ https://zenodo.org/record/3457880/files/3M-february-2018.txt.gz
         <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“<span class="notranslate">RNA</span>-Seq FASTQ/FASTA file, c<span class="notranslate">DNA</span> <span class="notranslate">reads</span>”</em>: Multi-select <code class="language-plaintext highlighter-rouge">L001_R2_001</code> and <code class="language-plaintext highlighter-rouge">L002_R2_001</code> using the Ctrl key.</li>
         <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“<span class="notranslate">RNA</span>-Seq Cell Barcode Whitelist”</em>: <code class="language-plaintext highlighter-rouge">3M-february-2018.txt.gz</code></li>
         <li><em>“Configure Chemistry Options”</em>: <code class="language-plaintext highlighter-rouge">Cell Ranger v3</code></li>
-        <li><em>“UMI deduplication (collapsing) algorithm”</em>: <code class="language-plaintext highlighter-rouge">All</code></li>
-        <li><em>“Matching the Cell Barcodes to the WhiteList”</em>: <code class="language-plaintext highlighter-rouge">Multiple matches (CellRanger 3)</code></li>
+        <li><em>“UMI deduplication (collapsing) algorithm”</em>: <code class="language-plaintext highlighter-rouge">CellRanger2-4 algorithm</code></li>
+        <li><em>“Matching the Cell Barcodes to the WhiteList”</em>: <code class="language-plaintext highlighter-rouge">Multiple matches (CellRanger 2)</code></li>
       </ul>
     </li>
     <li>Under <em>“Advanced Settings”</em>:
       <ul>
         <li><em>“Strandedness of Library”</em>: <code class="language-plaintext highlighter-rouge">Forward</code></li>
         <li><em>“Collect UMI counts for these genomic features”</em>: <code class="language-plaintext highlighter-rouge">Gene: Count <span class="notranslate">reads</span> matching the Gene Transcript</code></li>
-        <li><em>“Type of UMI filtering”</em>: <code class="language-plaintext highlighter-rouge">Remove lower-count UMIs that map to more than one gene (introduced in CellRanger 3.x.x)</code></li>
+        <li><em>“Type of UMI filtering”</em>: <code class="language-plaintext highlighter-rouge">Remove UMIs with N and homopolymers (similar to CellRanger 2.2.0)</code></li>
         <li><em>“Cell filter type and parameters”</em>: <code class="language-plaintext highlighter-rouge">Do not filter</code></li>
+        <li><em>“Field 3 in the Genes output”</em>: <code class="language-plaintext highlighter-rouge">Gene <span class="notranslate">Expression</span></code></li>
       </ul>
     </li>
   </ul>
 
   <blockquote class="comment">
-    <h3 id="comment-comment"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> Comment</h3>
+    <h3 id="comment-comment-1"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> Comment</h3>
 
     <p>The in-built Cell filtering is a relatively new feature that emulates the CellRanger pipeline. Here, we set the filtering options to not filter because we will use our own methods to better understand how this works. For your own future datasets, you may wish to enable the filtering parameter.</p>
   </blockquote>
@@ -1185,7 +1239,7 @@ https://zenodo.org/record/3457880/files/3M-february-2018.txt.gz
 <blockquote class="notranslate hands_on">
   <h3 id="hands_on-hands-on-1"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on</h3>
 
-  <p><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.8+galaxy0" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.8+galaxy0"><strong>MultiQC</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.8+<span class="notranslate">galaxy</span>0</span></span>  with the following parameters:</p>
+  <p><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.9+galaxy1" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.9+galaxy1"><strong>MultiQC</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.9+<span class="notranslate">galaxy</span>1</span></span>  with the following parameters:</p>
   <ul>
     <li>In <em>“Results”</em>:
       <ul>
@@ -1518,6 +1572,8 @@ Genes:
 
 <p>Note that, since version <em>2.7.7a</em> of the tool, the entire <em>Cell Ranger</em> pipeline including the filtering can be performed natively within <strong><span class="notranslate">RNA</span> STARsolo</strong>. As this is still a relatively new feature, we do not use it here in this tutorial, but eager users are encouraged to try it out.</p>
 
+<p>This tutorial is part of the https://singlecell.use<span class="notranslate">galaxy</span>.eu portal (<a class="citation" href="#tekman2020single">Tekman <i>et al.</i> 2020</a>).</p>
+
 <!-- <figure id="figure-9"><img src="/training-material/topics/transcriptomics/images/scrna_workflow.svg" alt="Recap of workflow" ><figcaption><span class="figcaption-prefix">Figure 9:</span> A recap of the entire <span class="notranslate">workflow</span></figcaption></figure> -->
 
 
@@ -1536,9 +1592,24 @@ Genes:
                     </blockquote>
                     
 
+                    <h1>Frequently Asked Questions</h1>
+                    Have questions about this tutorial? Check out the  <a href="/training-material/topics/transcriptomics/faqs/">FAQ page for the Transcriptomics topic</a> to see if your question is listed there.
+                    If not, please ask your question on the <a href="https://gitter.im/Galaxy-Training-Network/Lobby">GTN Gitter Channel</a> or the
+                    <a href="https://help.galaxyproject.org">Galaxy Help Forum</a>
+
                     
                     <h1 data-toc-skip>Useful literature</h1>
                     <p>Further information, including links to documentation and original publications, regarding the tools, analysis techniques and the interpretation of results described in this tutorial can be found <a href="/training-material/topics/transcriptomics#references">here</a>.</p>
+                    
+
+                    
+                    <h1 id="bibliography">References</h1>
+                    <ol class="bibliography"><li><span id="tekman2020single">Tekman, M., B. Batut, A. Ostrovsky, C. Antoniewski, D. Clements <i>et al.</i>, 2020 <b>A single-cell RNA-sequencing training and analysis suite using the Galaxy framework</b>. GigaScience 9: giaa102.</span>
+    
+    
+    
+
+</li></ol>
                     
 
                     
@@ -1579,7 +1650,7 @@ Genes:
                     <h1>Citing this Tutorial</h1>
                     <p>
                         <ol>
-                            <li id="citation-text">Mehmet Tekman, Hans-Rudolf Hotz, Daniel Blankenberg, Wendi Bacon, 2021 <b>Pre-processing of 10X Single-Cell RNA Datasets (Galaxy Training Materials)</b>. <a href="/training-material/topics/transcriptomics/tutorials/scrna-preprocessing-tenx/tutorial.html">/training-material/topics/transcriptomics/tutorials/scrna-preprocessing-tenx/tutorial.html</a> Online; accessed TODAY
+                            <li id="citation-text">Mehmet Tekman, Hans-Rudolf Hotz, Daniel Blankenberg, Wendi Bacon, 2021 <b>Pre-processing of 10X Single-Cell RNA Datasets (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/scrna-preprocessing-tenx/tutorial.html">https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/scrna-preprocessing-tenx/tutorial.html</a> Online; accessed TODAY
                             </li>
                             <li>
                             Batut et al., 2018 <b>Community-Driven Data Analysis Training for Biology</b> Cell Systems <a href="https://doi.org/10.1016%2Fj.cels.2018.05.012">10.1016/j.cels.2018.05.012</a>
@@ -1597,9 +1668,9 @@ Genes:
     author = "Mehmet Tekman and Hans-Rudolf Hotz and Daniel Blankenberg and Wendi Bacon",
     title = "Pre-processing of 10X Single-Cell RNA Datasets (Galaxy Training Materials)",
     year = "2021",
-    month = "02",
-    day = "09"
-    url = "\url{/training-material/topics/transcriptomics/tutorials/scrna-preprocessing-tenx/tutorial.html}",
+    month = "04",
+    day = "23"
+    url = "\url{https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/scrna-preprocessing-tenx/tutorial.html}",
     note = "[Online; accessed TODAY]"
 }
 @article{Batut_2018,
@@ -1627,19 +1698,15 @@ document.getElementById("citation-code").innerHTML = document.getElementById("ci
 document.getElementById("citation-text").innerHTML = document.getElementById("citation-text").innerHTML.replace("TODAY", d.toDateString());
 </script>
 
-                </div>
-            </div>
-        </div>
+                    <h3><i class="far fa-thumbs-up" aria-hidden="true"></i><span class="visually-hidden">congratulations</span> Congratulations on successfully completing this tutorial!</h3>
 
-        <h3><i class="far fa-thumbs-up" aria-hidden="true"></i><span class="visually-hidden">congratulations</span> Congratulations on successfully completing this tutorial!</h3>
+                    
 
-        
-
-        
-        <blockquote class="agenda follow-up">
-            <strong class="follow-up"><i class="fas fa-graduation-cap" aria-hidden="true"></i><span class="visually-hidden">curriculum</span> Do you want to extend your knowledge? Follow one of our recommended follow-up trainings:</strong>
-            <ul>
-                
+                    
+                    <blockquote class="agenda follow-up">
+                        <strong class="follow-up"><i class="fas fa-graduation-cap" aria-hidden="true"></i><span class="visually-hidden">curriculum</span> Do you want to extend your knowledge? Follow one of our recommended follow-up trainings:</strong>
+                        <ul>
+                            
     <li>
     
         
@@ -1648,6 +1715,8 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
         
             <ul>
                 
+                    
+                        
                     
                         
                     
@@ -1712,15 +1781,29 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
                     
                         
                     
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
                 
             </ul>
         
     
     </li>
 
-            </ul>
-        </blockquote>
-        
+                        </ul>
+                    </blockquote>
+                    
+
+                </div>
+            </div>
+        </div>
     </section>
 </div>
 
@@ -1734,7 +1817,7 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
         </p>
         <p>
             Found a typo? Something is wrong in this tutorial? Edit it on
-            <a href="https://github.com/galaxyproject/training-material/tree/master/topics/transcriptomics/tutorials/scrna-preprocessing-tenx/tutorial.md">GitHub</a>.
+            <a href="https://github.com/galaxyproject/training-material/tree/main/topics/transcriptomics/tutorials/scrna-preprocessing-tenx/tutorial.md">GitHub</a>.
         </p>
         <p>
     The content of the tutorials and website is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.

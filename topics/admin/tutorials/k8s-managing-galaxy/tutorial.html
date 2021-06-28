@@ -70,59 +70,93 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Language Selector">
-                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Language
-                        </a>
-                        <div class="dropdown-menu">
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fadmin%2Ftutorials%2Fk8s-managing-galaxy%2Ftutorial.html&edit-text=&act=url" title="">
-                                Français
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fadmin%2Ftutorials%2Fk8s-managing-galaxy%2Ftutorial.html&edit-text=&act=url" title="">
-                                日本語
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fadmin%2Ftutorials%2Fk8s-managing-galaxy%2Ftutorial.html&edit-text=&act=url" title="">
-                                Español
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fadmin%2Ftutorials%2Fk8s-managing-galaxy%2Ftutorial.html&edit-text=&act=url" title="">
-                                Português
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fadmin%2Ftutorials%2Fk8s-managing-galaxy%2Ftutorial.html&edit-text=&act=url" title="">
-                                العربية
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fadmin%2Ftutorials%2Fk8s-managing-galaxy%2Ftutorial.html&edit-text=&act=url" title="">
-                                And more!
-                            </a>
-                        </div>
-                    </li>
-
-                    <li class="nav-item dropdown">
     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
         <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
     </a>
     <div class="dropdown-menu dropdown-menu-right">
+        <!-- disable Tess for now
         <form method="get" action="https://tess.elixir-europe.org/materials">
             <input type="text" id="search" name="q" value="" style="margin-left: 0.5em;/*! border-radius: 0px; */">
             <input type="hidden" value="Galaxy Training" name="content_provider">
             <input type="submit" value="Search on TeSS" style="width: 92%;border-radius: 0px;margin: 0.5em;background: #f47d20;border: 0px;padding: 0.25em;" class="">
         </form>
+        -->
 
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQ">
-            FAQ
+        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQs">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
         </a>
+        
+        <a class="dropdown-item" href="/training-material/topics/admin/faqs/" title="Check our FAQs for the Galaxy Server administration topic">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
+        </a>
+        
         <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
-            Discuss on Galaxy Help
+            <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
+        </a>
+        <a class="dropdown-item" href="https://gitter.im/Galaxy-Training-Network/Lobby" title="Discuss on gitter">
+           <i class="fab fa-gitter" aria-hidden="true"></i><span class="visually-hidden">gitter</span> Discuss on Gitter
+        </a>
+    </div>
+</li>
+
+
+                    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Extras">
+        <i class="far fa-star" aria-hidden="true"></i><span class="visually-hidden">galaxy-star</span> Extras
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+
+        
+        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/admin/tutorials/k8s-managing-galaxy/tutorial.md" title="Edit on GitHub">
+          <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
+        </a>
+
+        <a class="dropdown-item" href="/training-material/stats.html" title="Show view statistics about this rrepository">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN statistics
+        </a>
+
+        <a class="dropdown-item" href="https://plausible.galaxyproject.eu/training.galaxyproject.org?period=12mo&page=/training-material/topics/admin/tutorials/k8s-managing-galaxy/tutorial.html" title="Show view statistics of this page">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
         </a>
 
         <div class="dropdown-item">
             <div>
-                Theme
+                <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Translate this page
+            </div>
+
+            <div id="lang-selector">
+                
+                <strong>Automatic Translations</strong>
+
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/admin/tutorials/k8s-managing-galaxy/tutorial.html&edit-text=&act=url">
+                Français
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/admin/tutorials/k8s-managing-galaxy/tutorial.html&edit-text=&act=url">
+                日本語
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/admin/tutorials/k8s-managing-galaxy/tutorial.html&edit-text=&act=url">
+                Español
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/admin/tutorials/k8s-managing-galaxy/tutorial.html&edit-text=&act=url">
+                Português
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/admin/tutorials/k8s-managing-galaxy/tutorial.html&edit-text=&act=url">
+                العربية
+                </a>
+                
+                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fadmin%2Ftutorials%2Fk8s-managing-galaxy%2Ftutorial.html&edit-text=&act=url" title="">
+                And more!
+                </a>
+            </div>
+        </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
             </div>
 
             <div id="theme-selector" data-toggle="buttons">
@@ -138,6 +172,9 @@
                 <label data-value="rainbow" class="btn btn-secondary">
                     <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
                 </label>
+                <label data-value="progress" class="btn btn-secondary">
+                    <input type="radio" name="options" id="progress" autocomplete="off">🏳️‍🌈
+                </label>
                 <label data-value="halloween" class="btn btn-secondary">
                     <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
                 </label>
@@ -147,15 +184,50 @@
             </div>
 
         </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
+            </div>
+
+            
+            <div id="archive-selector">
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2021-02-01/topics/admin/tutorials/k8s-managing-galaxy/tutorial.html" title="Version 2021-02-01">2021-02-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2020-12-01/topics/admin/tutorials/k8s-managing-galaxy/tutorial.html" title="Version 2020-12-01">2020-12-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2020-11-01/topics/admin/tutorials/k8s-managing-galaxy/tutorial.html" title="Version 2020-11-01">2020-11-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
+            </div>
+
+        </div>
+
     </div>
 </li>
 
-
+                    <!--
                     <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/galaxyproject/training-material/edit/master/topics/admin/tutorials/k8s-managing-galaxy/tutorial.md">
+                        <a class="nav-link" href="https://github.com/galaxyproject/training-material/edit/main/topics/admin/tutorials/k8s-managing-galaxy/tutorial.md">
                             <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit
                         </a>
                     </li>
+                    -->
+
+                     <!-- Search bar-->
+                    <li class="nav-item">
+                      <div id="navbarSupportedContent">
+                        <!-- Search form -->
+                        <form class="form-inline mr-auto" method="GET" action="/training-material/search">
+                          <i class="fas fa-search nav-link" aria-hidden="true"></i>
+                          <div class="md-form mb-2">
+                            <input name="query" class="form-control nicer" type="text" placeholder="Search Tutorials" aria-label="Search">
+                          </div>
+                        </form>
+                      </div>
+                    </li>
+
                 </ul>
             </div>
         </div>
@@ -211,7 +283,7 @@
   },
   "interactivityType": "mixed",
   "isAccessibleForFree": true,
-  "license": "https://github.com/galaxyproject/training-material/blob/master/LICENSE.md",
+  "license": "https://github.com/galaxyproject/training-material/blob/main/LICENSE.md",
   "producer": {
     "@type": "Organization",
     "email": "galaxytrainingnetwork@gmail.com",
@@ -318,7 +390,7 @@
 }
     </script>
 
-    <section class="tutorial">
+    <section class="tutorial topic-admin">
         <h1 data-toc-skip>Managing Galaxy on Kubernetes</h1>
         
 
@@ -371,6 +443,8 @@
         
             <ul>
                 
+                    
+                        
                     
                         
                     
@@ -456,8 +530,6 @@
                     
                         
                     
-                        
-                    
                 
             </ul>
         
@@ -468,24 +540,24 @@
             
 
             
-            <p><strong><i class="fas fa-hourglass-half" aria-hidden="true"></i><span class="visually-hidden">time</span> Time estimation:</strong> 30 minutes</p>
+            <div><strong><i class="fas fa-hourglass-half" aria-hidden="true"></i><span class="visually-hidden">time</span> Time estimation:</strong> 30 minutes</div>
             
 
             
-            <p><strong><i class="fas fa-graduation-cap" aria-hidden="true"></i><span class="visually-hidden">level</span> Level: </strong>
+            <div><strong><i class="fas fa-graduation-cap" aria-hidden="true"></i><span class="visually-hidden">level</span> Level: </strong>
              Intermediate 
 <span class="level intermediate" title="Intermediate Tutorial">
   <i class="fas fa-graduation-cap" aria-hidden="true"></i><span class="visually-hidden">level</span> <i class="fas fa-graduation-cap" aria-hidden="true"></i><span class="visually-hidden">level</span> <i class="fas fa-graduation-cap" aria-hidden="true"></i><span class="visually-hidden">level</span>
 </span>
 
-</p>
+</div>
             
 
             
             
 
             
-            <p id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials</strong></p>
+            <div id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials</strong></div>
             <ul>
                 <div class="supporting_material">
                 
@@ -501,11 +573,15 @@
                 
 
                 
+                
+                
+
+                
                 </div>
             </ul>
             
 
-            <p><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Jul 6, 2019 </p>
+            <div><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Jul 6, 2019 </div>
         </blockquote>
 
         <div class="container">
@@ -930,6 +1006,13 @@ on Gitter: <a href="https://gitter.im/galaxyproject/FederatedGalaxy">https://git
                     </blockquote>
                     
 
+                    <h1>Frequently Asked Questions</h1>
+                    Have questions about this tutorial? Check out the  <a href="/training-material/topics/admin/faqs/">FAQ page for the Galaxy Server administration topic</a> to see if your question is listed there.
+                    If not, please ask your question on the <a href="https://gitter.im/Galaxy-Training-Network/Lobby">GTN Gitter Channel</a> or the
+                    <a href="https://help.galaxyproject.org">Galaxy Help Forum</a>
+
+                    
+
                     
 
                     
@@ -970,7 +1053,7 @@ on Gitter: <a href="https://gitter.im/galaxyproject/FederatedGalaxy">https://git
                     <h1>Citing this Tutorial</h1>
                     <p>
                         <ol>
-                            <li id="citation-text">Nuwan Goonasekera, Enis Afgan, Alex Mahmoud, Pablo Moreno, Sergey Golitsynskiy, 2019 <b>Managing Galaxy on Kubernetes (Galaxy Training Materials)</b>. <a href="/training-material/topics/admin/tutorials/k8s-managing-galaxy/tutorial.html">/training-material/topics/admin/tutorials/k8s-managing-galaxy/tutorial.html</a> Online; accessed TODAY
+                            <li id="citation-text">Nuwan Goonasekera, Enis Afgan, Alex Mahmoud, Pablo Moreno, Sergey Golitsynskiy, 2019 <b>Managing Galaxy on Kubernetes (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/admin/tutorials/k8s-managing-galaxy/tutorial.html">https://training.galaxyproject.org/training-material/topics/admin/tutorials/k8s-managing-galaxy/tutorial.html</a> Online; accessed TODAY
                             </li>
                             <li>
                             Batut et al., 2018 <b>Community-Driven Data Analysis Training for Biology</b> Cell Systems <a href="https://doi.org/10.1016%2Fj.cels.2018.05.012">10.1016/j.cels.2018.05.012</a>
@@ -990,7 +1073,7 @@ on Gitter: <a href="https://gitter.im/galaxyproject/FederatedGalaxy">https://git
     year = "2019",
     month = "07",
     day = "06"
-    url = "\url{/training-material/topics/admin/tutorials/k8s-managing-galaxy/tutorial.html}",
+    url = "\url{https://training.galaxyproject.org/training-material/topics/admin/tutorials/k8s-managing-galaxy/tutorial.html}",
     note = "[Online; accessed TODAY]"
 }
 @article{Batut_2018,
@@ -1018,15 +1101,15 @@ document.getElementById("citation-code").innerHTML = document.getElementById("ci
 document.getElementById("citation-text").innerHTML = document.getElementById("citation-text").innerHTML.replace("TODAY", d.toDateString());
 </script>
 
+                    <h3><i class="far fa-thumbs-up" aria-hidden="true"></i><span class="visually-hidden">congratulations</span> Congratulations on successfully completing this tutorial!</h3>
+
+                    
+
+                    
+
                 </div>
             </div>
         </div>
-
-        <h3><i class="far fa-thumbs-up" aria-hidden="true"></i><span class="visually-hidden">congratulations</span> Congratulations on successfully completing this tutorial!</h3>
-
-        
-
-        
     </section>
 </div>
 
@@ -1040,7 +1123,7 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
         </p>
         <p>
             Found a typo? Something is wrong in this tutorial? Edit it on
-            <a href="https://github.com/galaxyproject/training-material/tree/master/topics/admin/tutorials/k8s-managing-galaxy/tutorial.md">GitHub</a>.
+            <a href="https://github.com/galaxyproject/training-material/tree/main/topics/admin/tutorials/k8s-managing-galaxy/tutorial.md">GitHub</a>.
         </p>
         <p>
     The content of the tutorials and website is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.

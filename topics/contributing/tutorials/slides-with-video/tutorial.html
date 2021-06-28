@@ -70,59 +70,93 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Language Selector">
-                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Language
-                        </a>
-                        <div class="dropdown-menu">
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fslides-with-video%2Ftutorial.html&edit-text=&act=url" title="">
-                                Français
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fslides-with-video%2Ftutorial.html&edit-text=&act=url" title="">
-                                日本語
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fslides-with-video%2Ftutorial.html&edit-text=&act=url" title="">
-                                Español
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fslides-with-video%2Ftutorial.html&edit-text=&act=url" title="">
-                                Português
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fslides-with-video%2Ftutorial.html&edit-text=&act=url" title="">
-                                العربية
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fslides-with-video%2Ftutorial.html&edit-text=&act=url" title="">
-                                And more!
-                            </a>
-                        </div>
-                    </li>
-
-                    <li class="nav-item dropdown">
     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
         <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
     </a>
     <div class="dropdown-menu dropdown-menu-right">
+        <!-- disable Tess for now
         <form method="get" action="https://tess.elixir-europe.org/materials">
             <input type="text" id="search" name="q" value="" style="margin-left: 0.5em;/*! border-radius: 0px; */">
             <input type="hidden" value="Galaxy Training" name="content_provider">
             <input type="submit" value="Search on TeSS" style="width: 92%;border-radius: 0px;margin: 0.5em;background: #f47d20;border: 0px;padding: 0.25em;" class="">
         </form>
+        -->
 
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQ">
-            FAQ
+        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQs">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
         </a>
+        
+        <a class="dropdown-item" href="/training-material/topics/contributing/faqs/" title="Check our FAQs for the Contributing to the Galaxy Training Material topic">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
+        </a>
+        
         <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
-            Discuss on Galaxy Help
+            <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
+        </a>
+        <a class="dropdown-item" href="https://gitter.im/Galaxy-Training-Network/Lobby" title="Discuss on gitter">
+           <i class="fab fa-gitter" aria-hidden="true"></i><span class="visually-hidden">gitter</span> Discuss on Gitter
+        </a>
+    </div>
+</li>
+
+
+                    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Extras">
+        <i class="far fa-star" aria-hidden="true"></i><span class="visually-hidden">galaxy-star</span> Extras
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+
+        
+        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/contributing/tutorials/slides-with-video/tutorial.md" title="Edit on GitHub">
+          <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
+        </a>
+
+        <a class="dropdown-item" href="/training-material/stats.html" title="Show view statistics about this rrepository">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN statistics
+        </a>
+
+        <a class="dropdown-item" href="https://plausible.galaxyproject.eu/training.galaxyproject.org?period=12mo&page=/training-material/topics/contributing/tutorials/slides-with-video/tutorial.html" title="Show view statistics of this page">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
         </a>
 
         <div class="dropdown-item">
             <div>
-                Theme
+                <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Translate this page
+            </div>
+
+            <div id="lang-selector">
+                
+                <strong>Automatic Translations</strong>
+
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/contributing/tutorials/slides-with-video/tutorial.html&edit-text=&act=url">
+                Français
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/contributing/tutorials/slides-with-video/tutorial.html&edit-text=&act=url">
+                日本語
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/contributing/tutorials/slides-with-video/tutorial.html&edit-text=&act=url">
+                Español
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/contributing/tutorials/slides-with-video/tutorial.html&edit-text=&act=url">
+                Português
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/contributing/tutorials/slides-with-video/tutorial.html&edit-text=&act=url">
+                العربية
+                </a>
+                
+                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fcontributing%2Ftutorials%2Fslides-with-video%2Ftutorial.html&edit-text=&act=url" title="">
+                And more!
+                </a>
+            </div>
+        </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
             </div>
 
             <div id="theme-selector" data-toggle="buttons">
@@ -138,6 +172,9 @@
                 <label data-value="rainbow" class="btn btn-secondary">
                     <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
                 </label>
+                <label data-value="progress" class="btn btn-secondary">
+                    <input type="radio" name="options" id="progress" autocomplete="off">🏳️‍🌈
+                </label>
                 <label data-value="halloween" class="btn btn-secondary">
                     <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
                 </label>
@@ -147,15 +184,50 @@
             </div>
 
         </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
+            </div>
+
+            
+            <div id="archive-selector">
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2021-02-01/topics/contributing/tutorials/slides-with-video/tutorial.html" title="Version 2021-02-01">2021-02-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2020-12-01/topics/contributing/tutorials/slides-with-video/tutorial.html" title="Version 2020-12-01">2020-12-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2020-11-01/topics/contributing/tutorials/slides-with-video/tutorial.html" title="Version 2020-11-01">2020-11-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
+            </div>
+
+        </div>
+
     </div>
 </li>
 
-
+                    <!--
                     <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/galaxyproject/training-material/edit/master/topics/contributing/tutorials/slides-with-video/tutorial.md">
+                        <a class="nav-link" href="https://github.com/galaxyproject/training-material/edit/main/topics/contributing/tutorials/slides-with-video/tutorial.md">
                             <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit
                         </a>
                     </li>
+                    -->
+
+                     <!-- Search bar-->
+                    <li class="nav-item">
+                      <div id="navbarSupportedContent">
+                        <!-- Search form -->
+                        <form class="form-inline mr-auto" method="GET" action="/training-material/search">
+                          <i class="fas fa-search nav-link" aria-hidden="true"></i>
+                          <div class="md-form mb-2">
+                            <input name="query" class="form-control nicer" type="text" placeholder="Search Tutorials" aria-label="Search">
+                          </div>
+                        </form>
+                      </div>
+                    </li>
+
                 </ul>
             </div>
         </div>
@@ -211,7 +283,7 @@
   },
   "interactivityType": "mixed",
   "isAccessibleForFree": true,
-  "license": "https://github.com/galaxyproject/training-material/blob/master/LICENSE.md",
+  "license": "https://github.com/galaxyproject/training-material/blob/main/LICENSE.md",
   "producer": {
     "@type": "Organization",
     "email": "galaxytrainingnetwork@gmail.com",
@@ -268,7 +340,7 @@
 }
     </script>
 
-    <section class="tutorial">
+    <section class="tutorial topic-contributing">
         <h1 data-toc-skip>Adding auto-generated video to your slides</h1>
         
 
@@ -305,7 +377,7 @@
             
 
             
-            <p><strong><i class="fas fa-hourglass-half" aria-hidden="true"></i><span class="visually-hidden">time</span> Time estimation:</strong> 20 minutes</p>
+            <div><strong><i class="fas fa-hourglass-half" aria-hidden="true"></i><span class="visually-hidden">time</span> Time estimation:</strong> 20 minutes</div>
             
 
             
@@ -314,7 +386,7 @@
             
 
             
-            <p id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials</strong></p>
+            <div id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials</strong></div>
             <ul>
                 <div class="supporting_material">
                 
@@ -330,6 +402,10 @@
                 
 
                 
+                
+                
+
+                
                     <li class="btn btn-default supporting_material">
 
     <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Where to run the tutorial">
@@ -338,7 +414,7 @@
     <ul class="dropdown-menu">
     
         <li>
-            <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/tree/master/topics/contributing/docker" title="Docker image for this tutorial">
+            <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/tree/main/topics/contributing/docker" title="Docker image for this tutorial">
                 <i class="fab fa-docker" aria-hidden="true"></i><span class="visually-hidden">docker_image</span> Docker image
             </a>
         </li>
@@ -353,7 +429,7 @@
             </ul>
             
 
-            <p><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Jan 8, 2021 </p>
+            <div><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> May 20, 2021 </div>
         </blockquote>
 
         <div class="container">
@@ -387,21 +463,23 @@
 
 <p>We wrote a short script which does the following:</p>
 
+<p><em>Locally and in production</em>:</p>
+
 <ul>
   <li>Extracts a ‘script’ from the slides. We extract every presenter comment in the slidedeck, and turn this into a text file.</li>
-  <li>
-    <p>Every line of this text file is then narrated by <a href="https://aws.amazon.com/polly/">Amazon Polly</a></p>
-
-    <ul>
-      <li><em>NB</em>: this currently means it is non-free, and requires AWS credentials in order to build the videos locally, which is not an option for everyone. We do not have plans for integrating an open source voice engine but we would welcome it!</li>
-    </ul>
-  </li>
+  <li>Every line of this text file is then narrated by <a href="https://aws.amazon.com/polly/">Amazon Polly</a> (if you have money) or <a href="https://github.com/synesthesiam/docker-mozillatts">MozillaTTS</a> (free).</li>
   <li>The slide deck is converted to a PDF, and then each slide is extracted as a PNG.</li>
   <li>Captions are extracted from the audio components.</li>
   <li>The narration is stitched together into an mp3</li>
   <li>The images are stitched together into an mp4 file</li>
   <li>The video, audio, and captions are muxed together into a final mp4 file</li>
-  <li>This is uploaded to an S3 bucket</li>
+</ul>
+
+<p><em>In production</em></p>
+
+<ul>
+  <li>We use Amazon Polly, paid for by the <span class="notranslate">Galaxy</span>project</li>
+  <li>The result is uploaded to an S3 bucket</li>
 </ul>
 
 <h1 id="enabling-video">Enabling Video</h1>
@@ -414,32 +492,21 @@
 
 <h3 id="sentence-structure">Sentence Structure</h3>
 
-<p>Use short and uncomplex sentences whenever possible. Break up ideas into easy to digest bits. Students will be listening to this spoken and possibly reading the captions.</p>
+<p>Use simple and uncomplex sentences whenever possible. Break up ideas into easy to digest bits. Students will be listening to this spoken and possibly reading the captions.</p>
 
-<p>The captioning process is completely automated, but it means that for very long sentences, we do not currently break them up into multiple captions. So please keep your sentences under ~80 characters where possible.</p>
+<p><em>2021-05-01</em> There used to be a limit of ~120 characters per sentence, but this is no longer an issue. We now break up sentences which are too long in the captions and show them over multiple timepoints. So if you need to write a really long sentence, you can, but we still advise to simplify sentences where possible.</p>
 
-<blockquote class="code-2col">
-  <blockquote class="code-in">
-    <p><strong>Good</strong></p>
-    <ul>
-      <li>Configuration management manages the configuration of machines.</li>
-      <li>It specifies what software should be installed, and how it should be configured.</li>
-    </ul>
-  </blockquote>
+<h3 id="captions-per-slide">Captions per Slide</h3>
 
-  <blockquote class="code-out">
-    <p><strong>Bad</strong>
-Configuration management manages the configuration of machines; it specifies what software should be installed, and how it should be configured</p>
-  </blockquote>
-</blockquote>
+<p>Every slide must have some speaker notes in this system, <strong>NO exceptions</strong>.</p>
 
 <h3 id="punctuation">Punctuation</h3>
 
-<p>Every sentence must end with punctuation like <code class="language-plaintext highlighter-rouge">.</code> or <code class="language-plaintext highlighter-rouge">?</code> or even <code class="language-plaintext highlighter-rouge">!</code> if you’re feeling excited. We merge all lines of the presenter notes before having them spoken by Polly. If you forget the punctuation it will be one long run-on sentence.</p>
+<p>Sentences should end with punctuation like <code class="language-plaintext highlighter-rouge">.</code> or <code class="language-plaintext highlighter-rouge">?</code> or even <code class="language-plaintext highlighter-rouge">!</code> if you’re feeling excited.</p>
 
 <h3 id="abbreviations">Abbreviations</h3>
 
-<p>These are generally fine as-is. Make sure they are all caps though.</p>
+<p>These are generally fine as-is. (e.g. <code class="language-plaintext highlighter-rouge">e.g.</code>/<code class="language-plaintext highlighter-rouge">i.e.</code> is fine as-is, <code class="language-plaintext highlighter-rouge"><span class="notranslate">RNA</span></code> is fine, etc.) Make sure abbreviations are all caps though.</p>
 
 <blockquote class="code-in">
   <p><strong>Good</strong>
@@ -530,6 +597,13 @@ This role deploys CVMFS.</p>
                     </blockquote>
                     
 
+                    <h1>Frequently Asked Questions</h1>
+                    Have questions about this tutorial? Check out the  <a href="/training-material/topics/contributing/faqs/">FAQ page for the Contributing to the Galaxy Training Material topic</a> to see if your question is listed there.
+                    If not, please ask your question on the <a href="https://gitter.im/Galaxy-Training-Network/Lobby">GTN Gitter Channel</a> or the
+                    <a href="https://help.galaxyproject.org">Galaxy Help Forum</a>
+
+                    
+
                     
 
                     
@@ -570,7 +644,7 @@ This role deploys CVMFS.</p>
                     <h1>Citing this Tutorial</h1>
                     <p>
                         <ol>
-                            <li id="citation-text">Helena Rasche, 2021 <b>Adding auto-generated video to your slides (Galaxy Training Materials)</b>. <a href="/training-material/topics/contributing/tutorials/slides-with-video/tutorial.html">/training-material/topics/contributing/tutorials/slides-with-video/tutorial.html</a> Online; accessed TODAY
+                            <li id="citation-text">Helena Rasche, 2021 <b>Adding auto-generated video to your slides (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/contributing/tutorials/slides-with-video/tutorial.html">https://training.galaxyproject.org/training-material/topics/contributing/tutorials/slides-with-video/tutorial.html</a> Online; accessed TODAY
                             </li>
                             <li>
                             Batut et al., 2018 <b>Community-Driven Data Analysis Training for Biology</b> Cell Systems <a href="https://doi.org/10.1016%2Fj.cels.2018.05.012">10.1016/j.cels.2018.05.012</a>
@@ -588,9 +662,9 @@ This role deploys CVMFS.</p>
     author = "Helena Rasche",
     title = "Adding auto-generated video to your slides (Galaxy Training Materials)",
     year = "2021",
-    month = "01",
-    day = "08"
-    url = "\url{/training-material/topics/contributing/tutorials/slides-with-video/tutorial.html}",
+    month = "05",
+    day = "20"
+    url = "\url{https://training.galaxyproject.org/training-material/topics/contributing/tutorials/slides-with-video/tutorial.html}",
     note = "[Online; accessed TODAY]"
 }
 @article{Batut_2018,
@@ -618,118 +692,134 @@ document.getElementById("citation-code").innerHTML = document.getElementById("ci
 document.getElementById("citation-text").innerHTML = document.getElementById("citation-text").innerHTML.replace("TODAY", d.toDateString());
 </script>
 
+                    <h3><i class="far fa-thumbs-up" aria-hidden="true"></i><span class="visually-hidden">congratulations</span> Congratulations on successfully completing this tutorial!</h3>
+
+                    
+                    <blockquote class="agenda">
+                        <h3>Developing GTN training material</h3>
+                        This tutorial is part of a series to develop GTN training material, feel free to also look at:
+                        
+                        <ol>
+                        
+                            
+                                
+                        <li><a href="/training-material/topics/contributing/slides/introduction.html">Overview of the Galaxy Training Material</a></li>
+                                
+                            
+                        
+                            
+                                
+                                    
+                        <li><a href="/training-material/topics/contributing/tutorials/slides-with-video/tutorial.html">Adding auto-generated video to your slides</a></li>
+                                    
+                                
+                            
+                        
+                            
+                                
+                                    
+                        <li><a href="/training-material/topics/contributing/tutorials/github-command-line-contribution/tutorial.html">Contributing with GitHub via command-line</a></li>
+                                    
+                                
+                            
+                        
+                            
+                                
+                                    
+                        <li><a href="/training-material/topics/contributing/tutorials/github-interface-contribution/tutorial.html">Contributing with GitHub via its interface</a></li>
+                                    
+                                
+                            
+                        
+                            
+                                
+                                    
+                        <li><a href="/training-material/topics/contributing/tutorials/create-new-tutorial/tutorial.html">Creating a new tutorial</a></li>
+                                    
+                                
+                            
+                        
+                            
+                                
+                                    
+                        <li><a href="/training-material/topics/contributing/tutorials/create-new-tutorial-content/tutorial.html">Creating content in Markdown</a></li>
+                                    
+                                
+                            
+                        
+                            
+                                
+                                    
+                        <li><a href="/training-material/topics/contributing/tutorials/create-new-tutorial-tours/tutorial.html">Creating Interactive Galaxy Tours</a></li>
+                                    
+                                
+                            
+                        
+                            
+                                
+                                    
+                        <li><a href="/training-material/topics/contributing/tutorials/create-new-tutorial-slides/slides.html">Creating Slides</a></li>
+                                    
+                                
+                            
+                        
+                            
+                                
+                                    
+                        <li><a href="/training-material/topics/contributing/tutorials/generating-pdf/tutorial.html">Generating PDF artefacts of the website</a></li>
+                                    
+                                
+                            
+                        
+                            
+                                
+                                    
+                        <li><a href="/training-material/topics/contributing/tutorials/create-new-topic/tutorial.html">Including a new topic</a></li>
+                                    
+                                
+                            
+                        
+                            
+                                
+                                    
+                        <li><a href="/training-material/topics/contributing/tutorials/running-jekyll/tutorial.html">Running the GTN website locally</a></li>
+                                    
+                                
+                            
+                        
+                            
+                                
+                                    
+                        <li><a href="/training-material/topics/contributing/tutorials/gitpod/tutorial.html">Running the GTN website online using GitPod</a></li>
+                                    
+                                
+                            
+                        
+                            
+                                
+                                    
+                        <li><a href="/training-material/topics/contributing/tutorials/create-new-tutorial-technical/tutorial.html">Tools, Data, and Workflows for tutorials</a></li>
+                                    
+                                
+                            
+                        
+                            
+                                
+                                    
+                        <li><a href="/training-material/topics/contributing/tutorials/admin-knitting/tutorial.html">Updating diffs in admin training</a></li>
+                                    
+                                
+                            
+                        
+                        </ol>
+                    </blockquote>
+                    
+
+                    
+
                 </div>
             </div>
         </div>
-
-        <h3><i class="far fa-thumbs-up" aria-hidden="true"></i><span class="visually-hidden">congratulations</span> Congratulations on successfully completing this tutorial!</h3>
-
-        
-        <blockquote class="agenda">
-            <h3>Developing GTN training material</h3>
-            This tutorial is part of a series to develop GTN training material, feel free to also look at:
-            
-            <ol>
-            
-                
-                    
-            <li><a href="/training-material/topics/contributing/slides/introduction.html">Overview of the Galaxy Training Material</a></li>
-                    
-                
-            
-                
-                    
-                        
-            <li><a href="/training-material/topics/contributing/tutorials/slides-with-video/tutorial.html">Adding auto-generated video to your slides</a></li>
-                        
-                    
-                
-            
-                
-                    
-                        
-            <li><a href="/training-material/topics/contributing/tutorials/github-command-line-contribution/tutorial.html">Contributing with GitHub via command-line</a></li>
-                        
-                    
-                
-            
-                
-                    
-                        
-            <li><a href="/training-material/topics/contributing/tutorials/github-interface-contribution/tutorial.html">Contributing with GitHub via its interface</a></li>
-                        
-                    
-                
-            
-                
-                    
-                        
-            <li><a href="/training-material/topics/contributing/tutorials/create-new-tutorial/tutorial.html">Creating a new tutorial</a></li>
-                        
-                    
-                
-            
-                
-                    
-                        
-            <li><a href="/training-material/topics/contributing/tutorials/create-new-tutorial-content/tutorial.html">Creating content in Markdown</a></li>
-                        
-                    
-                
-            
-                
-                    
-                        
-            <li><a href="/training-material/topics/contributing/tutorials/create-new-tutorial-tours/tutorial.html">Creating Interactive Galaxy Tours</a></li>
-                        
-                    
-                
-            
-                
-                    
-                        
-            <li><a href="/training-material/topics/contributing/tutorials/create-new-tutorial-slides/slides.html">Creating Slides</a></li>
-                        
-                    
-                
-            
-                
-                    
-                        
-            <li><a href="/training-material/topics/contributing/tutorials/generating-pdf/tutorial.html">Generating PDF artefacts of the website</a></li>
-                        
-                    
-                
-            
-                
-                    
-                        
-            <li><a href="/training-material/topics/contributing/tutorials/create-new-topic/tutorial.html">Including a new topic</a></li>
-                        
-                    
-                
-            
-                
-                    
-                        
-            <li><a href="/training-material/topics/contributing/tutorials/running-jekyll/tutorial.html">Running the Galaxy Training material website locally</a></li>
-                        
-                    
-                
-            
-                
-                    
-                        
-            <li><a href="/training-material/topics/contributing/tutorials/create-new-tutorial-technical/tutorial.html">Tools, Data, and Workflows for tutorials</a></li>
-                        
-                    
-                
-            
-            </ol>
-        </blockquote>
-        
-
-        
     </section>
 </div>
 
@@ -743,7 +833,7 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
         </p>
         <p>
             Found a typo? Something is wrong in this tutorial? Edit it on
-            <a href="https://github.com/galaxyproject/training-material/tree/master/topics/contributing/tutorials/slides-with-video/tutorial.md">GitHub</a>.
+            <a href="https://github.com/galaxyproject/training-material/tree/main/topics/contributing/tutorials/slides-with-video/tutorial.md">GitHub</a>.
         </p>
         <p>
     The content of the tutorials and website is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.

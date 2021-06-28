@@ -70,59 +70,93 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Language Selector">
-                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Language
-                        </a>
-                        <div class="dropdown-menu">
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fadmin%2Ftutorials%2Ftool-management%2Ftutorial.html&edit-text=&act=url" title="">
-                                Français
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fadmin%2Ftutorials%2Ftool-management%2Ftutorial.html&edit-text=&act=url" title="">
-                                日本語
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fadmin%2Ftutorials%2Ftool-management%2Ftutorial.html&edit-text=&act=url" title="">
-                                Español
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fadmin%2Ftutorials%2Ftool-management%2Ftutorial.html&edit-text=&act=url" title="">
-                                Português
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fadmin%2Ftutorials%2Ftool-management%2Ftutorial.html&edit-text=&act=url" title="">
-                                العربية
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fadmin%2Ftutorials%2Ftool-management%2Ftutorial.html&edit-text=&act=url" title="">
-                                And more!
-                            </a>
-                        </div>
-                    </li>
-
-                    <li class="nav-item dropdown">
     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
         <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
     </a>
     <div class="dropdown-menu dropdown-menu-right">
+        <!-- disable Tess for now
         <form method="get" action="https://tess.elixir-europe.org/materials">
             <input type="text" id="search" name="q" value="" style="margin-left: 0.5em;/*! border-radius: 0px; */">
             <input type="hidden" value="Galaxy Training" name="content_provider">
             <input type="submit" value="Search on TeSS" style="width: 92%;border-radius: 0px;margin: 0.5em;background: #f47d20;border: 0px;padding: 0.25em;" class="">
         </form>
+        -->
 
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQ">
-            FAQ
+        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQs">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
         </a>
+        
+        <a class="dropdown-item" href="/training-material/topics/admin/faqs/" title="Check our FAQs for the Galaxy Server administration topic">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
+        </a>
+        
         <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
-            Discuss on Galaxy Help
+            <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
+        </a>
+        <a class="dropdown-item" href="https://gitter.im/Galaxy-Training-Network/Lobby" title="Discuss on gitter">
+           <i class="fab fa-gitter" aria-hidden="true"></i><span class="visually-hidden">gitter</span> Discuss on Gitter
+        </a>
+    </div>
+</li>
+
+
+                    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Extras">
+        <i class="far fa-star" aria-hidden="true"></i><span class="visually-hidden">galaxy-star</span> Extras
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+
+        
+        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/admin/tutorials/tool-management/tutorial.md" title="Edit on GitHub">
+          <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
+        </a>
+
+        <a class="dropdown-item" href="/training-material/stats.html" title="Show view statistics about this rrepository">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN statistics
+        </a>
+
+        <a class="dropdown-item" href="https://plausible.galaxyproject.eu/training.galaxyproject.org?period=12mo&page=/training-material/topics/admin/tutorials/tool-management/tutorial.html" title="Show view statistics of this page">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
         </a>
 
         <div class="dropdown-item">
             <div>
-                Theme
+                <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Translate this page
+            </div>
+
+            <div id="lang-selector">
+                
+                <strong>Automatic Translations</strong>
+
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/admin/tutorials/tool-management/tutorial.html&edit-text=&act=url">
+                Français
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/admin/tutorials/tool-management/tutorial.html&edit-text=&act=url">
+                日本語
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/admin/tutorials/tool-management/tutorial.html&edit-text=&act=url">
+                Español
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/admin/tutorials/tool-management/tutorial.html&edit-text=&act=url">
+                Português
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/admin/tutorials/tool-management/tutorial.html&edit-text=&act=url">
+                العربية
+                </a>
+                
+                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fadmin%2Ftutorials%2Ftool-management%2Ftutorial.html&edit-text=&act=url" title="">
+                And more!
+                </a>
+            </div>
+        </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
             </div>
 
             <div id="theme-selector" data-toggle="buttons">
@@ -138,6 +172,9 @@
                 <label data-value="rainbow" class="btn btn-secondary">
                     <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
                 </label>
+                <label data-value="progress" class="btn btn-secondary">
+                    <input type="radio" name="options" id="progress" autocomplete="off">🏳️‍🌈
+                </label>
                 <label data-value="halloween" class="btn btn-secondary">
                     <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
                 </label>
@@ -147,15 +184,50 @@
             </div>
 
         </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
+            </div>
+
+            
+            <div id="archive-selector">
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2021-02-01/topics/admin/tutorials/tool-management/tutorial.html" title="Version 2021-02-01">2021-02-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2020-12-01/topics/admin/tutorials/tool-management/tutorial.html" title="Version 2020-12-01">2020-12-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2020-11-01/topics/admin/tutorials/tool-management/tutorial.html" title="Version 2020-11-01">2020-11-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
+            </div>
+
+        </div>
+
     </div>
 </li>
 
-
+                    <!--
                     <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/galaxyproject/training-material/edit/master/topics/admin/tutorials/tool-management/tutorial.md">
+                        <a class="nav-link" href="https://github.com/galaxyproject/training-material/edit/main/topics/admin/tutorials/tool-management/tutorial.md">
                             <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit
                         </a>
                     </li>
+                    -->
+
+                     <!-- Search bar-->
+                    <li class="nav-item">
+                      <div id="navbarSupportedContent">
+                        <!-- Search form -->
+                        <form class="form-inline mr-auto" method="GET" action="/training-material/search">
+                          <i class="fas fa-search nav-link" aria-hidden="true"></i>
+                          <div class="md-form mb-2">
+                            <input name="query" class="form-control nicer" type="text" placeholder="Search Tutorials" aria-label="Search">
+                          </div>
+                        </form>
+                      </div>
+                    </li>
+
                 </ul>
             </div>
         </div>
@@ -211,7 +283,7 @@
   },
   "interactivityType": "mixed",
   "isAccessibleForFree": true,
-  "license": "https://github.com/galaxyproject/training-material/blob/master/LICENSE.md",
+  "license": "https://github.com/galaxyproject/training-material/blob/main/LICENSE.md",
   "producer": {
     "@type": "Organization",
     "email": "galaxytrainingnetwork@gmail.com",
@@ -285,7 +357,7 @@
 }
     </script>
 
-    <section class="tutorial">
+    <section class="tutorial topic-admin">
         <h1 data-toc-skip>Galaxy Tool Management with Ephemeris</h1>
         
 
@@ -325,7 +397,7 @@
             
 
             
-            <p><strong><i class="fas fa-hourglass-half" aria-hidden="true"></i><span class="visually-hidden">time</span> Time estimation:</strong> 45 minutes</p>
+            <div><strong><i class="fas fa-hourglass-half" aria-hidden="true"></i><span class="visually-hidden">time</span> Time estimation:</strong> 45 minutes</div>
             
 
             
@@ -334,7 +406,7 @@
             
 
             
-            <p id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials</strong></p>
+            <div id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials</strong></div>
             <ul>
                 <div class="supporting_material">
                 
@@ -350,11 +422,15 @@
                 
 
                 
+                
+                
+
+                
                 </div>
             </ul>
             
 
-            <p><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Jan 23, 2021 </p>
+            <div><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Jun 10, 2021 </div>
         </blockquote>
 
         <div class="container">
@@ -435,15 +511,20 @@ pip install ephemeris
   <span class="na">tool_shed_url</span><span class="pi">:</span> <span class="s">https://<span class="notranslate">toolshed</span>.g2.bx.psu.edu</span>
 </code></pre></div></div>
 
-<p>Ephemeris can take care of this process. Let’s practice this on a real worfklow.</p>
+<p>Ephemeris can take care of this process. Let’s practice this on a real <span class="notranslate">workflow</span>.</p>
 
 <blockquote class="notranslate hands_on">
   <h3 id="hands_on-hands-on-extracting-a-list-of-tools-from-a-workflow"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Extracting a list of tools from a <span class="notranslate">workflow</span></h3>
 
   <ol>
-    <li>Download the <span class="notranslate">mapping</span> <span class="notranslate">workflow</span>:
-      <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">wget https://training.<span class="notranslate">galaxy</span>project.org/training-material/topics/sequence-analysis/tutorials/<span class="notranslate">mapping</span>/workflows/<span class="notranslate">mapping</span>.ga
-</span></code></pre></div>      </div>
+    <li>
+      <p>Download the <span class="notranslate">mapping</span> <span class="notranslate">workflow</span>:</p>
+
+      <blockquote class="code-in">
+        <h3 id="code-in-input-bash"><i class="far fa-keyboard" aria-hidden="true"></i><span class="visually-hidden">code-in</span> Input: Bash</h3>
+        <div data-cmd="true" class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wget https://training.<span class="notranslate">galaxy</span>project.org/training-material/topics/sequence-analysis/tutorials/<span class="notranslate">mapping</span>/workflows/<span class="notranslate">mapping</span>.ga
+</code></pre></div>        </div>
+      </blockquote>
     </li>
     <li>
       <p>Use the Ephemeris <a href="https://ephemeris.readthedocs.io/en/latest/commands/workflow-to-tools.html"><code class="language-plaintext highlighter-rouge"><span class="notranslate">workflow</span>-to-tools</code></a> command to extract the tool list from this <span class="notranslate">workflow</span> into a file named <code class="language-plaintext highlighter-rouge">workflow_tools.yml</code>.</p>
@@ -454,12 +535,17 @@ pip install ephemeris
 
         <blockquote class="solution">
           <h3 id="solution-solution"><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden">solution</span> Solution</h3>
-          <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go"><span class="notranslate">workflow</span>-to-tools -w <span class="notranslate">mapping</span>.ga -o workflow_tools.yml -l <span class="notranslate">Mapping</span>
-</span></code></pre></div>          </div>
+          <blockquote class="code-in">
+            <h3 id="code-in-input-bash-1"><i class="far fa-keyboard" aria-hidden="true"></i><span class="visually-hidden">code-in</span> Input: Bash</h3>
+            <div data-cmd="true" class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="notranslate">workflow</span>-to-tools <span class="nt">-w</span> <span class="notranslate">mapping</span>.ga <span class="nt">-o</span> workflow_tools.yml <span class="nt">-l</span> <span class="notranslate">Mapping</span>
+</code></pre></div>            </div>
+          </blockquote>
         </blockquote>
       </blockquote>
     </li>
-    <li>Inspect the <code class="language-plaintext highlighter-rouge">workflow_tools.yml</code> file, which contains a tool list in YAML format.</li>
+    <li>
+      <p>Inspect the <code class="language-plaintext highlighter-rouge">workflow_tools.yml</code> file, which contains a tool list in YAML format.</p>
+    </li>
   </ol>
 
 </blockquote>
@@ -473,19 +559,8 @@ pip install ephemeris
   <li>The API key for your account, which must be an admin</li>
 </ul>
 
-<blockquote class="tip">
-  <h3 id="tip-getting-your-admin-api-key"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Getting your admin API key</h3>
-
-  <p><span class="notranslate">Galaxy</span> admin accounts are specified as a comma-separated email list in the <code class="language-plaintext highlighter-rouge">admin_users</code> directive of <code class="language-plaintext highlighter-rouge"><span class="notranslate">galaxy</span>.yml</code> . If you have set up your <span class="notranslate">Galaxy</span> server using the <a href="/training-material/topics/admin/tutorials/ansible-galaxy/tutorial.html"><span class="notranslate">Galaxy</span> Installation with Ansible</a> tutorial, this is set to <code class="language-plaintext highlighter-rouge">admin@example.org</code>.</p>
-
-  <ol>
-    <li>In your browser, open your <span class="notranslate">Galaxy</span> homepage</li>
-    <li>Log in using the admin email, or register a new account with it if it is the first time you use it</li>
-    <li>Go to <code class="language-plaintext highlighter-rouge">User -&gt; Preferences</code> in the top menu bar, then click on <code class="language-plaintext highlighter-rouge">Manage API key</code></li>
-    <li>If there is no current API key available, click on <code class="language-plaintext highlighter-rouge">Create a new key</code> to generate it</li>
-    <li>Copy your API key to somewhere convenient, you will need it throughout this tutorial</li>
-  </ol>
-</blockquote>
+<!--SNIPPET-->
+<blockquote class="tip">  <h3 data-toc-skip="" id="-tip-getting-your-api-key"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Getting your API key</h3>  <p><span class="notranslate">Galaxy</span> admin accounts are specified as a comma-separated email list in the <code class="language-plaintext highlighter-rouge">admin_users</code> directive of <code class="language-plaintext highlighter-rouge"><span class="notranslate">galaxy</span>.yml</code> . If you have set up your <span class="notranslate">Galaxy</span> server using the <a href="/training-material/topics/admin/tutorials/ansible-galaxy/tutorial.html"><span class="notranslate">Galaxy</span> Installation with Ansible</a> tutorial, this is set to <code class="language-plaintext highlighter-rouge">admin@example.org</code>.</p>  <ol>  <li>In your browser, open your <span class="notranslate">Galaxy</span> homepage</li>  <li>Log in, or register a new account, if it’s the first time you’re logging in</li>  <li>Go to <code class="language-plaintext highlighter-rouge">User -&gt; Preferences</code> in the top menu bar, then click on <code class="language-plaintext highlighter-rouge">Manage API key</code></li>  <li>If there is no current API key available, click on <code class="language-plaintext highlighter-rouge">Create a new key</code> to generate it</li>  <li>Copy your API key to somewhere convenient, you will need it throughout this tutorial</li></ol></blockquote>
 
 <p>There are two ways to install tools, depending on how you specify the tools to install:</p>
 
@@ -494,7 +569,7 @@ pip install ephemeris
 
   <ol>
     <li>
-      <p>Use the Ephemeris <a href="https://ephemeris.readthedocs.io/en/latest/commands/shed-tools.html"><code class="language-plaintext highlighter-rouge">shed-tools</code></a> command to install the tool <code class="language-plaintext highlighter-rouge">pilon</code>, owned by <code class="language-plaintext highlighter-rouge">iuc</code> into a section named <code class="language-plaintext highlighter-rouge">Assembly</code></p>
+      <p>Use the Ephemeris <a href="https://ephemeris.readthedocs.io/en/latest/commands/shed-tools.html"><code class="language-plaintext highlighter-rouge">shed-tools</code></a> command to install the tool <code class="language-plaintext highlighter-rouge">bwa</code>, owned by <code class="language-plaintext highlighter-rouge">devteam</code> into a section named <code class="language-plaintext highlighter-rouge"><span class="notranslate">Mapping</span></code></p>
 
       <blockquote class="question">
         <h3 id="question-question-1"><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Question</h3>
@@ -504,7 +579,7 @@ pip install ephemeris
           <h3 id="solution-solution-1"><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden">solution</span> Solution</h3>
           <p>Use your <span class="notranslate">Galaxy</span> URL and API key in the example command below:</p>
 
-          <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">shed-tools install -g https://your-<span class="notranslate">galaxy</span> -a &lt;api-key&gt;</span><span class="w"> </span><span class="nt">--name</span> pilon <span class="nt">--owner</span> iuc <span class="nt">--section_label</span> Assembly
+          <div data-cmd="true" class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>shed-tools <span class="nb">install</span> <span class="nt">-g</span> https://your-<span class="notranslate">galaxy</span> <span class="nt">-a</span> &lt;api-key&gt; <span class="nt">--name</span> bwa <span class="nt">--owner</span> devteam <span class="nt">--section_label</span> <span class="notranslate">Mapping</span>
 </code></pre></div>          </div>
         </blockquote>
       </blockquote>
@@ -550,7 +625,7 @@ For that, you can install from a YAML file:</p>
           <h3 id="solution-solution-2"><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden">solution</span> Solution</h3>
           <p>Use your <span class="notranslate">Galaxy</span> URL and API key in the example command below:</p>
 
-          <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">shed-tools install -g https://your-<span class="notranslate">galaxy</span> -a &lt;api-key&gt;</span><span class="w"> </span><span class="nt">-t</span> workflow_tools.yml
+          <div data-cmd="true" class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>shed-tools <span class="nb">install</span> <span class="nt">-g</span> https://your-<span class="notranslate">galaxy</span> <span class="nt">-a</span> &lt;api-key&gt; <span class="nt">-t</span> workflow_tools.yml
 </code></pre></div>          </div>
         </blockquote>
       </blockquote>
@@ -559,7 +634,14 @@ For that, you can install from a YAML file:</p>
       <p>Open your <span class="notranslate">Galaxy</span>’s admin interface and check that the tools have been installed.</p>
     </li>
     <li>
-      <p>Using the UI import the <span class="notranslate">workflow</span> file that you used, <a href="/training-material/topics/sequence-analysis/tutorials/mapping/workflows/mapping.ga"><span class="notranslate">mapping</span>.ga</a> .</p>
+      <p>Using the UI import the <span class="notranslate">workflow</span> file that you used, <a href="https://training.galaxyproject.org/training-material/topics/sequence-analysis/tutorials/mapping/workflows/mapping.ga"><span class="notranslate">mapping</span>.ga</a>.</p>
+      <blockquote>
+        <blockquote>
+          <p>(i) Right-click or Ctrl-click on the link above and copy the link address</p>
+
+          <p>(ii) On your <span class="notranslate">Galaxy</span> instance click on <code class="language-plaintext highlighter-rouge"><span class="notranslate">Workflow</span></code>, then <code class="language-plaintext highlighter-rouge">Import</code>.  Paste the URL into the <code class="language-plaintext highlighter-rouge">Import Archived URL</code> field.</p>
+        </blockquote>
+      </blockquote>
     </li>
   </ol>
 </blockquote>
@@ -598,7 +680,7 @@ For that, you can install from a YAML file:</p>
 
   <ol>
     <li>
-      <p>Use the Ephemeris <a href="https://ephemeris.readthedocs.io/en/latest/commands/shed-tools.html"><code class="language-plaintext highlighter-rouge">shed-tools</code></a> command to test the <code class="language-plaintext highlighter-rouge">pilon</code> tool on your <span class="notranslate">Galaxy</span>.</p>
+      <p>Use the Ephemeris <a href="https://ephemeris.readthedocs.io/en/latest/commands/shed-tools.html#test"><code class="language-plaintext highlighter-rouge">shed-tools</code></a> command to test the <code class="language-plaintext highlighter-rouge">bamtools_filter</code> tool on your <span class="notranslate">Galaxy</span>.</p>
 
       <blockquote class="question">
         <h3 id="question-question-3"><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Question</h3>
@@ -608,15 +690,23 @@ For that, you can install from a YAML file:</p>
           <h3 id="solution-solution-3"><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden">solution</span> Solution</h3>
           <p>Use your <span class="notranslate">Galaxy</span> URL and API key in the example command below:</p>
 
-          <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">shed-tools test -g https://your-<span class="notranslate">galaxy</span> -a &lt;api-key&gt;</span><span class="w"> </span><span class="nt">--name</span> pilon <span class="nt">--owner</span> iuc
+          <div data-cmd="true" class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>shed-tools <span class="nb">test</span> <span class="nt">-g</span> https://your-<span class="notranslate">galaxy</span> <span class="nt">-a</span> &lt;api-key&gt; <span class="nt">--name</span> bamtools_filter <span class="nt">--owner</span> devteam
 </code></pre></div>          </div>
         </blockquote>
       </blockquote>
+    </li>
+    <li>
+      <p>Shed-tools test outputs a file with details of <code class="language-plaintext highlighter-rouge">tool_test_output.json</code> with details of jobs that have run.  Have a look at this file.</p>
     </li>
   </ol>
 </blockquote>
 
 <p>This can give you some more confidence that things are working correctly. Oftentimes, users provide workflows for biological domains that we are not familiar with, so knowing how we can test these tools is impossible for us as admins. Leveraging the built-in tool test cases can give you reassurance that things are functional before you inform your users of the new tools.</p>
+
+<blockquote class="tip">
+  <h3 id="tip-tool-test-reports"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tool test reports</h3>
+  <p>The ephemeris <code class="language-plaintext highlighter-rouge">shed-tools test</code> command produces an output file <code class="language-plaintext highlighter-rouge">tool_test_output.json</code> with information about the test jobs that have run. <span class="notranslate">Galaxy</span>project’s <a href="https://github.com/galaxyproject/planemo">Planemo</a> can be used to generate <a href="https://planemo.readthedocs.io/en/latest/commands/test_reports.html?highlight=test_reports#test-reports-command">test reports</a> from tool_test_output.json in HTML and other formats.</p>
+</blockquote>
 
 <h1 id="obtaining-a-tool-list">Obtaining a Tool List</h1>
 
@@ -637,10 +727,16 @@ For that, you can install from a YAML file:</p>
           <h3 id="solution-solution-4"><i class="far fa-eye" aria-hidden="true"></i><span class="visually-hidden">solution</span> Solution</h3>
           <p>This command does not require authentication and can be used to obtain the tool list from any public <span class="notranslate">Galaxy</span> server:</p>
 
-          <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">get-tool-list -g "https://use<span class="notranslate">galaxy</span>.eu" -o "eu_tool_list.yaml"
-</span></code></pre></div>          </div>
+          <blockquote class="code-in">
+            <h3 id="code-in-input-bash-2"><i class="far fa-keyboard" aria-hidden="true"></i><span class="visually-hidden">code-in</span> Input: Bash</h3>
+            <div data-cmd="true" class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>get-tool-list <span class="nt">-g</span> <span class="s2">"https://use<span class="notranslate">galaxy</span>.eu"</span> <span class="nt">-o</span> <span class="s2">"eu_tool_list.yaml"</span>
+</code></pre></div>            </div>
+          </blockquote>
         </blockquote>
       </blockquote>
+    </li>
+    <li>
+      <p>Inpect the first few lines of tool list: Run <code class="language-plaintext highlighter-rouge">head -n 20 eu_tool_list.yaml</code>.</p>
     </li>
   </ol>
 </blockquote>
@@ -658,12 +754,12 @@ For that, you can install from a YAML file:</p>
 
 <p>Interestingly, Use<span class="notranslate">Galaxy</span>.eu and Use<span class="notranslate">Galaxy</span>.org.au have different approaches:</p>
 <ul>
-  <li>AU maintains <a href="https://github.com/usegalaxy-au/usegalaxy-au-tools/tree/master/usegalaxy.org.au">a separate YAML file per tool panel section</a>, which allows to easily identify where tools should be added or found to add new revisions. They follow a cycle of adding the tool to their YAML file, triggering installation, and then updating the YAML files from the current server status.</li>
   <li>EU maintains <a href="https://github.com/usegalaxy-eu/usegalaxy-eu-tools">YAML files roughly per domain</a>, it is not as clear of an ordering. They maintain a YAML file where humans add the tools which should be installed in a given category, and lock files are automatically generated from these with the latest revision if it is missing. They follow a cycle of updating the lock files with the latest available revisions of tools, and then installing from these lock files any missing revisions. They use a <a href="https://build.galaxyproject.eu/job/usegalaxy-eu/job/install-tools/">Jenkins server</a> to automatically run tool installation weekly.</li>
+  <li>AU maintains <a href="https://github.com/usegalaxy-au/usegalaxy-au-tools/tree/master/usegalaxy.org.au">a separate YAML file per tool panel section</a> as a record of all installed tools on the server.  They accept tool requests as pull requests and a Jenkins server is notified when a pull request is merged so that the tool can be automatically installed and tested. Like EU, they run automatic updates of installed tools once a week.</li>
   <li>Together, <code class="language-plaintext highlighter-rouge">use<span class="notranslate">galaxy</span>.*</code> are working on a collaborative approach at <a href="https://github.com/galaxyproject/usegalaxy-tools"><span class="notranslate">galaxy</span>project/use<span class="notranslate">galaxy</span>-tools</a> but this is not consumption ready yet.</li>
 </ul>
 
-<p>If running ephemeris directly is not your preference, there is also an Ansible <a href="https://github.com/galaxyproject/ansible-galaxy-tools">role</a> and a sample <a href="https://github.com/afgane/galaxy-tools-playbook">playbook</a> that can help automate some tasks.</p>
+<p>If running ephemeris directly is not your preference, there is an Ansible <a href="https://github.com/galaxyproject/ansible-galaxy-tools">role</a> and a sample <a href="https://github.com/afgane/galaxy-tools-playbook">playbook</a> that can help automate some tasks.</p>
 
 <blockquote class="tip">
   <h3 id="tip-what-if-environments-are-not-working"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> What if environments are not working</h3>
@@ -672,7 +768,7 @@ For that, you can install from a YAML file:</p>
 
 <blockquote class="tip">
   <h3 id="tip-can-you-install-multiple-tools-simultaneously"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Can you install multiple tools simultaneously?</h3>
-  <p>Previous experience with this is not good, there was a lot of unsafe code that would do things simultaneously that would destroy config files. But now it’s conda, so you may destroy conda environments. A solution for this is like how <a href="https://github.com/usegalaxy-eu/usegalaxy-eu-tools">Use<span class="notranslate">Galaxy</span>.eu does it</a>, where we keep the full list of tools we want to install, and then a CI server (Jenkins) installs them. In this way we can enforce that only a single install process is running at any time.</p>
+  <p>Previous experience with this is not good, there was a lot of unsafe code that would do things simultaneously that would destroy config files. With conda this is not recommended either, as this can corrupt conda environments. A solution for this is how <a href="https://github.com/usegalaxy-eu/usegalaxy-eu-tools">Use<span class="notranslate">Galaxy</span>.eu does it</a>, where they keep the full list of tools they want to install, and then a CI server (Jenkins) installs them. In this way they can enforce that only a single install process is running at any time.</p>
 </blockquote>
 
 <blockquote class="tip">
@@ -683,7 +779,7 @@ We cannot (and would not recommend) setting that certificate on your local machi
 
 <blockquote class="tip">
   <h3 id="tip-uninstalling-tools"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Uninstalling tools</h3>
-  <p>While there is a function to accomplish this in BioBlend, it has not been <a href="https://github.com/galaxyproject/ephemeris/issues/83">included in Ephemeris yet.</a> If you’re looking for a way to contribute to <span class="notranslate">Galaxy</span>, this would be great :)</p>
+  <p>While there is a function to accomplish this in <a href="https://github.com/galaxyproject/bioblend">BioBlend</a>, it has not been <a href="https://github.com/galaxyproject/ephemeris/issues/83">included in Ephemeris yet.</a> If you’re looking for a way to contribute to <span class="notranslate">Galaxy</span>, this would be great :)</p>
 </blockquote>
 
 
@@ -703,6 +799,13 @@ We cannot (and would not recommend) setting that certificate on your local machi
                             
                         </ul>
                     </blockquote>
+                    
+
+                    <h1>Frequently Asked Questions</h1>
+                    Have questions about this tutorial? Check out the  <a href="/training-material/topics/admin/faqs/">FAQ page for the Galaxy Server administration topic</a> to see if your question is listed there.
+                    If not, please ask your question on the <a href="https://gitter.im/Galaxy-Training-Network/Lobby">GTN Gitter Channel</a> or the
+                    <a href="https://help.galaxyproject.org">Galaxy Help Forum</a>
+
                     
 
                     
@@ -745,7 +848,7 @@ We cannot (and would not recommend) setting that certificate on your local machi
                     <h1>Citing this Tutorial</h1>
                     <p>
                         <ol>
-                            <li id="citation-text">Martin Čech, Helena Rasche, Nicola Soranzo, 2021 <b>Galaxy Tool Management with Ephemeris (Galaxy Training Materials)</b>. <a href="/training-material/topics/admin/tutorials/tool-management/tutorial.html">/training-material/topics/admin/tutorials/tool-management/tutorial.html</a> Online; accessed TODAY
+                            <li id="citation-text">Martin Čech, Helena Rasche, Nicola Soranzo, 2021 <b>Galaxy Tool Management with Ephemeris (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/admin/tutorials/tool-management/tutorial.html">https://training.galaxyproject.org/training-material/topics/admin/tutorials/tool-management/tutorial.html</a> Online; accessed TODAY
                             </li>
                             <li>
                             Batut et al., 2018 <b>Community-Driven Data Analysis Training for Biology</b> Cell Systems <a href="https://doi.org/10.1016%2Fj.cels.2018.05.012">10.1016/j.cels.2018.05.012</a>
@@ -763,9 +866,9 @@ We cannot (and would not recommend) setting that certificate on your local machi
     author = "Martin Čech and Helena Rasche and Nicola Soranzo",
     title = "Galaxy Tool Management with Ephemeris (Galaxy Training Materials)",
     year = "2021",
-    month = "01",
-    day = "23"
-    url = "\url{/training-material/topics/admin/tutorials/tool-management/tutorial.html}",
+    month = "06",
+    day = "10"
+    url = "\url{https://training.galaxyproject.org/training-material/topics/admin/tutorials/tool-management/tutorial.html}",
     note = "[Online; accessed TODAY]"
 }
 @article{Batut_2018,
@@ -793,15 +896,15 @@ document.getElementById("citation-code").innerHTML = document.getElementById("ci
 document.getElementById("citation-text").innerHTML = document.getElementById("citation-text").innerHTML.replace("TODAY", d.toDateString());
 </script>
 
+                    <h3><i class="far fa-thumbs-up" aria-hidden="true"></i><span class="visually-hidden">congratulations</span> Congratulations on successfully completing this tutorial!</h3>
+
+                    
+
+                    
+
                 </div>
             </div>
         </div>
-
-        <h3><i class="far fa-thumbs-up" aria-hidden="true"></i><span class="visually-hidden">congratulations</span> Congratulations on successfully completing this tutorial!</h3>
-
-        
-
-        
     </section>
 </div>
 
@@ -815,7 +918,7 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
         </p>
         <p>
             Found a typo? Something is wrong in this tutorial? Edit it on
-            <a href="https://github.com/galaxyproject/training-material/tree/master/topics/admin/tutorials/tool-management/tutorial.md">GitHub</a>.
+            <a href="https://github.com/galaxyproject/training-material/tree/main/topics/admin/tutorials/tool-management/tutorial.md">GitHub</a>.
         </p>
         <p>
     The content of the tutorials and website is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.

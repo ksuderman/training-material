@@ -70,59 +70,93 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Language Selector">
-                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Language
-                        </a>
-                        <div class="dropdown-menu">
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fmetabolomics%2Ftutorials%2Flcms%2Ftutorial.html&edit-text=&act=url" title="">
-                                Français
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fmetabolomics%2Ftutorials%2Flcms%2Ftutorial.html&edit-text=&act=url" title="">
-                                日本語
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fmetabolomics%2Ftutorials%2Flcms%2Ftutorial.html&edit-text=&act=url" title="">
-                                Español
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fmetabolomics%2Ftutorials%2Flcms%2Ftutorial.html&edit-text=&act=url" title="">
-                                Português
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fmetabolomics%2Ftutorials%2Flcms%2Ftutorial.html&edit-text=&act=url" title="">
-                                العربية
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fmetabolomics%2Ftutorials%2Flcms%2Ftutorial.html&edit-text=&act=url" title="">
-                                And more!
-                            </a>
-                        </div>
-                    </li>
-
-                    <li class="nav-item dropdown">
     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
         <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
     </a>
     <div class="dropdown-menu dropdown-menu-right">
+        <!-- disable Tess for now
         <form method="get" action="https://tess.elixir-europe.org/materials">
             <input type="text" id="search" name="q" value="" style="margin-left: 0.5em;/*! border-radius: 0px; */">
             <input type="hidden" value="Galaxy Training" name="content_provider">
             <input type="submit" value="Search on TeSS" style="width: 92%;border-radius: 0px;margin: 0.5em;background: #f47d20;border: 0px;padding: 0.25em;" class="">
         </form>
+        -->
 
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQ">
-            FAQ
+        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQs">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
         </a>
+        
+        <a class="dropdown-item" href="/training-material/topics/metabolomics/faqs/" title="Check our FAQs for the Metabolomics topic">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
+        </a>
+        
         <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
-            Discuss on Galaxy Help
+            <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
+        </a>
+        <a class="dropdown-item" href="https://gitter.im/Galaxy-Training-Network/Lobby" title="Discuss on gitter">
+           <i class="fab fa-gitter" aria-hidden="true"></i><span class="visually-hidden">gitter</span> Discuss on Gitter
+        </a>
+    </div>
+</li>
+
+
+                    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Extras">
+        <i class="far fa-star" aria-hidden="true"></i><span class="visually-hidden">galaxy-star</span> Extras
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+
+        
+        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/metabolomics/tutorials/lcms/tutorial.md" title="Edit on GitHub">
+          <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
+        </a>
+
+        <a class="dropdown-item" href="/training-material/stats.html" title="Show view statistics about this rrepository">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN statistics
+        </a>
+
+        <a class="dropdown-item" href="https://plausible.galaxyproject.eu/training.galaxyproject.org?period=12mo&page=/training-material/topics/metabolomics/tutorials/lcms/tutorial.html" title="Show view statistics of this page">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
         </a>
 
         <div class="dropdown-item">
             <div>
-                Theme
+                <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Translate this page
+            </div>
+
+            <div id="lang-selector">
+                
+                <strong>Automatic Translations</strong>
+
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/metabolomics/tutorials/lcms/tutorial.html&edit-text=&act=url">
+                Français
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/metabolomics/tutorials/lcms/tutorial.html&edit-text=&act=url">
+                日本語
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/metabolomics/tutorials/lcms/tutorial.html&edit-text=&act=url">
+                Español
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/metabolomics/tutorials/lcms/tutorial.html&edit-text=&act=url">
+                Português
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/metabolomics/tutorials/lcms/tutorial.html&edit-text=&act=url">
+                العربية
+                </a>
+                
+                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fmetabolomics%2Ftutorials%2Flcms%2Ftutorial.html&edit-text=&act=url" title="">
+                And more!
+                </a>
+            </div>
+        </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
             </div>
 
             <div id="theme-selector" data-toggle="buttons">
@@ -138,6 +172,9 @@
                 <label data-value="rainbow" class="btn btn-secondary">
                     <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
                 </label>
+                <label data-value="progress" class="btn btn-secondary">
+                    <input type="radio" name="options" id="progress" autocomplete="off">🏳️‍🌈
+                </label>
                 <label data-value="halloween" class="btn btn-secondary">
                     <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
                 </label>
@@ -147,15 +184,50 @@
             </div>
 
         </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
+            </div>
+
+            
+            <div id="archive-selector">
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2021-02-01/topics/metabolomics/tutorials/lcms/tutorial.html" title="Version 2021-02-01">2021-02-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2020-12-01/topics/metabolomics/tutorials/lcms/tutorial.html" title="Version 2020-12-01">2020-12-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2020-11-01/topics/metabolomics/tutorials/lcms/tutorial.html" title="Version 2020-11-01">2020-11-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
+            </div>
+
+        </div>
+
     </div>
 </li>
 
-
+                    <!--
                     <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/galaxyproject/training-material/edit/master/topics/metabolomics/tutorials/lcms/tutorial.md">
+                        <a class="nav-link" href="https://github.com/galaxyproject/training-material/edit/main/topics/metabolomics/tutorials/lcms/tutorial.md">
                             <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit
                         </a>
                     </li>
+                    -->
+
+                     <!-- Search bar-->
+                    <li class="nav-item">
+                      <div id="navbarSupportedContent">
+                        <!-- Search form -->
+                        <form class="form-inline mr-auto" method="GET" action="/training-material/search">
+                          <i class="fas fa-search nav-link" aria-hidden="true"></i>
+                          <div class="md-form mb-2">
+                            <input name="query" class="form-control nicer" type="text" placeholder="Search Tutorials" aria-label="Search">
+                          </div>
+                        </form>
+                      </div>
+                    </li>
+
                 </ul>
             </div>
         </div>
@@ -211,7 +283,7 @@
   },
   "interactivityType": "mixed",
   "isAccessibleForFree": true,
-  "license": "https://github.com/galaxyproject/training-material/blob/master/LICENSE.md",
+  "license": "https://github.com/galaxyproject/training-material/blob/main/LICENSE.md",
   "producer": {
     "@type": "Organization",
     "email": "galaxytrainingnetwork@gmail.com",
@@ -321,7 +393,7 @@
 }
     </script>
 
-    <section class="tutorial">
+    <section class="tutorial topic-metabolomics">
         <h1 data-toc-skip>Mass spectrometry: LC-MS analysis</h1>
         
 
@@ -376,7 +448,7 @@
             
 
             
-            <p><strong><i class="fas fa-hourglass-half" aria-hidden="true"></i><span class="visually-hidden">time</span> Time estimation:</strong> 3 hours</p>
+            <div><strong><i class="fas fa-hourglass-half" aria-hidden="true"></i><span class="visually-hidden">time</span> Time estimation:</strong> 3 hours</div>
             
 
             
@@ -385,7 +457,7 @@
             
 
             
-            <p id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials</strong></p>
+            <div id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials</strong></div>
             <ul>
                 <div class="supporting_material">
                 
@@ -415,6 +487,10 @@
                 
 
                 
+                
+                
+
+                
                     <li class="btn btn-default supporting_material">
 
     <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Where to run the tutorial">
@@ -423,13 +499,11 @@
     <ul class="dropdown-menu">
     
         <li>
-            <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/tree/master/topics/metabolomics/docker" title="Docker image for this tutorial">
+            <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/tree/main/topics/metabolomics/docker" title="Docker image for this tutorial">
                 <i class="fab fa-docker" aria-hidden="true"></i><span class="visually-hidden">docker_image</span> Docker image
             </a>
         </li>
     
-    
-        
     
         
     
@@ -546,6 +620,8 @@
         
     
         
+    
+        
         <a class="dropdown-item" href="https://streetscience.usegalaxy.eu/" title="Street Science">
             Street Science
         </a>
@@ -585,6 +661,8 @@
     
         
     
+        
+    
     </ul>
 
 
@@ -594,7 +672,7 @@
             </ul>
             
 
-            <p><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Oct 15, 2020 </p>
+            <div><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Mar 23, 2021 </div>
         </blockquote>
 
         <div class="container">
@@ -709,27 +787,16 @@ having to launch jobs manually for each sample. You can start using the dataset 
     <li>
       <p>Create a new history for this tutorial</p>
 
-      <blockquote class="tip">
-
-        <h3 id="tip-tip-creating-a-new-history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Creating a new history</h3>
-
-        <p>Click the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> icon at the top of the history panel</p>
-
-        <p>If the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> is missing:</p>
-        <ol>
-          <li>Click on the <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-gear</span> icon (<strong>History options</strong>) on the top of the history panel</li>
-          <li>Select the option <strong>Create New</strong> from the menu</li>
-        </ol>
-      </blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-creating-a-new-history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Creating a new history</h3>  <p>Click the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> icon at the top of the history panel.</p>  <p>If the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> is missing:</p>  <ol>  <li>Click on the <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-gear</span> icon (<strong>History options</strong>) on the top of the history panel</li>  <li>Select the option <strong>Create New</strong> from the menu</li></ol></blockquote>
     </li>
     <li>Import the 9 <code class="language-plaintext highlighter-rouge">mzXML</code> files into a collection named <code class="language-plaintext highlighter-rouge">sacurine</code>
       <ul>
         <li>Option 1: from a shared data library (ask your instructor)</li>
-        <li>
-          <p>Option 2: from Zenodo using the URLs given below</p>
+        <li>Option 2: from Zenodo using the URLs given below</li>
+      </ul>
 
-          <p><a href="https://doi.org/10.5281/zenodo.3244991"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.3244991.svg" alt="DOI" /></a></p>
-          <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://zenodo.org/record/3244991/files/HU_neg_048.mzML
+      <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://zenodo.org/record/3244991/files/HU_neg_048.mzML
 https://zenodo.org/record/3244991/files/HU_neg_090.mzML
 https://zenodo.org/record/3244991/files/HU_neg_123.mzML
 https://zenodo.org/record/3244991/files/HU_neg_157.mzML
@@ -738,92 +805,23 @@ https://zenodo.org/record/3244991/files/HU_neg_192.mzML
 https://zenodo.org/record/3244991/files/QC1_002.mzML
 https://zenodo.org/record/3244991/files/QC1_008.mzML
 https://zenodo.org/record/3244991/files/QC1_014.mzML
-</code></pre></div>          </div>
-        </li>
-      </ul>
+</code></pre></div>      </div>
 
-      <blockquote class="tip">
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-importing-via-links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing via links</h3>  <ul>  <li>Copy the link location</li>  <li>    <p>Open the <span class="notranslate">Galaxy</span> Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-upload</span> on the top-right of the tool panel)</p>  </li>  <li>    <p>Click on <strong>Collection</strong> on the top</p>  </li>  <li>Select <strong>Paste/Fetch Data</strong></li>  <li>    <p>Paste the link into the text field</p>  </li>  <li>    <p>Change <strong>Type</strong> from “Auto-detect” to <code class="language-plaintext highlighter-rouge">mzml</code></p>  </li>  <li>    <p>Press <strong>Start</strong></p>  </li>  <li>    <p>Click on <strong>Build</strong> when available</p>  </li>  <li>    <p>Enter a name for the collection</p>    <ul>      <li>sacurine</li>    </ul>  </li>  <li>Click on <strong>Create list</strong> (and wait a bit)</li></ul></blockquote>
 
-        <h3 id="tip-tip-importing-data-via-links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Importing data via links</h3>
-
-        <ul>
-          <li>Copy the link location</li>
-          <li>
-            <p>Open the <span class="notranslate">Galaxy</span> Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-upload</span> on the top-right of the tool panel)</p>
-          </li>
-          <li>
-            <p>Click on <strong>Collection</strong> on the top</p>
-          </li>
-          <li>Select <strong>Paste/Fetch Data</strong></li>
-          <li>
-            <p>Paste the link into the text field</p>
-          </li>
-          <li>
-            <p>Change <strong>Type</strong> from “Auto-detect” to <code class="language-plaintext highlighter-rouge">mzml</code></p>
-          </li>
-          <li>
-            <p>Press <strong>Start</strong></p>
-          </li>
-          <li>
-            <p>Click on <strong>Build</strong> when available</p>
-          </li>
-          <li>
-            <p>Enter a name for the collection</p>
-
-            <ul>
-              <li>sacurine</li>
-            </ul>
-          </li>
-          <li>Click on <strong>Create list</strong> (and wait a bit)</li>
-        </ul>
-
-      </blockquote>
-
-      <blockquote class="tip">
-
-        <h3 id="tip-tip-importing-data-from-a-data-library"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Importing data from a data library</h3>
-
-        <p>As an alte<span class="notranslate">rna</span>tive to uploading the data from a URL or your computer, the files may also have been made available from a <em>shared data library</em>:</p>
-
-        <ul>
-          <li>
-            <p>Go into <strong>Shared data</strong> (top panel) then <strong>Data libraries</strong></p>
-          </li>
-          <li>
-            <p>Find the correct folder (ask your instructor)</p>
-          </li>
-          <li>Select the desired files</li>
-          <li>Click on the <strong>To History</strong> button near the top and select <strong>as a Collection</strong> from the dropdown menu</li>
-          <li>In the pop-up window, select the history you want to import the files to (or create a new one)</li>
-          <li>Click on <strong>Import</strong></li>
-        </ul>
-      </blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-importing-data-from-a-data-library"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing data from a data library</h3>  <p>As an alte<span class="notranslate">rna</span>tive to uploading the data from a URL or your computer, the files may also have been made available from a <em>shared data library</em>:</p>  <ul>  <li>    <p>Go into <strong>Shared data</strong> (top panel) then <strong>Data libraries</strong></p>  </li>  <li>    <p>Find the correct folder (ask your instructor)</p>  </li>  <li>Select the desired files</li>  <li>Click on the <strong>To History</strong> button near the top and select <strong>as a Collection</strong> from the dropdown menu</li>  <li>In the pop-up window, select the history you want to import the files to (or create a new one)</li>  <li>Click on <strong>Import</strong></li></ul></blockquote>
     </li>
     <li>Make sure your data is in a <strong>collection</strong>. Make sure it is named <code class="language-plaintext highlighter-rouge">sacurine</code>
       <ul>
         <li>If you forgot to select the collection option during import, you can create the collection now:</li>
       </ul>
 
-      <blockquote class="tip">
-
-        <h3 id="tip-tip-creating-a-dataset-collection"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Creating a dataset collection</h3>
-
-        <ul>
-          <li>Click on <strong>Operations on multiple datasets</strong> (check box icon) at the top of the history panel <img src="../../../galaxy-interface/images/historyItemControls.png" alt="Operations on multiple datasets button" /></li>
-          <li>Check all the datasets in your history you would like to include</li>
-          <li>
-            <p>Click <strong>For all selected..</strong> and choose <strong>Build dataset list</strong></p>
-
-            <p><img src="/training-material/topics/galaxy-interface/images/buildList.png" alt="build list collection menu item" width="15%" /></p>
-          </li>
-          <li>Enter a name for your collection</li>
-          <li>Click <strong>Create List</strong> to build your collection</li>
-          <li>Click on the checkmark icon at the top of your history again</li>
-        </ul>
-      </blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-creating-a-dataset-collection"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Creating a dataset collection</h3>  <ul>  <li>Click on <strong>Operations on multiple datasets</strong> (check box icon) at the top of the history panel <img src="/training-material/topics/galaxy-interface/images/historyItemControls.png" alt="Operations on multiple datasets button" /></li>  <li>Check all the datasets in your history you would like to include</li>  <li>    <p>Click <strong>For all selected..</strong> and choose <strong>Build dataset list</strong></p>    <p><img src="/training-material/topics/galaxy-interface/images/buildList.png" alt="build list collection menu item" width="15%" /></p>  </li>  <li>Enter a name for your collection</li>  <li>Click <strong>Create List</strong> to build your collection</li>  <li>Click on the checkmark icon at the top of your history again</li></ul></blockquote>
     </li>
   </ol>
-
 </blockquote>
 
 <p>You should have in your history a green Dataset collection (<code class="language-plaintext highlighter-rouge">sacurine</code>) with 9 datasets in mzml format.</p>
@@ -844,19 +842,11 @@ https://zenodo.org/record/3244991/files/QC1_014.mzML
       <ul>
         <li><em>“File(s) from your history containing your chromatograms”</em>: the <code class="language-plaintext highlighter-rouge">sacurine</code> dataset collection</li>
       </ul>
+
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-selecting-a-datast-collection-as-input"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Selecting a datast collection as input</h3>  <ol>  <li>Click on <i class="far fa-folder" aria-hidden="true"></i><span class="visually-hidden">param-collection</span> <strong>Dataset collection</strong> in front of the input parameter you want to supply the collection to.</li>  <li>Select the collection you want to use from the list</li></ol></blockquote>
     </li>
   </ol>
-
-  <blockquote class="tip">
-
-    <h3 id="tip-tip-selecting-a-dataset-collection-as-input"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Selecting a dataset collection as input</h3>
-
-    <ol>
-      <li>Click on <i class="far fa-folder" aria-hidden="true"></i><span class="visually-hidden">param-collection</span> <strong>Dataset collection</strong> in
-front of the input parameter you want to supply the collection to.</li>
-      <li>Select the collection you want to use from the list</li>
-    </ol>
-  </blockquote>
 
   <blockquote class="question">
     <h3 id="question-question"><i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Question</h3>
@@ -1219,64 +1209,19 @@ be uploaded into <span class="notranslate">Galaxy</span>.</p>
       <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://zenodo.org/record/3244991/files/sampleMetadata_completed.tsv
 </code></pre></div>      </div>
 
-      <blockquote class="tip">
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-importing-via-links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing via links</h3>  <ul>  <li>Copy the link location</li>  <li>    <p>Open the <span class="notranslate">Galaxy</span> Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-upload</span> on the top-right of the tool panel)</p>  </li>  <li>Select <strong>Paste/Fetch Data</strong></li>  <li>    <p>Paste the link into the text field</p>  </li>  <li>    <p>Press <strong>Start</strong></p>  </li>  <li>    <p><strong>Close</strong> the window</p>  </li>  <li>By default, <span class="notranslate">Galaxy</span> uses the URL as the name, so rename the files with a more useful name.</li></ul></blockquote>
 
-        <h3 id="tip-tip-importing-data-via-links-1"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Importing data via links</h3>
-
-        <ul>
-          <li>Copy the link location</li>
-          <li>
-            <p>Open the <span class="notranslate">Galaxy</span> Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-upload</span> on the top-right of the tool panel)</p>
-          </li>
-          <li>Select <strong>Paste/Fetch Data</strong></li>
-          <li>
-            <p>Paste the link into the text field</p>
-          </li>
-          <li>
-            <p>Press <strong>Start</strong></p>
-          </li>
-          <li><strong>Close</strong> the window</li>
-        </ul>
-
-        <p>By default, <span class="notranslate">Galaxy</span> uses the URL as the name, so rename the files with a more useful name.</p>
-
-      </blockquote>
-
-      <blockquote class="tip">
-
-        <h3 id="tip-tip-importing-data-from-a-data-library-1"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Importing data from a data library</h3>
-
-        <p>As an alte<span class="notranslate">rna</span>tive to uploading the data from a URL or your computer, the files may also have been made available from a <em>shared data library</em>:</p>
-
-        <ul>
-          <li>
-            <p>Go into <strong>Shared data</strong> (top panel) then <strong>Data libraries</strong></p>
-          </li>
-          <li>
-            <p>Find the correct folder (ask your instructor)</p>
-          </li>
-          <li>Select the desired files</li>
-          <li>Click on the <strong>To History</strong> button near the top and select <strong>as Datasets</strong> from the dropdown menu</li>
-          <li>In the pop-up window, select the history you want to import the files to (or create a new one)</li>
-          <li>Click on <strong>Import</strong></li>
-        </ul>
-      </blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-importing-data-from-a-data-library"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing data from a data library</h3>  <p>As an alte<span class="notranslate">rna</span>tive to uploading the data from a URL or your computer, the files may also have been made available from a <em>shared data library</em>:</p>  <ul>  <li>    <p>Go into <strong>Shared data</strong> (top panel) then <strong>Data libraries</strong></p>  </li>  <li>    <p>Find the correct folder (ask your instructor)</p>  </li>  <li>Select the desired files</li>  <li>Click on the <strong>To History</strong> button near the top and select <strong>as Datasets</strong> from the dropdown menu</li>  <li>In the pop-up window, select the history you want to import the files to (or create a new one)</li>  <li>Click on <strong>Import</strong></li></ul></blockquote>
     </li>
     <li>Check the data type of your imported files.
       <ul>
         <li>The datatype should be <code class="language-plaintext highlighter-rouge">tabular</code>, if this is not the case, please change the datatype now</li>
       </ul>
 
-      <blockquote class="tip">
-
-        <h3 id="tip-tip-changing-the-datatype"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Changing the datatype</h3>
-        <ul>
-          <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>
-          <li>In the central panel, click on the <i class="fas fa-database" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-chart-select-data</span> <strong>Datatypes</strong> tab on the top</li>
-          <li>Select ``</li>
-          <li>Click the <strong>Change datatype</strong> button</li>
-        </ul>
-      </blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-changing-the-datatype"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Changing the datatype</h3>  <ul>  <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>  <li>In the central panel, click on the <i class="fas fa-database" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-chart-select-data</span> <strong>Datatypes</strong> tab on the top</li>  <li>Select  your desired datatype</li>  <li>Click the <strong>Change datatype</strong> button</li></ul></blockquote>
 
       <blockquote class="comment">
         <h3 id="comment-comment"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> Comment</h3>
@@ -1291,15 +1236,8 @@ right away if you happen to get one of these obvious issues.</p>
     <li>
       <p>Rename your sampleMetadata file with a shorter name ‘sampleMetadata_completed.tsv’</p>
 
-      <blockquote class="tip">
-
-        <h3 id="tip-tip-renaming-a-dataset"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Renaming a dataset</h3>
-        <ul>
-          <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>
-          <li>In the central panel, change the <strong>Name</strong> field</li>
-          <li>Click the <strong>Save</strong> button</li>
-        </ul>
-      </blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-renaming-a-dataset"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Renaming a dataset</h3>  <ul>  <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>  <li>In the central panel, change the <strong>Name</strong> field</li>  <li>Click the <strong>Save</strong> button</li></ul></blockquote>
     </li>
   </ol>
 
@@ -1352,16 +1290,8 @@ The tool automatically takes the second column as colour groups when a file is p
         <li><em>“Sample metadata file”</em>: <code class="language-plaintext highlighter-rouge">sampleMetadata_completed.tsv</code> you uploaded previously</li>
       </ul>
 
-      <blockquote class="tip">
-
-        <h3 id="tip-tip-selecting-a-dataset-collection-as-input-1"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Selecting a dataset collection as input</h3>
-
-        <ol>
-          <li>Click on <i class="far fa-folder" aria-hidden="true"></i><span class="visually-hidden">param-collection</span> <strong>Dataset collection</strong> in
-front of the input parameter you want to supply the collection to.</li>
-          <li>Select the collection you want to use from the list</li>
-        </ol>
-      </blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-selecting-a-datast-collection-as-input"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Selecting a datast collection as input</h3>  <ol>  <li>Click on <i class="far fa-folder" aria-hidden="true"></i><span class="visually-hidden">param-collection</span> <strong>Dataset collection</strong> in front of the input parameter you want to supply the collection to.</li>  <li>Select the collection you want to use from the list</li></ol></blockquote>
 
       <blockquote class="comment">
         <h3 id="comment-comment-1"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> Comment</h3>
@@ -1473,16 +1403,8 @@ the Merger tool.</p>
         <li><em>“Sample metadata file”</em>: <code class="language-plaintext highlighter-rouge">Nothing selected</code></li>
       </ul>
 
-      <blockquote class="tip">
-
-        <h3 id="tip-tip-selecting-a-dataset-collection-as-input-2"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Selecting a dataset collection as input</h3>
-
-        <ol>
-          <li>Click on <i class="far fa-folder" aria-hidden="true"></i><span class="visually-hidden">param-collection</span> <strong>Dataset collection</strong> in
-front of the input parameter you want to supply the collection to.</li>
-          <li>Select the collection you want to use from the list</li>
-        </ol>
-      </blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-selecting-a-datast-collection-as-input"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Selecting a datast collection as input</h3>  <ol>  <li>Click on <i class="far fa-folder" aria-hidden="true"></i><span class="visually-hidden">param-collection</span> <strong>Dataset collection</strong> in front of the input parameter you want to supply the collection to.</li>  <li>Select the collection you want to use from the list</li></ol></blockquote>
     </li>
   </ol>
 
@@ -1560,7 +1482,7 @@ previous peak group, thus not assigned to any peak group due to the 0.5 minimum 
 </blockquote>
 
 <p>When looking at the plots from plotChromPeakDensity.pdf, we can notice that in some cases there seems to be a small drift of retention time for some samples.
-This phenomenon is well known with LC-MS techniques. To be able to attribute correct groups for peaks, it may be needed to perform some retention time 
+This phenomenon is well known with LC-MS techniques. To be able to attribute correct groups for peaks, it may be needed to perform some retention time
 correction accross samples. Thus, the idea is (when needed) to apply a retention time strategy on the output of your grouping step, then to perform
 a second grouping step on the corrected data.</p>
 
@@ -1868,39 +1790,21 @@ long and thus may reduce the names’ readability. Hence, we highly recommend yo
   <h3 id="hands_on-hands-on-copying-the-3-tables-into-a-new-history-and-renaming-them"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Copying the 3 tables into a new history and renaming them</h3>
 
   <ol>
-    <li>Create a new history with the 3 tables
-      <blockquote class="tip">
+    <li>
+      <p>Create a new history with the 3 tables</p>
 
-        <h3 id="tip-tip-copy-dataset-to-a-new-history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Copy dataset to a new history</h3>
-
-        <ol>
-          <li>Click on the <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-gear</span> icon (<strong>History options</strong>) on the top of the history panel</li>
-          <li>Click on <strong>Copy Dataset</strong></li>
-          <li>
-            <p>Select the desired files</p>
-          </li>
-          <li>
-            <p>“New history name:” <code class="language-plaintext highlighter-rouge">Sacurine Processing</code></p>
-          </li>
-          <li>Click on the new history name in the green box that have just appear to switch to this history</li>
-        </ol>
-      </blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-copy-a-dataset-to-a-new-history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Copy a dataset to a new history</h3>  <ol>  <li>Click on the <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-gear</span> icon (<strong>History options</strong>) on the top of the history panel</li>  <li>Click on <strong>Copy Dataset</strong></li>  <li>    <p>Select the desired files</p>  </li>  <li>    <p>“New history name:” <code class="language-plaintext highlighter-rouge">Sacurine Processing</code></p>  </li>  <li>Click on the new history name in the green box that have just appear to switch to this history</li></ol></blockquote>
     </li>
-    <li>Rename the 3 tables with shorter names:
+    <li>
+      <p>Rename the 3 tables with shorter names:</p>
       <ul>
         <li><code class="language-plaintext highlighter-rouge">xset.merged.groupChromPeaks.adjustRtime.groupChromPeaks.fillpeaks.dataMatrix.tsv</code> -&gt; <strong>dataMatrix.tsv</strong></li>
         <li><code class="language-plaintext highlighter-rouge">xset.merged.groupChromPeaks.*.fillChromPeaks.annotate.variableMetadata.tsv</code> -&gt; <strong>variableMetadata.tsv</strong></li>
       </ul>
 
-      <blockquote class="tip">
-
-        <h3 id="tip-tip-renaming-a-dataset-1"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Renaming a dataset</h3>
-        <ul>
-          <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>
-          <li>In the central panel, change the <strong>Name</strong> field</li>
-          <li>Click the <strong>Save</strong> button</li>
-        </ul>
-      </blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-renaming-a-dataset"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Renaming a dataset</h3>  <ul>  <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>  <li>In the central panel, change the <strong>Name</strong> field</li>  <li>Click the <strong>Save</strong> button</li></ul></blockquote>
     </li>
   </ol>
 
@@ -2164,7 +2068,7 @@ statistical analysis, and you do not need the pools anymore since they do not pa
     <ol>
       <li>The <em>0.3</em> value corresponds to the maximum value kept in the dataset (‘Interval of values to remove: <em>upper</em>’) regarding the
 <em>poolCV</em> column in your <em>Variable metadata</em> file. As mentioned previously in ‘Step 1: global variability in the data’ section,
-pool CV values are commonly considered as reflecting unstable ions when superior to 0.3. 
+pool CV values are commonly considered as reflecting unstable ions when superior to 0.3.
 Although the signal drift correction decreased the proportion of ions with pool CV &gt; 30% from 74% to 53%, we still need to get
 rid of these remaining unstable ions for which sample comparisons would be difficult and at high risk of being unreliable.</li>
       <li>The <em>1.0</em> value corresponds to the maximum value kept in the dataset (‘Interval of values to remove: <em>upper</em>’) regarding the
@@ -2221,7 +2125,7 @@ and the ions that we have in our dataset. For this calculation we can use the <s
 based on a relevant statistical strategy (which would more likely be to <em>use</em> multiple testing correction). It is based on
 the fact that with only 6 biological samples in a dataset of 2706 ions it is almost impossible to settle for correlation
 coefficients significantly different from zero. Consequently, to illustrate better the filtering step that will follow,
-we chose not to apply the multiple testing correction, allowing us to obtain something that looks like ‘significant’ results 
+we chose not to apply the multiple testing correction, allowing us to obtain something that looks like ‘significant’ results
 regarding statistical indices.</p>
       </blockquote>
     </li>
@@ -2333,7 +2237,7 @@ an adequate reference bank online. However, it is also possible that none of the
 case, you may need to construct your own database, to be able to search for relevant matches for your ions of interest.</p>
 
 <p>In this tutorial, we chose the ‘easy’ case of human urinary samples. Thus, one possibility we have is to use the online reference
-bank HMDB (The Human Metabolome Database). Let’s try requesting directly into this widely used bank using the <strong>HMDB MS search</strong> 
+bank HMDB (The Human Metabolome Database). Let’s try requesting directly into this widely used bank using the <strong>HMDB MS search</strong>
 <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> tool.</p>
 
 <blockquote class="notranslate hands_on">
@@ -2398,6 +2302,11 @@ and create, run and share!</p>
                         </ul>
                     </blockquote>
                     
+
+                    <h1>Frequently Asked Questions</h1>
+                    Have questions about this tutorial? Check out the  <a href="/training-material/topics/metabolomics/faqs/">FAQ page for the Metabolomics topic</a> to see if your question is listed there.
+                    If not, please ask your question on the <a href="https://gitter.im/Galaxy-Training-Network/Lobby">GTN Gitter Channel</a> or the
+                    <a href="https://help.galaxyproject.org">Galaxy Help Forum</a>
 
                     
 
@@ -2473,6 +2382,8 @@ and create, run and share!</p>
 </li></ol>
                     
 
+                    
+
                     <h1>Feedback</h1>
                     <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.</p>
 
@@ -2509,7 +2420,7 @@ and create, run and share!</p>
                     <h1>Citing this Tutorial</h1>
                     <p>
                         <ol>
-                            <li id="citation-text">Mélanie Petera, Gildas Le Corguillé, Jean-François Martin, Yann Guitton, Workflow4Metabolomics core team, 2020 <b>Mass spectrometry: LC-MS analysis (Galaxy Training Materials)</b>. <a href="/training-material/topics/metabolomics/tutorials/lcms/tutorial.html">/training-material/topics/metabolomics/tutorials/lcms/tutorial.html</a> Online; accessed TODAY
+                            <li id="citation-text">Mélanie Petera, Gildas Le Corguillé, Jean-François Martin, Yann Guitton, Workflow4Metabolomics core team, 2021 <b>Mass spectrometry: LC-MS analysis (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/metabolomics/tutorials/lcms/tutorial.html">https://training.galaxyproject.org/training-material/topics/metabolomics/tutorials/lcms/tutorial.html</a> Online; accessed TODAY
                             </li>
                             <li>
                             Batut et al., 2018 <b>Community-Driven Data Analysis Training for Biology</b> Cell Systems <a href="https://doi.org/10.1016%2Fj.cels.2018.05.012">10.1016/j.cels.2018.05.012</a>
@@ -2526,10 +2437,10 @@ and create, run and share!</p>
 <code id="citation-code">@misc{metabolomics-lcms,
     author = "Mélanie Petera and Gildas Le Corguillé and Jean-François Martin and Yann Guitton and Workflow4Metabolomics core team",
     title = "Mass spectrometry: LC-MS analysis (Galaxy Training Materials)",
-    year = "2020",
-    month = "10",
-    day = "15"
-    url = "\url{/training-material/topics/metabolomics/tutorials/lcms/tutorial.html}",
+    year = "2021",
+    month = "03",
+    day = "23"
+    url = "\url{https://training.galaxyproject.org/training-material/topics/metabolomics/tutorials/lcms/tutorial.html}",
     note = "[Online; accessed TODAY]"
 }
 @article{Batut_2018,
@@ -2557,15 +2468,15 @@ document.getElementById("citation-code").innerHTML = document.getElementById("ci
 document.getElementById("citation-text").innerHTML = document.getElementById("citation-text").innerHTML.replace("TODAY", d.toDateString());
 </script>
 
+                    <h3><i class="far fa-thumbs-up" aria-hidden="true"></i><span class="visually-hidden">congratulations</span> Congratulations on successfully completing this tutorial!</h3>
+
+                    
+
+                    
+
                 </div>
             </div>
         </div>
-
-        <h3><i class="far fa-thumbs-up" aria-hidden="true"></i><span class="visually-hidden">congratulations</span> Congratulations on successfully completing this tutorial!</h3>
-
-        
-
-        
     </section>
 </div>
 
@@ -2579,7 +2490,7 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
         </p>
         <p>
             Found a typo? Something is wrong in this tutorial? Edit it on
-            <a href="https://github.com/galaxyproject/training-material/tree/master/topics/metabolomics/tutorials/lcms/tutorial.md">GitHub</a>.
+            <a href="https://github.com/galaxyproject/training-material/tree/main/topics/metabolomics/tutorials/lcms/tutorial.md">GitHub</a>.
         </p>
         <p>
     The content of the tutorials and website is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.

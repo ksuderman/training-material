@@ -70,59 +70,93 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Language Selector">
-                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Language
-                        </a>
-                        <div class="dropdown-menu">
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fgalaxy-interface%2Ftutorials%2Fjupyterlab%2Ftutorial.html&edit-text=&act=url" title="">
-                                Français
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fgalaxy-interface%2Ftutorials%2Fjupyterlab%2Ftutorial.html&edit-text=&act=url" title="">
-                                日本語
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fgalaxy-interface%2Ftutorials%2Fjupyterlab%2Ftutorial.html&edit-text=&act=url" title="">
-                                Español
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fgalaxy-interface%2Ftutorials%2Fjupyterlab%2Ftutorial.html&edit-text=&act=url" title="">
-                                Português
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fgalaxy-interface%2Ftutorials%2Fjupyterlab%2Ftutorial.html&edit-text=&act=url" title="">
-                                العربية
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fgalaxy-interface%2Ftutorials%2Fjupyterlab%2Ftutorial.html&edit-text=&act=url" title="">
-                                And more!
-                            </a>
-                        </div>
-                    </li>
-
-                    <li class="nav-item dropdown">
     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
         <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
     </a>
     <div class="dropdown-menu dropdown-menu-right">
+        <!-- disable Tess for now
         <form method="get" action="https://tess.elixir-europe.org/materials">
             <input type="text" id="search" name="q" value="" style="margin-left: 0.5em;/*! border-radius: 0px; */">
             <input type="hidden" value="Galaxy Training" name="content_provider">
             <input type="submit" value="Search on TeSS" style="width: 92%;border-radius: 0px;margin: 0.5em;background: #f47d20;border: 0px;padding: 0.25em;" class="">
         </form>
+        -->
 
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQ">
-            FAQ
+        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQs">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
         </a>
+        
+        <a class="dropdown-item" href="/training-material/topics/galaxy-interface/faqs/" title="Check our FAQs for the Using Galaxy and Managing your Data topic">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
+        </a>
+        
         <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
-            Discuss on Galaxy Help
+            <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
+        </a>
+        <a class="dropdown-item" href="https://gitter.im/Galaxy-Training-Network/Lobby" title="Discuss on gitter">
+           <i class="fab fa-gitter" aria-hidden="true"></i><span class="visually-hidden">gitter</span> Discuss on Gitter
+        </a>
+    </div>
+</li>
+
+
+                    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Extras">
+        <i class="far fa-star" aria-hidden="true"></i><span class="visually-hidden">galaxy-star</span> Extras
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+
+        
+        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/galaxy-interface/tutorials/jupyterlab/tutorial.md" title="Edit on GitHub">
+          <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
+        </a>
+
+        <a class="dropdown-item" href="/training-material/stats.html" title="Show view statistics about this rrepository">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN statistics
+        </a>
+
+        <a class="dropdown-item" href="https://plausible.galaxyproject.eu/training.galaxyproject.org?period=12mo&page=/training-material/topics/galaxy-interface/tutorials/jupyterlab/tutorial.html" title="Show view statistics of this page">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
         </a>
 
         <div class="dropdown-item">
             <div>
-                Theme
+                <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Translate this page
+            </div>
+
+            <div id="lang-selector">
+                
+                <strong>Automatic Translations</strong>
+
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/galaxy-interface/tutorials/jupyterlab/tutorial.html&edit-text=&act=url">
+                Français
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/galaxy-interface/tutorials/jupyterlab/tutorial.html&edit-text=&act=url">
+                日本語
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/galaxy-interface/tutorials/jupyterlab/tutorial.html&edit-text=&act=url">
+                Español
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/galaxy-interface/tutorials/jupyterlab/tutorial.html&edit-text=&act=url">
+                Português
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/galaxy-interface/tutorials/jupyterlab/tutorial.html&edit-text=&act=url">
+                العربية
+                </a>
+                
+                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fgalaxy-interface%2Ftutorials%2Fjupyterlab%2Ftutorial.html&edit-text=&act=url" title="">
+                And more!
+                </a>
+            </div>
+        </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
             </div>
 
             <div id="theme-selector" data-toggle="buttons">
@@ -138,6 +172,9 @@
                 <label data-value="rainbow" class="btn btn-secondary">
                     <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
                 </label>
+                <label data-value="progress" class="btn btn-secondary">
+                    <input type="radio" name="options" id="progress" autocomplete="off">🏳️‍🌈
+                </label>
                 <label data-value="halloween" class="btn btn-secondary">
                     <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
                 </label>
@@ -147,15 +184,50 @@
             </div>
 
         </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
+            </div>
+
+            
+            <div id="archive-selector">
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2021-02-01/topics/galaxy-interface/tutorials/jupyterlab/tutorial.html" title="Version 2021-02-01">2021-02-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2020-12-01/topics/galaxy-interface/tutorials/jupyterlab/tutorial.html" title="Version 2020-12-01">2020-12-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2020-11-01/topics/galaxy-interface/tutorials/jupyterlab/tutorial.html" title="Version 2020-11-01">2020-11-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
+            </div>
+
+        </div>
+
     </div>
 </li>
 
-
+                    <!--
                     <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/galaxyproject/training-material/edit/master/topics/galaxy-interface/tutorials/jupyterlab/tutorial.md">
+                        <a class="nav-link" href="https://github.com/galaxyproject/training-material/edit/main/topics/galaxy-interface/tutorials/jupyterlab/tutorial.md">
                             <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit
                         </a>
                     </li>
+                    -->
+
+                     <!-- Search bar-->
+                    <li class="nav-item">
+                      <div id="navbarSupportedContent">
+                        <!-- Search form -->
+                        <form class="form-inline mr-auto" method="GET" action="/training-material/search">
+                          <i class="fas fa-search nav-link" aria-hidden="true"></i>
+                          <div class="md-form mb-2">
+                            <input name="query" class="form-control nicer" type="text" placeholder="Search Tutorials" aria-label="Search">
+                          </div>
+                        </form>
+                      </div>
+                    </li>
+
                 </ul>
             </div>
         </div>
@@ -211,7 +283,7 @@
   },
   "interactivityType": "mixed",
   "isAccessibleForFree": true,
-  "license": "https://github.com/galaxyproject/training-material/blob/master/LICENSE.md",
+  "license": "https://github.com/galaxyproject/training-material/blob/main/LICENSE.md",
   "producer": {
     "@type": "Organization",
     "email": "galaxytrainingnetwork@gmail.com",
@@ -268,7 +340,7 @@
 }
     </script>
 
-    <section class="tutorial">
+    <section class="tutorial topic-galaxy-interface">
         <h1 data-toc-skip>JupyterLab in Galaxy</h1>
         
 
@@ -323,7 +395,7 @@
             
 
             
-            <p><strong><i class="fas fa-hourglass-half" aria-hidden="true"></i><span class="visually-hidden">time</span> Time estimation:</strong> 1 hour</p>
+            <div><strong><i class="fas fa-hourglass-half" aria-hidden="true"></i><span class="visually-hidden">time</span> Time estimation:</strong> 1 hour</div>
             
 
             
@@ -333,7 +405,7 @@
 
             
 
-            <p><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Jun 15, 2020 </p>
+            <div><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Jun 17, 2021 </div>
         </blockquote>
 
         <div class="container">
@@ -363,7 +435,6 @@ We will introduce additional benefits of using JupyterLab as you cover the lesso
 
 <ol id="markdown-toc">
   <li><a href="#jupyterlab" id="markdown-toc-jupyterlab">JupyterLab</a>    <ol>
-      <li><a href="#opening-up-jupyterlab" id="markdown-toc-opening-up-jupyterlab">Opening up JupyterLab</a></li>
       <li><a href="#start-your-first-notebook" id="markdown-toc-start-your-first-notebook">Start your first notebook</a></li>
       <li><a href="#graph-display-in-jupyterlab-with-python" id="markdown-toc-graph-display-in-jupyterlab-with-python">Graph Display in JupyterLab with Python</a></li>
     </ol>
@@ -379,35 +450,10 @@ We will introduce additional benefits of using JupyterLab as you cover the lesso
 
 <h1 id="jupyterlab">JupyterLab</h1>
 
-<h2 id="opening-up-jupyterlab">Opening up JupyterLab</h2>
+<p>Opening up <span class="tool" data-tool="interactive_tool_jupyter_notebook" title="Tested with interactive_tool_jupyter_notebook"><strong>JupyterLab</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: interactive_tool_jupyter_notebook</span></span>  is quite easy:</p>
 
-<blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-launch-jupyterlab"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Launch JupyterLab</h3>
-
-  <p>Depending on which server you are using, you may be able to run JupyterLab directly in <span class="notranslate">Galaxy</span>. If that is not available, <a href="https://jupyter.org/try">Try JupyterLab</a> can be an alte<span class="notranslate">rna</span>tive.</p>
-
-  <blockquote class="tip">
-    <h3 id="tip-tip-launch-jupyterlab-in-galaxy"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Launch JupyterLab in <span class="notranslate">Galaxy</span></h3>
-    <p>Currently JupyterLab in <span class="notranslate">Galaxy</span> is available on <a href="https://live.usegalaxy.eu">Live.use<span class="notranslate">Galaxy</span>.eu</a></p>
-
-    <ol>
-      <li>Open the JupyterLab tool <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> by clicking <a href="https://live.usegalaxy.eu/?tool_id=interactive_tool_jupyter_notebook" target="_blank">here</a></li>
-      <li>Click Execute</li>
-      <li>The tool will start running and will stay running permanently</li>
-      <li>Click on the “User” menu at the top and go to “Active Interactive Tools” and locate the JupyterLab instance you started.</li>
-      <li>Click on your JupyterLab instance</li>
-    </ol>
-  </blockquote>
-
-  <blockquote class="tip">
-    <h3 id="tip-tip-launch-try-jupyterlab-if-not-available-on-galaxy"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Launch Try JupyterLab if not available on <span class="notranslate">Galaxy</span></h3>
-
-    <p>If JupyterLab is not available on the <span class="notranslate">Galaxy</span> instance:</p>
-    <ol>
-      <li>Start <a href="https://mybinder.org/v2/gh/jupyterlab/jupyterlab-demo/try.jupyter.org?urlpath=lab">Try JupyterLab</a></li>
-    </ol>
-  </blockquote>
-</blockquote>
+<!--SNIPPET-->
+<blockquote class="notranslate hands_on">  <h3 data-toc-skip="" id="-hands-on-launch-jupyterlab"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"></span> Hands-on: Launch JupyterLab</h3>  <blockquote class="tip">  <h3 data-toc-skip="" id="tip-tip-launch-jupyterlab-in-galaxy"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Launch JupyterLab in <span class="notranslate">Galaxy</span></h3>  <p>Currently JupyterLab in <span class="notranslate">Galaxy</span> is available on <a href="https://live.usegalaxy.eu">Live.use<span class="notranslate">Galaxy</span>.eu</a>, <a href="https://usegalaxy.org">use<span class="notranslate">galaxy</span>.org</a> and <a href="https://usegalaxy.eu">use<span class="notranslate">galaxy</span>.eu</a>.</p>  <blockquote class="notranslate hands_on">    <h3 data-toc-skip="" id="hands_on-hands-on-run-jupyterlab"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Run JupyterLab</h3>    <ol>      <li><span class="tool" data-tool="interactive_tool_jupyter_notebook" title="Tested with interactive_tool_jupyter_notebook"><strong>Interactive Jupyter Notebook</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: interactive_tool_jupyter_notebook</span></span> :</li>      <li>Click Execute</li>      <li>The tool will start running and will stay running permanently</li>      <li>Click on the <strong>User</strong> menu at the top and go to <strong>Active Interactive Tools</strong> and locate the JupyterLab instance you started.</li>      <li>Click on your JupyterLab instance</li>    </ol>  </blockquote></blockquote>  <blockquote class="tip">  <h3 data-toc-skip="" id="tip-tip-launch-try-jupyterlab-if-not-available-on-galaxy"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Launch Try JupyterLab if not available on <span class="notranslate">Galaxy</span></h3>  <p>If JupyterLab is not available on the <span class="notranslate">Galaxy</span> instance:</p>  <ol>    <li>Start <a href="https://mybinder.org/v2/gh/jupyterlab/jupyterlab-demo/try.jupyter.org?urlpath=lab">Try JupyterLab</a></li>  </ol></blockquote></blockquote>
 
 <p>You should now be looking at a page with the JupyterLab interface:</p>
 
@@ -550,6 +596,20 @@ Alte<span class="notranslate">rna</span>tively, you can also:</li>
 
 <p>This will create a new notebook <code class="language-plaintext highlighter-rouge">.pynb</code> file in your history every time you click on this icon.</p>
 
+<blockquote class="notranslate hands_on">
+  <h3 id="hands_on-hands-on-closing-jupyterlab"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Closing JupyterLab</h3>
+
+  <ol>
+    <li>
+      <p>Click <strong>User</strong>: <strong>Active Interactive Tools</strong></p>
+    </li>
+    <li>
+      <p>Tick <i class="far fa-check-square" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-selector</span> the box of your Jupyter Interactive Tool, and click <strong>Stop</strong></p>
+    </li>
+  </ol>
+
+</blockquote>
+
 <h1 class="no_toc" id="conclusion">Conclusion</h1>
 
 
@@ -563,6 +623,13 @@ Alte<span class="notranslate">rna</span>tively, you can also:</li>
                             
                         </ul>
                     </blockquote>
+                    
+
+                    <h1>Frequently Asked Questions</h1>
+                    Have questions about this tutorial? Check out the  <a href="/training-material/topics/galaxy-interface/faqs/">FAQ page for the Using Galaxy and Managing your Data topic</a> to see if your question is listed there.
+                    If not, please ask your question on the <a href="https://gitter.im/Galaxy-Training-Network/Lobby">GTN Gitter Channel</a> or the
+                    <a href="https://help.galaxyproject.org">Galaxy Help Forum</a>
+
                     
 
                     
@@ -605,7 +672,7 @@ Alte<span class="notranslate">rna</span>tively, you can also:</li>
                     <h1>Citing this Tutorial</h1>
                     <p>
                         <ol>
-                            <li id="citation-text">Anne Fouilloux, 2020 <b>JupyterLab in Galaxy (Galaxy Training Materials)</b>. <a href="/training-material/topics/galaxy-interface/tutorials/jupyterlab/tutorial.html">/training-material/topics/galaxy-interface/tutorials/jupyterlab/tutorial.html</a> Online; accessed TODAY
+                            <li id="citation-text">Anne Fouilloux, 2021 <b>JupyterLab in Galaxy (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/galaxy-interface/tutorials/jupyterlab/tutorial.html">https://training.galaxyproject.org/training-material/topics/galaxy-interface/tutorials/jupyterlab/tutorial.html</a> Online; accessed TODAY
                             </li>
                             <li>
                             Batut et al., 2018 <b>Community-Driven Data Analysis Training for Biology</b> Cell Systems <a href="https://doi.org/10.1016%2Fj.cels.2018.05.012">10.1016/j.cels.2018.05.012</a>
@@ -622,10 +689,10 @@ Alte<span class="notranslate">rna</span>tively, you can also:</li>
 <code id="citation-code">@misc{galaxy-interface-jupyterlab,
     author = "Anne Fouilloux",
     title = "JupyterLab in Galaxy (Galaxy Training Materials)",
-    year = "2020",
+    year = "2021",
     month = "06",
-    day = "15"
-    url = "\url{/training-material/topics/galaxy-interface/tutorials/jupyterlab/tutorial.html}",
+    day = "17"
+    url = "\url{https://training.galaxyproject.org/training-material/topics/galaxy-interface/tutorials/jupyterlab/tutorial.html}",
     note = "[Online; accessed TODAY]"
 }
 @article{Batut_2018,
@@ -653,15 +720,15 @@ document.getElementById("citation-code").innerHTML = document.getElementById("ci
 document.getElementById("citation-text").innerHTML = document.getElementById("citation-text").innerHTML.replace("TODAY", d.toDateString());
 </script>
 
+                    <h3><i class="far fa-thumbs-up" aria-hidden="true"></i><span class="visually-hidden">congratulations</span> Congratulations on successfully completing this tutorial!</h3>
+
+                    
+
+                    
+
                 </div>
             </div>
         </div>
-
-        <h3><i class="far fa-thumbs-up" aria-hidden="true"></i><span class="visually-hidden">congratulations</span> Congratulations on successfully completing this tutorial!</h3>
-
-        
-
-        
     </section>
 </div>
 
@@ -675,7 +742,7 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
         </p>
         <p>
             Found a typo? Something is wrong in this tutorial? Edit it on
-            <a href="https://github.com/galaxyproject/training-material/tree/master/topics/galaxy-interface/tutorials/jupyterlab/tutorial.md">GitHub</a>.
+            <a href="https://github.com/galaxyproject/training-material/tree/main/topics/galaxy-interface/tutorials/jupyterlab/tutorial.md">GitHub</a>.
         </p>
         <p>
     The content of the tutorials and website is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.

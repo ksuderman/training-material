@@ -70,59 +70,93 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Language Selector">
-                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Language
-                        </a>
-                        <div class="dropdown-menu">
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fmapping%2Ftutorial.html&edit-text=&act=url" title="">
-                                Français
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fmapping%2Ftutorial.html&edit-text=&act=url" title="">
-                                日本語
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fmapping%2Ftutorial.html&edit-text=&act=url" title="">
-                                Español
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fmapping%2Ftutorial.html&edit-text=&act=url" title="">
-                                Português
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fmapping%2Ftutorial.html&edit-text=&act=url" title="">
-                                العربية
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fmapping%2Ftutorial.html&edit-text=&act=url" title="">
-                                And more!
-                            </a>
-                        </div>
-                    </li>
-
-                    <li class="nav-item dropdown">
     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
         <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
     </a>
     <div class="dropdown-menu dropdown-menu-right">
+        <!-- disable Tess for now
         <form method="get" action="https://tess.elixir-europe.org/materials">
             <input type="text" id="search" name="q" value="" style="margin-left: 0.5em;/*! border-radius: 0px; */">
             <input type="hidden" value="Galaxy Training" name="content_provider">
             <input type="submit" value="Search on TeSS" style="width: 92%;border-radius: 0px;margin: 0.5em;background: #f47d20;border: 0px;padding: 0.25em;" class="">
         </form>
+        -->
 
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQ">
-            FAQ
+        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQs">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
         </a>
+        
+        <a class="dropdown-item" href="/training-material/topics/sequence-analysis/faqs/" title="Check our FAQs for the Sequence analysis topic">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
+        </a>
+        
         <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
-            Discuss on Galaxy Help
+            <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
+        </a>
+        <a class="dropdown-item" href="https://gitter.im/Galaxy-Training-Network/Lobby" title="Discuss on gitter">
+           <i class="fab fa-gitter" aria-hidden="true"></i><span class="visually-hidden">gitter</span> Discuss on Gitter
+        </a>
+    </div>
+</li>
+
+
+                    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Extras">
+        <i class="far fa-star" aria-hidden="true"></i><span class="visually-hidden">galaxy-star</span> Extras
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+
+        
+        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/sequence-analysis/tutorials/mapping/tutorial.md" title="Edit on GitHub">
+          <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
+        </a>
+
+        <a class="dropdown-item" href="/training-material/stats.html" title="Show view statistics about this rrepository">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN statistics
+        </a>
+
+        <a class="dropdown-item" href="https://plausible.galaxyproject.eu/training.galaxyproject.org?period=12mo&page=/training-material/topics/sequence-analysis/tutorials/mapping/tutorial.html" title="Show view statistics of this page">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
         </a>
 
         <div class="dropdown-item">
             <div>
-                Theme
+                <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Translate this page
+            </div>
+
+            <div id="lang-selector">
+                
+                <strong>Automatic Translations</strong>
+
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/sequence-analysis/tutorials/mapping/tutorial.html&edit-text=&act=url">
+                Français
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/sequence-analysis/tutorials/mapping/tutorial.html&edit-text=&act=url">
+                日本語
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/sequence-analysis/tutorials/mapping/tutorial.html&edit-text=&act=url">
+                Español
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/sequence-analysis/tutorials/mapping/tutorial.html&edit-text=&act=url">
+                Português
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/sequence-analysis/tutorials/mapping/tutorial.html&edit-text=&act=url">
+                العربية
+                </a>
+                
+                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fsequence-analysis%2Ftutorials%2Fmapping%2Ftutorial.html&edit-text=&act=url" title="">
+                And more!
+                </a>
+            </div>
+        </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
             </div>
 
             <div id="theme-selector" data-toggle="buttons">
@@ -138,6 +172,9 @@
                 <label data-value="rainbow" class="btn btn-secondary">
                     <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
                 </label>
+                <label data-value="progress" class="btn btn-secondary">
+                    <input type="radio" name="options" id="progress" autocomplete="off">🏳️‍🌈
+                </label>
                 <label data-value="halloween" class="btn btn-secondary">
                     <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
                 </label>
@@ -147,15 +184,50 @@
             </div>
 
         </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
+            </div>
+
+            
+            <div id="archive-selector">
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2021-02-01/topics/sequence-analysis/tutorials/mapping/tutorial.html" title="Version 2021-02-01">2021-02-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2020-12-01/topics/sequence-analysis/tutorials/mapping/tutorial.html" title="Version 2020-12-01">2020-12-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2020-11-01/topics/sequence-analysis/tutorials/mapping/tutorial.html" title="Version 2020-11-01">2020-11-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
+            </div>
+
+        </div>
+
     </div>
 </li>
 
-
+                    <!--
                     <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/galaxyproject/training-material/edit/master/topics/sequence-analysis/tutorials/mapping/tutorial.md">
+                        <a class="nav-link" href="https://github.com/galaxyproject/training-material/edit/main/topics/sequence-analysis/tutorials/mapping/tutorial.md">
                             <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit
                         </a>
                     </li>
+                    -->
+
+                     <!-- Search bar-->
+                    <li class="nav-item">
+                      <div id="navbarSupportedContent">
+                        <!-- Search form -->
+                        <form class="form-inline mr-auto" method="GET" action="/training-material/search">
+                          <i class="fas fa-search nav-link" aria-hidden="true"></i>
+                          <div class="md-form mb-2">
+                            <input name="query" class="form-control nicer" type="text" placeholder="Search Tutorials" aria-label="Search">
+                          </div>
+                        </form>
+                      </div>
+                    </li>
+
                 </ul>
             </div>
         </div>
@@ -211,7 +283,7 @@
   },
   "interactivityType": "mixed",
   "isAccessibleForFree": true,
-  "license": "https://github.com/galaxyproject/training-material/blob/master/LICENSE.md",
+  "license": "https://github.com/galaxyproject/training-material/blob/main/LICENSE.md",
   "producer": {
     "@type": "Organization",
     "email": "galaxytrainingnetwork@gmail.com",
@@ -326,7 +398,7 @@
 }
     </script>
 
-    <section class="tutorial">
+    <section class="tutorial topic-sequence-analysis">
         <h1 data-toc-skip>Mapping</h1>
         
 
@@ -413,7 +485,7 @@
             
 
             
-            <p><strong><i class="fas fa-hourglass-half" aria-hidden="true"></i><span class="visually-hidden">time</span> Time estimation:</strong> 1 hour</p>
+            <div><strong><i class="fas fa-hourglass-half" aria-hidden="true"></i><span class="visually-hidden">time</span> Time estimation:</strong> 1 hour</div>
             
 
             
@@ -422,7 +494,7 @@
             
 
             
-            <p id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials</strong></p>
+            <div id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials</strong></div>
             <ul>
                 <div class="supporting_material">
                 
@@ -451,11 +523,15 @@
 
                 
                     <li class="btn btn-default supporting_material">
-<a class="topic-icon" href="https://github.com/galaxyproject/training-material/tree/master/topics/sequence-analysis/tutorials/mapping/tours/">
+<a class="topic-icon" href="https://github.com/galaxyproject/training-material/tree/main/topics/sequence-analysis/tutorials/mapping/tours/">
     <i class="fas fa-magic" aria-hidden="true"></i><span class="visually-hidden">interactive_tour</span> Tours
 </a>
 
 </li>
+                
+
+                
+                
                 
 
                 
@@ -467,13 +543,11 @@
     <ul class="dropdown-menu">
     
         <li>
-            <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/tree/master/topics/sequence-analysis/docker" title="Docker image for this tutorial">
+            <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/tree/main/topics/sequence-analysis/docker" title="Docker image for this tutorial">
                 <i class="fab fa-docker" aria-hidden="true"></i><span class="visually-hidden">docker_image</span> Docker image
             </a>
         </li>
     
-    
-        
     
         
     
@@ -542,8 +616,18 @@
         
     
         
-        <a class="dropdown-item" href="https://www.galaxytrakr.org/" title="GalaxyTrakr">
-            GalaxyTrakr
+    
+        
+    
+        
+        <a class="dropdown-item" href="https://hicexplorer.usegalaxy.eu" title="HiCExplorer">
+            HiCExplorer
+        </a>
+        
+    
+        
+        <a class="dropdown-item" href="https://humancellatlas.usegalaxy.eu/" title="Human Cell Atlas">
+            Human Cell Atlas
         </a>
         
     
@@ -572,7 +656,9 @@
         
     
         
-    
+        <a class="dropdown-item" href="https://metagenomics.usegalaxy.eu/" title="Metagenomics">
+            Metagenomics
+        </a>
         
     
         
@@ -582,7 +668,9 @@
         
     
         
-    
+        <a class="dropdown-item" href="https://nanopore.usegalaxy.eu/" title="NanoGalaxy">
+            NanoGalaxy
+        </a>
         
     
         
@@ -590,11 +678,19 @@
         
     
         
-    
+        <a class="dropdown-item" href="https://plants.usegalaxy.eu/" title="Plant Anaylsis Workbench">
+            Plant Anaylsis Workbench
+        </a>
         
     
         
     
+        
+    
+        
+        <a class="dropdown-item" href="https://singlecell.usegalaxy.eu/" title="Single Cell Omics workbench">
+            Single Cell Omics workbench
+        </a>
         
     
         
@@ -605,6 +701,10 @@
     
         
     
+        
+        <a class="dropdown-item" href="https://usegalaxy.be/" title="UseGalaxy.be">
+            UseGalaxy.be
+        </a>
         
     
         
@@ -641,6 +741,8 @@
     
         
     
+        
+    
     </ul>
 
 
@@ -650,7 +752,7 @@
             </ul>
             
 
-            <p><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Jan 20, 2020 </p>
+            <div><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Apr 19, 2021 </div>
         </blockquote>
 
         <div class="container">
@@ -694,29 +796,10 @@
     <li>
       <p>Create a new history for this tutorial and give it a proper name</p>
 
-      <blockquote class="tip">
-
-        <h3 id="tip-tip-creating-a-new-history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Creating a new history</h3>
-
-        <p>Click the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> icon at the top of the history panel</p>
-
-        <p>If the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> is missing:</p>
-        <ol>
-          <li>Click on the <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-gear</span> icon (<strong>History options</strong>) on the top of the history panel</li>
-          <li>Select the option <strong>Create New</strong> from the menu</li>
-        </ol>
-      </blockquote>
-
-      <blockquote class="tip">
-
-        <h3 id="tip-tip-renaming-a-history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Renaming a history</h3>
-
-        <ol>
-          <li>Click on <strong>Unnamed history</strong> (or the current name of the history) (<strong>Click to rename history</strong>) at the top of your history panel</li>
-          <li>Type the new name</li>
-          <li>Press <kbd>Enter</kbd></li>
-        </ol>
-      </blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-creating-a-new-history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Creating a new history</h3>  <p>Click the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> icon at the top of the history panel.</p>  <p>If the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> is missing:</p>  <ol>  <li>Click on the <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-gear</span> icon (<strong>History options</strong>) on the top of the history panel</li>  <li>Select the option <strong>Create New</strong> from the menu</li></ol></blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-renaming-a-history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Renaming a history</h3>  <ol>  <li>Click on <strong>Unnamed history</strong> (or the current name of the history) (<strong>Click to rename history</strong>) at the top of your history panel</li>  <li>Type the new name</li>  <li>Press <kbd>Enter</kbd></li></ol></blockquote>
     </li>
     <li>
       <p>Import <code class="language-plaintext highlighter-rouge">wt_H3K4me3_read1.fastq.gz</code> and <code class="language-plaintext highlighter-rouge">wt_H3K4me3_read2.fastq.gz</code> from <a href="https://zenodo.org/record/1324070">Zenodo</a> or from the data library (ask your instructor)</p>
@@ -725,63 +808,18 @@
 https://zenodo.org/record/1324070/files/wt_H3K4me3_read2.fastq.gz
 </code></pre></div>      </div>
 
-      <blockquote class="tip">
-
-        <h3 id="tip-tip-importing-data-via-links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Importing data via links</h3>
-
-        <ul>
-          <li>Copy the link location</li>
-          <li>
-            <p>Open the <span class="notranslate">Galaxy</span> Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-upload</span> on the top-right of the tool panel)</p>
-          </li>
-          <li>Select <strong>Paste/Fetch Data</strong></li>
-          <li>
-            <p>Paste the link into the text field</p>
-          </li>
-          <li>
-            <p>Press <strong>Start</strong></p>
-          </li>
-          <li><strong>Close</strong> the window</li>
-        </ul>
-
-        <p>By default, <span class="notranslate">Galaxy</span> uses the URL as the name, so rename the files with a more useful name.</p>
-
-      </blockquote>
-
-      <blockquote class="tip">
-
-        <h3 id="tip-tip-importing-data-from-a-data-library"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Importing data from a data library</h3>
-
-        <p>As an alte<span class="notranslate">rna</span>tive to uploading the data from a URL or your computer, the files may also have been made available from a <em>shared data library</em>:</p>
-
-        <ul>
-          <li>
-            <p>Go into <strong>Shared data</strong> (top panel) then <strong>Data libraries</strong></p>
-          </li>
-          <li>
-            <p>Find the correct folder (ask your instructor)</p>
-          </li>
-          <li>Select the desired files</li>
-          <li>Click on the <strong>To History</strong> button near the top and select <strong>as Datasets</strong> from the dropdown menu</li>
-          <li>In the pop-up window, select the history you want to import the files to (or create a new one)</li>
-          <li>Click on <strong>Import</strong></li>
-        </ul>
-      </blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-importing-via-links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing via links</h3>  <ul>  <li>Copy the link location</li>  <li>    <p>Open the <span class="notranslate">Galaxy</span> Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-upload</span> on the top-right of the tool panel)</p>  </li>  <li>Select <strong>Paste/Fetch Data</strong></li>  <li>    <p>Paste the link into the text field</p>  </li>  <li>    <p>Press <strong>Start</strong></p>  </li>  <li>    <p><strong>Close</strong> the window</p>  </li>  <li>By default, <span class="notranslate">Galaxy</span> uses the URL as the name, so rename the files with a more useful name.</li></ul></blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-importing-data-from-a-data-library"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing data from a data library</h3>  <p>As an alte<span class="notranslate">rna</span>tive to uploading the data from a URL or your computer, the files may also have been made available from a <em>shared data library</em>:</p>  <ul>  <li>    <p>Go into <strong>Shared data</strong> (top panel) then <strong>Data libraries</strong></p>  </li>  <li>    <p>Find the correct folder (ask your instructor)</p>  </li>  <li>Select the desired files</li>  <li>Click on the <strong>To History</strong> button near the top and select <strong>as Datasets</strong> from the dropdown menu</li>  <li>In the pop-up window, select the history you want to import the files to (or create a new one)</li>  <li>Click on <strong>Import</strong></li></ul></blockquote>
 
       <p>As default, <span class="notranslate">Galaxy</span> takes the link as name, so rename them.</p>
     </li>
     <li>
       <p>Rename the files to <code class="language-plaintext highlighter-rouge"><span class="notranslate">reads</span>_1</code> and <code class="language-plaintext highlighter-rouge"><span class="notranslate">reads</span>_2</code></p>
 
-      <blockquote class="tip">
-
-        <h3 id="tip-tip-renaming-a-dataset"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Renaming a dataset</h3>
-        <ul>
-          <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>
-          <li>In the central panel, change the <strong>Name</strong> field</li>
-          <li>Click the <strong>Save</strong> button</li>
-        </ul>
-      </blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-renaming-a-dataset"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Renaming a dataset</h3>  <ul>  <li>Click on the <i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-pencil</span> <strong>pencil icon</strong> for the dataset to edit its attributes</li>  <li>In the central panel, change the <strong>Name</strong> field</li>  <li>Click the <strong>Save</strong> button</li></ul></blockquote>
     </li>
   </ol>
 
@@ -825,7 +863,7 @@ https://zenodo.org/record/1324070/files/wt_H3K4me3_read2.fastq.gz
 <blockquote class="notranslate hands_on">
   <h3 id="hands_on-hands-on-mapping-with-bowtie2"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: <span class="notranslate">Mapping</span> with Bowtie2</h3>
   <ol>
-    <li><strong>Bowtie2</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with the following parameters
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.4.2+galaxy0" title="Tested with toolshed.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.4.2+galaxy0"><strong>Bowtie2</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/devteam/bowtie2/bowtie2/2.4.2+<span class="notranslate">galaxy</span>0</span></span>  with the following parameters
       <ul>
         <li><em>“Is this single or paired library”</em>: <code class="language-plaintext highlighter-rouge">Paired-end</code>
           <ul>
@@ -1021,7 +1059,7 @@ https://zenodo.org/record/1324070/files/wt_H3K4me3_read2.fastq.gz
 <blockquote class="notranslate hands_on">
   <h3 id="hands_on-hands-on-summary-of-mapping-quality"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Summary of <span class="notranslate">mapping</span> quality</h3>
   <ol>
-    <li><strong>Samtools stats - generate statistics for BAM dataset</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with the following parameters
+    <li><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/devteam/samtools_stats/samtools_stats/2.0.2+galaxy2" title="Tested with toolshed.g2.bx.psu.edu/repos/devteam/samtools_stats/samtools_stats/2.0.2+galaxy2"><strong>Samtools Stats</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/devteam/samtools_stats/samtools_stats/2.0.2+<span class="notranslate">galaxy</span>2</span></span>  with the following parameters
       <ul>
         <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“BAM file”</em>: <code class="language-plaintext highlighter-rouge">aligned <span class="notranslate">reads</span></code> (output of <strong>Bowtie2</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span>)</li>
         <li><em>“Use reference sequence”</em>: <code class="language-plaintext highlighter-rouge">Locally cached</code>
@@ -1129,7 +1167,7 @@ https://zenodo.org/record/1324070/files/wt_H3K4me3_read2.fastq.gz
 
 <h1 id="visualization-using-a-genome-browser-jbrowse">Visualization using a Genome Browser (JBrowse)</h1>
 
-<p>JBrowse is an alte<span class="notranslate">rna</span>tive, web-based genome browser. Whereas IGV is a piece of software you must download and run, JBrowse instances are websites hosted online that provide an interface to browse genomics data. We’ll use it to visualise the mapped <span class="notranslate">reads</span>.</p>
+<p><span class="tool" data-tool="toolshed.g2.bx.psu.edu/repos/iuc/jbrowse/jbrowse/1.16.11+galaxy0" title="Tested with toolshed.g2.bx.psu.edu/repos/iuc/jbrowse/jbrowse/1.16.11+galaxy0"><strong>JBrowse</strong> <i class="fas fa-wrench" aria-hidden="true"></i><i aria-hidden="true" class="fas fa-cog"></i><span class="visually-hidden">Tool: <span class="notranslate">toolshed</span>.g2.bx.psu.edu/repos/iuc/jbrowse/jbrowse/1.16.11+<span class="notranslate">galaxy</span>0</span></span>  is an alte<span class="notranslate">rna</span>tive, web-based genome browser. Whereas IGV is a piece of software you must download and run, JBrowse instances are websites hosted online that provide an interface to browse genomics data. We’ll use it to visualise the mapped <span class="notranslate">reads</span>.</p>
 
 <blockquote class="notranslate hands_on">
   <h3 id="hands_on-hands-on-visualization-of-the-reads-in-jbrowse"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Visualization of the <span class="notranslate">reads</span> in JBrowse</h3>
@@ -1258,9 +1296,16 @@ https://zenodo.org/record/1324070/files/wt_H3K4me3_read2.fastq.gz
                     </blockquote>
                     
 
+                    <h1>Frequently Asked Questions</h1>
+                    Have questions about this tutorial? Check out the  <a href="/training-material/topics/sequence-analysis/faqs/">FAQ page for the Sequence analysis topic</a> to see if your question is listed there.
+                    If not, please ask your question on the <a href="https://gitter.im/Galaxy-Training-Network/Lobby">GTN Gitter Channel</a> or the
+                    <a href="https://help.galaxyproject.org">Galaxy Help Forum</a>
+
                     
                     <h1 data-toc-skip>Useful literature</h1>
                     <p>Further information, including links to documentation and original publications, regarding the tools, analysis techniques and the interpretation of results described in this tutorial can be found <a href="/training-material/topics/sequence-analysis#references">here</a>.</p>
+                    
+
                     
 
                     
@@ -1301,7 +1346,7 @@ https://zenodo.org/record/1324070/files/wt_H3K4me3_read2.fastq.gz
                     <h1>Citing this Tutorial</h1>
                     <p>
                         <ol>
-                            <li id="citation-text">Joachim Wolff, Bérénice Batut, Helena Rasche, 2020 <b>Mapping (Galaxy Training Materials)</b>. <a href="/training-material/topics/sequence-analysis/tutorials/mapping/tutorial.html">/training-material/topics/sequence-analysis/tutorials/mapping/tutorial.html</a> Online; accessed TODAY
+                            <li id="citation-text">Joachim Wolff, Bérénice Batut, Helena Rasche, 2021 <b>Mapping (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/sequence-analysis/tutorials/mapping/tutorial.html">https://training.galaxyproject.org/training-material/topics/sequence-analysis/tutorials/mapping/tutorial.html</a> Online; accessed TODAY
                             </li>
                             <li>
                             Batut et al., 2018 <b>Community-Driven Data Analysis Training for Biology</b> Cell Systems <a href="https://doi.org/10.1016%2Fj.cels.2018.05.012">10.1016/j.cels.2018.05.012</a>
@@ -1318,10 +1363,10 @@ https://zenodo.org/record/1324070/files/wt_H3K4me3_read2.fastq.gz
 <code id="citation-code">@misc{sequence-analysis-mapping,
     author = "Joachim Wolff and Bérénice Batut and Helena Rasche",
     title = "Mapping (Galaxy Training Materials)",
-    year = "2020",
-    month = "01",
-    day = "20"
-    url = "\url{/training-material/topics/sequence-analysis/tutorials/mapping/tutorial.html}",
+    year = "2021",
+    month = "04",
+    day = "19"
+    url = "\url{https://training.galaxyproject.org/training-material/topics/sequence-analysis/tutorials/mapping/tutorial.html}",
     note = "[Online; accessed TODAY]"
 }
 @article{Batut_2018,
@@ -1349,19 +1394,15 @@ document.getElementById("citation-code").innerHTML = document.getElementById("ci
 document.getElementById("citation-text").innerHTML = document.getElementById("citation-text").innerHTML.replace("TODAY", d.toDateString());
 </script>
 
-                </div>
-            </div>
-        </div>
+                    <h3><i class="far fa-thumbs-up" aria-hidden="true"></i><span class="visually-hidden">congratulations</span> Congratulations on successfully completing this tutorial!</h3>
 
-        <h3><i class="far fa-thumbs-up" aria-hidden="true"></i><span class="visually-hidden">congratulations</span> Congratulations on successfully completing this tutorial!</h3>
+                    
 
-        
-
-        
-        <blockquote class="agenda follow-up">
-            <strong class="follow-up"><i class="fas fa-graduation-cap" aria-hidden="true"></i><span class="visually-hidden">curriculum</span> Do you want to extend your knowledge? Follow one of our recommended follow-up trainings:</strong>
-            <ul>
-                
+                    
+                    <blockquote class="agenda follow-up">
+                        <strong class="follow-up"><i class="fas fa-graduation-cap" aria-hidden="true"></i><span class="visually-hidden">curriculum</span> Do you want to extend your knowledge? Follow one of our recommended follow-up trainings:</strong>
+                        <ul>
+                            
     <li>
     
         
@@ -1370,6 +1411,12 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
         
             <ul>
                 
+                    
+                        
+                    
+                        
+                    
+                        
                     
                         
                     
@@ -1411,6 +1458,12 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
                                 
                             
                             </li>
+                        
+                    
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -1481,9 +1534,13 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
     
     </li>
 
-            </ul>
-        </blockquote>
-        
+                        </ul>
+                    </blockquote>
+                    
+
+                </div>
+            </div>
+        </div>
     </section>
 </div>
 
@@ -1497,7 +1554,7 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
         </p>
         <p>
             Found a typo? Something is wrong in this tutorial? Edit it on
-            <a href="https://github.com/galaxyproject/training-material/tree/master/topics/sequence-analysis/tutorials/mapping/tutorial.md">GitHub</a>.
+            <a href="https://github.com/galaxyproject/training-material/tree/main/topics/sequence-analysis/tutorials/mapping/tutorial.md">GitHub</a>.
         </p>
         <p>
     The content of the tutorials and website is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.

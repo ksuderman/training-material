@@ -70,59 +70,93 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Language Selector">
-                            <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Language
-                        </a>
-                        <div class="dropdown-menu">
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fproteomics%2Ftutorials%2Fproteome_annotation%2Ftutorial.html&edit-text=&act=url" title="">
-                                Français
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fproteomics%2Ftutorials%2Fproteome_annotation%2Ftutorial.html&edit-text=&act=url" title="">
-                                日本語
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fproteomics%2Ftutorials%2Fproteome_annotation%2Ftutorial.html&edit-text=&act=url" title="">
-                                Español
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fproteomics%2Ftutorials%2Fproteome_annotation%2Ftutorial.html&edit-text=&act=url" title="">
-                                Português
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fproteomics%2Ftutorials%2Fproteome_annotation%2Ftutorial.html&edit-text=&act=url" title="">
-                                العربية
-                            </a>
-                            
-                            <a class="dropdown-item" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fproteomics%2Ftutorials%2Fproteome_annotation%2Ftutorial.html&edit-text=&act=url" title="">
-                                And more!
-                            </a>
-                        </div>
-                    </li>
-
-                    <li class="nav-item dropdown">
     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Help">
         <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">help</span> Help
     </a>
     <div class="dropdown-menu dropdown-menu-right">
+        <!-- disable Tess for now
         <form method="get" action="https://tess.elixir-europe.org/materials">
             <input type="text" id="search" name="q" value="" style="margin-left: 0.5em;/*! border-radius: 0px; */">
             <input type="hidden" value="Galaxy Training" name="content_provider">
             <input type="submit" value="Search on TeSS" style="width: 92%;border-radius: 0px;margin: 0.5em;background: #f47d20;border: 0px;padding: 0.25em;" class="">
         </form>
+        -->
 
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQ">
-            FAQ
+        <a class="dropdown-item" href="/training-material/faq" title="Check our FAQs">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> FAQs
         </a>
+        
+        <a class="dropdown-item" href="/training-material/topics/proteomics/faqs/" title="Check our FAQs for the Proteomics topic">
+           <i class="far fa-question-circle" aria-hidden="true"></i><span class="visually-hidden">question</span> Topic FAQs
+        </a>
+        
         <a class="dropdown-item" href="https://help.galaxyproject.org/" title="Discuss on Galaxy Help">
-            Discuss on Galaxy Help
+            <i class="far fa-comments" aria-hidden="true"></i><span class="visually-hidden">feedback</span> Galaxy Help Forum
+        </a>
+        <a class="dropdown-item" href="https://gitter.im/Galaxy-Training-Network/Lobby" title="Discuss on gitter">
+           <i class="fab fa-gitter" aria-hidden="true"></i><span class="visually-hidden">gitter</span> Discuss on Gitter
+        </a>
+    </div>
+</li>
+
+
+                    <li class="nav-item dropdown">
+    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" title="Extras">
+        <i class="far fa-star" aria-hidden="true"></i><span class="visually-hidden">galaxy-star</span> Extras
+    </a>
+    <div class="dropdown-menu dropdown-menu-right">
+
+        
+        <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/edit/main/topics/proteomics/tutorials/proteome_annotation/tutorial.md" title="Edit on GitHub">
+          <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit on GitHub
+        </a>
+
+        <a class="dropdown-item" href="/training-material/stats.html" title="Show view statistics about this rrepository">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> GTN statistics
+        </a>
+
+        <a class="dropdown-item" href="https://plausible.galaxyproject.eu/training.galaxyproject.org?period=12mo&page=/training-material/topics/proteomics/tutorials/proteome_annotation/tutorial.html" title="Show view statistics of this page">
+            <i class="fas fa-chart-bar" aria-hidden="true"></i><span class="visually-hidden">galaxy-barchart</span> Page Metrics
         </a>
 
         <div class="dropdown-item">
             <div>
-                Theme
+                <i class="fas fa-language" aria-hidden="true"></i><span class="visually-hidden">language</span> Translate this page
+            </div>
+
+            <div id="lang-selector">
+                
+                <strong>Automatic Translations</strong>
+
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=fr&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/proteomics/tutorials/proteome_annotation/tutorial.html&edit-text=&act=url">
+                Français
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ja&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/proteomics/tutorials/proteome_annotation/tutorial.html&edit-text=&act=url">
+                日本語
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=es&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/proteomics/tutorials/proteome_annotation/tutorial.html&edit-text=&act=url">
+                Español
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=pt&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/proteomics/tutorials/proteome_annotation/tutorial.html&edit-text=&act=url">
+                Português
+                </a>
+                
+<a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=ar&u=https%3A%2F%2Ftraining.galaxyproject.org/topics/proteomics/tutorials/proteome_annotation/tutorial.html&edit-text=&act=url">
+                العربية
+                </a>
+                
+                <a class="btn btn-info" href="https://translate.google.com/translate?hl=jp&sl=en&tl=&u=https%3A%2F%2Ftraining.galaxyproject.org%2Ftopics%2Fproteomics%2Ftutorials%2Fproteome_annotation%2Ftutorial.html&edit-text=&act=url" title="">
+                And more!
+                </a>
+            </div>
+        </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-palette" aria-hidden="true"></i><span class="visually-hidden">gtn-theme</span> Theme
             </div>
 
             <div id="theme-selector" data-toggle="buttons">
@@ -138,6 +172,9 @@
                 <label data-value="rainbow" class="btn btn-secondary">
                     <input type="radio" name="options" id="rainbow" autocomplete="off"> Rainbow
                 </label>
+                <label data-value="progress" class="btn btn-secondary">
+                    <input type="radio" name="options" id="progress" autocomplete="off">🏳️‍🌈
+                </label>
                 <label data-value="halloween" class="btn btn-secondary">
                     <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
                 </label>
@@ -147,15 +184,50 @@
             </div>
 
         </div>
+
+        <div class="dropdown-item">
+            <div>
+                <i class="fas fa-history" aria-hidden="true"></i><span class="visually-hidden">galaxy-rulebuilder-history</span> Previous Versions
+            </div>
+
+            
+            <div id="archive-selector">
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2021-02-01/topics/proteomics/tutorials/proteome_annotation/tutorial.html" title="Version 2021-02-01">2021-02-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2020-12-01/topics/proteomics/tutorials/proteome_annotation/tutorial.html" title="Version 2020-12-01">2020-12-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/2020-11-01/topics/proteomics/tutorials/proteome_annotation/tutorial.html" title="Version 2020-11-01">2020-11-01</a>
+            
+                <a class="btn btn-warning" href="https://training.galaxyproject.org/archive/" title="Older Versions">Older Versions</a>
+            </div>
+
+        </div>
+
     </div>
 </li>
 
-
+                    <!--
                     <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/galaxyproject/training-material/edit/master/topics/proteomics/tutorials/proteome_annotation/tutorial.md">
+                        <a class="nav-link" href="https://github.com/galaxyproject/training-material/edit/main/topics/proteomics/tutorials/proteome_annotation/tutorial.md">
                             <i class="fab fa-github" aria-hidden="true"></i><span class="visually-hidden">github</span> Edit
                         </a>
                     </li>
+                    -->
+
+                     <!-- Search bar-->
+                    <li class="nav-item">
+                      <div id="navbarSupportedContent">
+                        <!-- Search form -->
+                        <form class="form-inline mr-auto" method="GET" action="/training-material/search">
+                          <i class="fas fa-search nav-link" aria-hidden="true"></i>
+                          <div class="md-form mb-2">
+                            <input name="query" class="form-control nicer" type="text" placeholder="Search Tutorials" aria-label="Search">
+                          </div>
+                        </form>
+                      </div>
+                    </li>
+
                 </ul>
             </div>
         </div>
@@ -211,7 +283,7 @@
   },
   "interactivityType": "mixed",
   "isAccessibleForFree": true,
-  "license": "https://github.com/galaxyproject/training-material/blob/master/LICENSE.md",
+  "license": "https://github.com/galaxyproject/training-material/blob/main/LICENSE.md",
   "producer": {
     "@type": "Organization",
     "email": "galaxytrainingnetwork@gmail.com",
@@ -241,6 +313,7 @@
   "name": "Hands-on for 'Annotating a protein list identified by LC-MS/MS experiments' tutorial",
   "url": "https://training.galaxyproject.org//training-material/topics/proteomics/tutorials/proteome_annotation/tutorial.html",
   "timeRequired": "PT1H",
+  "keywords": "DDA, human",
   "description": "The questions this  addresses are:\n - How to filter out technical contaminants?\n - How to check for tissue-specificity?\n - How to perform enrichment analysis?\n - How to map your protein list to pathways (Reactome)?\n - How to compare your proteome with other studies?\n\n\\nThe objectives are:\n - Execute a complete annotation pipeline of a protein list identified by LC-MS/MS experiments\n\n",
   "coursePrerequisites": [
     {
@@ -313,7 +386,7 @@
 }
     </script>
 
-    <section class="tutorial">
+    <section class="tutorial topic-proteomics">
         <h1 data-toc-skip>Annotating a protein list identified by LC-MS/MS experiments</h1>
         
 
@@ -371,7 +444,7 @@
             
 
             
-            <p><strong><i class="fas fa-hourglass-half" aria-hidden="true"></i><span class="visually-hidden">time</span> Time estimation:</strong> 1 hour</p>
+            <div><strong><i class="fas fa-hourglass-half" aria-hidden="true"></i><span class="visually-hidden">time</span> Time estimation:</strong> 1 hour</div>
             
 
             
@@ -380,7 +453,7 @@
             
 
             
-            <p id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials</strong></p>
+            <div id="supporting-materials"><strong><i class="fa fa-external-link" aria-hidden="true"></i> Supporting Materials</strong></div>
             <ul>
                 <div class="supporting_material">
                 
@@ -410,6 +483,10 @@
                 
 
                 
+                
+                
+
+                
                     <li class="btn btn-default supporting_material">
 
     <a href="#" class="btn btn-default dropdown-toggle topic-icon" data-toggle="dropdown" aria-expanded="false" title="Where to run the tutorial">
@@ -418,13 +495,11 @@
     <ul class="dropdown-menu">
     
         <li>
-            <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/tree/master/topics/proteomics/docker" title="Docker image for this tutorial">
+            <a class="dropdown-item" href="https://github.com/galaxyproject/training-material/tree/main/topics/proteomics/docker" title="Docker image for this tutorial">
                 <i class="fab fa-docker" aria-hidden="true"></i><span class="visually-hidden">docker_image</span> Docker image
             </a>
         </li>
     
-    
-        
     
         
     
@@ -543,11 +618,19 @@
         
     
         
+        <a class="dropdown-item" href="https://usegalaxy.be/" title="UseGalaxy.be">
+            UseGalaxy.be
+        </a>
+        
+    
+        
     
         
         <a class="dropdown-item" href="https://usegalaxy.fr/" title="UseGalaxy.fr">
             UseGalaxy.fr
         </a>
+        
+    
         
     
         
@@ -569,7 +652,7 @@
             </ul>
             
 
-            <p><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Jan 24, 2020 </p>
+            <div><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Jun 24, 2021 </div>
         </blockquote>
 
         <div class="container">
@@ -607,19 +690,11 @@ A total of 229 unique proteins were identified in EBC among which 153 proteins w
   <h3 id="hands_on-hands-on-data-upload"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Data upload</h3>
 
   <ol>
-    <li>Create a new history for this tutorial and give it a name
-      <blockquote class="tip">
+    <li>
+      <p>Create a new history for this tutorial and give it a name</p>
 
-        <h3 id="tip-tip-creating-a-new-history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Creating a new history</h3>
-
-        <p>Click the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> icon at the top of the history panel</p>
-
-        <p>If the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> is missing:</p>
-        <ol>
-          <li>Click on the <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-gear</span> icon (<strong>History options</strong>) on the top of the history panel</li>
-          <li>Select the option <strong>Create New</strong> from the menu</li>
-        </ol>
-      </blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-creating-a-new-history"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Creating a new history</h3>  <p>Click the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> icon at the top of the history panel.</p>  <p>If the <i class="fas fa-plus" aria-hidden="true"></i><span class="visually-hidden">new-history</span> is missing:</p>  <ol>  <li>Click on the <i class="fas fa-cog" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-gear</span> icon (<strong>History options</strong>) on the top of the history panel</li>  <li>Select the option <strong>Create New</strong> from the menu</li></ol></blockquote>
     </li>
     <li>
       <p>Import the files from <a href="https://zenodo.org/record/3405119">Zenodo</a> or from the shared data library (ask your instructors).</p>
@@ -629,48 +704,11 @@ https://zenodo.org/record/3405119/files/Bredberg.txt
 https://zenodo.org/record/3405119/files/Mucilli.txt
 </code></pre></div>      </div>
 
-      <blockquote class="tip">
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-importing-via-links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing via links</h3>  <ul>  <li>Copy the link location</li>  <li>    <p>Open the <span class="notranslate">Galaxy</span> Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-upload</span> on the top-right of the tool panel)</p>  </li>  <li>Select <strong>Paste/Fetch Data</strong></li>  <li>    <p>Paste the link into the text field</p>  </li>  <li>    <p>Press <strong>Start</strong></p>  </li>  <li>    <p><strong>Close</strong> the window</p>  </li>  <li>By default, <span class="notranslate">Galaxy</span> uses the URL as the name, so rename the files with a more useful name.</li></ul></blockquote>
 
-        <h3 id="tip-tip-importing-data-via-links"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Importing data via links</h3>
-
-        <ul>
-          <li>Copy the link location</li>
-          <li>
-            <p>Open the <span class="notranslate">Galaxy</span> Upload Manager (<i class="fas fa-upload" aria-hidden="true"></i><span class="visually-hidden"><span class="notranslate">galaxy</span>-upload</span> on the top-right of the tool panel)</p>
-          </li>
-          <li>Select <strong>Paste/Fetch Data</strong></li>
-          <li>
-            <p>Paste the link into the text field</p>
-          </li>
-          <li>
-            <p>Press <strong>Start</strong></p>
-          </li>
-          <li><strong>Close</strong> the window</li>
-        </ul>
-
-        <p>By default, <span class="notranslate">Galaxy</span> uses the URL as the name, so rename the files with a more useful name.</p>
-
-      </blockquote>
-
-      <blockquote class="tip">
-
-        <h3 id="tip-tip-importing-data-from-a-data-library"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden">tip</span> Tip: Importing data from a data library</h3>
-
-        <p>As an alte<span class="notranslate">rna</span>tive to uploading the data from a URL or your computer, the files may also have been made available from a <em>shared data library</em>:</p>
-
-        <ul>
-          <li>
-            <p>Go into <strong>Shared data</strong> (top panel) then <strong>Data libraries</strong></p>
-          </li>
-          <li>
-            <p>Find the correct folder (ask your instructor)</p>
-          </li>
-          <li>Select the desired files</li>
-          <li>Click on the <strong>To History</strong> button near the top and select <strong>as Datasets</strong> from the dropdown menu</li>
-          <li>In the pop-up window, select the history you want to import the files to (or create a new one)</li>
-          <li>Click on <strong>Import</strong></li>
-        </ul>
-      </blockquote>
+      <!--SNIPPET-->
+      <blockquote class="tip">  <h3 data-toc-skip="" id="-tip-importing-data-from-a-data-library"><i class="far fa-lightbulb" aria-hidden="true"></i><span class="visually-hidden"></span> Tip: Importing data from a data library</h3>  <p>As an alte<span class="notranslate">rna</span>tive to uploading the data from a URL or your computer, the files may also have been made available from a <em>shared data library</em>:</p>  <ul>  <li>    <p>Go into <strong>Shared data</strong> (top panel) then <strong>Data libraries</strong></p>  </li>  <li>    <p>Find the correct folder (ask your instructor)</p>  </li>  <li>Select the desired files</li>  <li>Click on the <strong>To History</strong> button near the top and select <strong>as Datasets</strong> from the dropdown menu</li>  <li>In the pop-up window, select the history you want to import the files to (or create a new one)</li>  <li>Click on <strong>Import</strong></li></ul></blockquote>
     </li>
   </ol>
 
@@ -833,78 +871,8 @@ by filtering out the lines that contain the word <code class="language-plaintext
 
 <h1 id="functional-annotation-of-the-ebc-proteome-enrichment-analysis">Functional annotation of the EBC proteome (enrichment analysis)</h1>
 
-<p>The resulting list of 157 proteins identified in the two pooled EBC samples (excluding the 10 contaminants proteins) is now submitted to Gene Ontology (GO)-term enrichment analysis to determine functions that were significantly enriched in our EBC proteomic dataset compared to the lung proteome (corresponding to tissue-specific genes extracted from the Human Protein Atlas). To do so, we first build a lung reference proteome (that should be more representative of the studied sample rather than a full human proteome) that will be used for enrichment analysis performed with the ClusterProfiler tool (based on the R package clusterProfiler).</p>
-
-<blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-build-a-lung-reference-proteome-as-a-background-for-go-terms-enrichment-analysis"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Build a lung reference proteome as a background for GO terms enrichment analysis</h3>
-
-  <ol>
-    <li><strong>Build tissue-specific <span class="notranslate">expression</span> dataset</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with the following parameters:
-      <ul>
-        <li><i class="fas fa-filter" aria-hidden="true"></i><span class="visually-hidden">param-select</span> <em>“Experimental data source (antibody- or <span class="notranslate">RNA</span>seq-based)”</em>: <code class="language-plaintext highlighter-rouge"><span class="notranslate">Expression</span> profiles based on immunohistochemistry</code></li>
-        <li><i class="fas fa-filter" aria-hidden="true"></i><span class="visually-hidden">param-select</span> <em>“Select tissue”</em>: <code class="language-plaintext highlighter-rouge">Lung</code> and <code class="language-plaintext highlighter-rouge">Bronchus</code> (you can start typing to filter the list)</li>
-        <li><em>“<span class="notranslate">Expression</span> level”</em>:
-          <ul>
-            <li><i class="far fa-check-square" aria-hidden="true"></i><span class="visually-hidden">param-check</span> <code class="language-plaintext highlighter-rouge">High</code></li>
-            <li><i class="far fa-check-square" aria-hidden="true"></i><span class="visually-hidden">param-check</span> <code class="language-plaintext highlighter-rouge">Medium</code></li>
-            <li><i class="far fa-check-square" aria-hidden="true"></i><span class="visually-hidden">param-check</span> <code class="language-plaintext highlighter-rouge">Low</code></li>
-          </ul>
-        </li>
-        <li><em>“Reliability score”</em>:
-          <ul>
-            <li><i class="far fa-check-square" aria-hidden="true"></i><span class="visually-hidden">param-check</span> <code class="language-plaintext highlighter-rouge">Enhanced</code></li>
-            <li><i class="far fa-check-square" aria-hidden="true"></i><span class="visually-hidden">param-check</span> <code class="language-plaintext highlighter-rouge">Supported</code></li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-  </ol>
-
-  <blockquote class="comment">
-    <h3 id="output">Output</h3>
-    <ul>
-      <li><strong>Tissue-specific <span class="notranslate">expression</span> from IHC</strong>: List of the selected proteins.
-6 columns: ‘Gene’, ‘Gene name’ and the retrieved info from HPA.</li>
-    </ul>
-  </blockquote>
-</blockquote>
-
-<p>Note that <span class="notranslate">expression</span> information about respiratory cell types is retrieved (column 4; e.g. macrophages, pneumocytes, respiratory epithelial cells)
-that could be used for further refinement of your reference background.</p>
-
-<p>As the ClusterProfiler tool (which we will use for the enrichment analysis) does not consider ENSG (Ensembl gene) identifiers as input, we need to convert IDs into either entrez Gene ID or Uniprot accession number.</p>
-
-<blockquote class="notranslate hands_on">
-  <h3 id="hands_on-hands-on-convert-ensembl-id-to-uniprot-and-entrez-gene-id"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Convert Ensembl ID to Uniprot and Entrez Gene ID</h3>
-
-  <ol>
-    <li><strong>ID Converter</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> with the following parameters:
-      <ul>
-        <li><em>“Enter IDs”</em>: <code class="language-plaintext highlighter-rouge">Input file containing IDs</code></li>
-        <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“Select your file”</em>: <code class="language-plaintext highlighter-rouge">Tissue-specific <span class="notranslate">expression</span> from IHC</code> from <strong>Build tissue-specific <span class="notranslate">expression</span> dataset</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span></li>
-        <li><em>“Column number of IDs to map”</em>: <code class="language-plaintext highlighter-rouge">c1</code></li>
-        <li><em>“Species”</em>: <code class="language-plaintext highlighter-rouge">Human (Homo sapiens)</code>
-          <ul>
-            <li><em>“Type/source of IDs”</em>: <code class="language-plaintext highlighter-rouge">Ensembl gene ID (e.g. ENSG00000166913)</code>
-              <ul>
-                <li><em>“Target type of IDs you would like to map to”</em>:</li>
-                <li><i class="far fa-check-square" aria-hidden="true"></i><span class="visually-hidden">param-check</span> <code class="language-plaintext highlighter-rouge">UniProt accession number (e.g. P31946)</code></li>
-                <li><i class="far fa-check-square" aria-hidden="true"></i><span class="visually-hidden">param-check</span> <code class="language-plaintext highlighter-rouge">Entrez gene ID (e.g. 7529)</code></li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-      </ul>
-
-      <blockquote class="comment">
-        <h3 id="comment-output-1"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> Output</h3>
-        <p>In the output file, 2 new columns have been added with the ID retrieved thanks to the conversion.</p>
-      </blockquote>
-    </li>
-  </ol>
-</blockquote>
-
-<p>Now we can perform the GO terms analysis. Input list is the EBC proteome to be analyzed after technical and biological contaminants
+<p>The resulting list of 157 proteins identified in the two pooled EBC samples (excluding the 10 contaminants proteins) is now submitted to Gene Ontology (GO)-term enrichment analysis to determine functions that were significantly enriched in our EBC proteomic dataset. To do so, we’ll use the ClusterProfiler tool (based on the R package clusterProfiler) for functional annotation. 
+Now we can perform the GO terms analysis. Input list is the EBC proteome to be analyzed after technical and biological contaminants
 removal, which is the output of biological contaminants filter step.</p>
 
 <blockquote class="notranslate hands_on">
@@ -929,12 +897,8 @@ removal, which is the output of biological contaminants filter step.</p>
         <li><em>“Ontology level”</em>: <code class="language-plaintext highlighter-rouge">3</code></li>
         <li><em>“Perform GO categories enrichment analysis?”</em>: <code class="language-plaintext highlighter-rouge">Yes</code>
           <ul>
-            <li><em>“Define your own background IDs?”</em>: <code class="language-plaintext highlighter-rouge">Yes</code>
+            <li><em>“Define your own background IDs?”</em>: <code class="language-plaintext highlighter-rouge">No</code>
               <ul>
-                <li><em>“Enter your background IDs”</em>: <code class="language-plaintext highlighter-rouge">Input file containing your background IDs</code></li>
-                <li><i class="far fa-file" aria-hidden="true"></i><span class="visually-hidden">param-file</span> <em>“Select file that contains your background IDs list”</em>: <code class="language-plaintext highlighter-rouge">ID converter on data ..</code> from lastest <strong>ID Converter</strong> <i class="fas fa-wrench" aria-hidden="true"></i><span class="visually-hidden">tool</span> run</li>
-                <li><em>“Column number of IDs”</em>: <code class="language-plaintext highlighter-rouge">c7</code></li>
-                <li><em>“Select type of background IDs”</em>: <code class="language-plaintext highlighter-rouge">UniProt Accession number</code></li>
                 <li><em>“Graphical display”</em>:
                   <ul>
                     <li><i class="far fa-check-square" aria-hidden="true"></i><span class="visually-hidden">param-check</span> <code class="language-plaintext highlighter-rouge">dot-plot</code></li>
@@ -949,7 +913,7 @@ removal, which is the output of biological contaminants filter step.</p>
   </ol>
 
   <blockquote class="comment">
-    <h3 id="comment-output-2"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> Output</h3>
+    <h3 id="comment-output-1"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> Output</h3>
 
     <p>Results created in History panel are the following:</p>
     <ul>
@@ -960,12 +924,8 @@ removal, which is the output of biological contaminants filter step.</p>
 
     <p>The suffix “GGO” (GroupGO) corresponds to the results “GO categories representation analysis” option
   (performs a gene/protein classification based on GO distribution at a specific level). The suffix
-  “EGO” (EnrichGO) corresponds to the results from the enrichment analysis (based on an
-  over-representation test of GO terms against the lung reference background). Two types of graphical output are provided either
-  in the form of bar-plot or dot-plot.
-  According to this analysis, the main biological processes over-represented in EBC compared to
-  lung were some processes related to the immune system and exocytosis (see EGO.BP.dot.png, for Enriched
-  Biological Process GO terms dot-plot representation in png format).</p>
+  “EGO” (EnrichGO) corresponds to the results from the enrichment analysis. Two types of graphical output are provided either
+  in the form of bar-plot or dot-plot.</p>
   </blockquote>
 </blockquote>
 
@@ -1031,7 +991,7 @@ interpretation and analysis of pathway knowledge.</p>
   </ol>
 
   <blockquote class="comment">
-    <h3 id="comment-output-3"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> Output</h3>
+    <h3 id="comment-output-2"><i class="far fa-comment-dots" aria-hidden="true"></i><span class="visually-hidden">comment</span> Output</h3>
 
     <p>The Venn diagram shows the number of proteins specific and in common between the 3 lists.
 <img src="../../images/ProteoreAnnot-Venn.png" alt="Graphical output of the Venn diagram" />.</p>
@@ -1065,6 +1025,11 @@ This allows the user to go deeper in the analysis of proteomics analyses results
                         </ul>
                     </blockquote>
                     
+
+                    <h1>Frequently Asked Questions</h1>
+                    Have questions about this tutorial? Check out the  <a href="/training-material/topics/proteomics/faqs/">FAQ page for the Proteomics topic</a> to see if your question is listed there.
+                    If not, please ask your question on the <a href="https://gitter.im/Galaxy-Training-Network/Lobby">GTN Gitter Channel</a> or the
+                    <a href="https://help.galaxyproject.org">Galaxy Help Forum</a>
 
                     
                     <h1 data-toc-skip>Useful literature</h1>
@@ -1120,6 +1085,8 @@ This allows the user to go deeper in the analysis of proteomics analyses results
 </li></ol>
                     
 
+                    
+
                     <h1>Feedback</h1>
                     <p class="text-muted">Did you use this material as an instructor? Feel free to give us feedback on <a href="https://github.com/galaxyproject/training-material/issues/1452" target="_blank">how it went</a>.</p>
 
@@ -1156,7 +1123,7 @@ This allows the user to go deeper in the analysis of proteomics analyses results
                     <h1>Citing this Tutorial</h1>
                     <p>
                         <ol>
-                            <li id="citation-text">Valentin Loux, Florence Combes, David Christiany, Yves Vandenbrouck, 2020 <b>Annotating a protein list identified by LC-MS/MS experiments (Galaxy Training Materials)</b>. <a href="/training-material/topics/proteomics/tutorials/proteome_annotation/tutorial.html">/training-material/topics/proteomics/tutorials/proteome_annotation/tutorial.html</a> Online; accessed TODAY
+                            <li id="citation-text">Valentin Loux, Florence Combes, David Christiany, Yves Vandenbrouck, 2021 <b>Annotating a protein list identified by LC-MS/MS experiments (Galaxy Training Materials)</b>. <a href="https://training.galaxyproject.org/training-material/topics/proteomics/tutorials/proteome_annotation/tutorial.html">https://training.galaxyproject.org/training-material/topics/proteomics/tutorials/proteome_annotation/tutorial.html</a> Online; accessed TODAY
                             </li>
                             <li>
                             Batut et al., 2018 <b>Community-Driven Data Analysis Training for Biology</b> Cell Systems <a href="https://doi.org/10.1016%2Fj.cels.2018.05.012">10.1016/j.cels.2018.05.012</a>
@@ -1173,10 +1140,10 @@ This allows the user to go deeper in the analysis of proteomics analyses results
 <code id="citation-code">@misc{proteomics-proteome_annotation,
     author = "Valentin Loux and Florence Combes and David Christiany and Yves Vandenbrouck",
     title = "Annotating a protein list identified by LC-MS/MS experiments (Galaxy Training Materials)",
-    year = "2020",
-    month = "01",
+    year = "2021",
+    month = "06",
     day = "24"
-    url = "\url{/training-material/topics/proteomics/tutorials/proteome_annotation/tutorial.html}",
+    url = "\url{https://training.galaxyproject.org/training-material/topics/proteomics/tutorials/proteome_annotation/tutorial.html}",
     note = "[Online; accessed TODAY]"
 }
 @article{Batut_2018,
@@ -1204,15 +1171,15 @@ document.getElementById("citation-code").innerHTML = document.getElementById("ci
 document.getElementById("citation-text").innerHTML = document.getElementById("citation-text").innerHTML.replace("TODAY", d.toDateString());
 </script>
 
+                    <h3><i class="far fa-thumbs-up" aria-hidden="true"></i><span class="visually-hidden">congratulations</span> Congratulations on successfully completing this tutorial!</h3>
+
+                    
+
+                    
+
                 </div>
             </div>
         </div>
-
-        <h3><i class="far fa-thumbs-up" aria-hidden="true"></i><span class="visually-hidden">congratulations</span> Congratulations on successfully completing this tutorial!</h3>
-
-        
-
-        
     </section>
 </div>
 
@@ -1226,7 +1193,7 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
         </p>
         <p>
             Found a typo? Something is wrong in this tutorial? Edit it on
-            <a href="https://github.com/galaxyproject/training-material/tree/master/topics/proteomics/tutorials/proteome_annotation/tutorial.md">GitHub</a>.
+            <a href="https://github.com/galaxyproject/training-material/tree/main/topics/proteomics/tutorials/proteome_annotation/tutorial.md">GitHub</a>.
         </p>
         <p>
     The content of the tutorials and website is licensed under the <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
