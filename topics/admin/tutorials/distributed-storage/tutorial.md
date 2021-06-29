@@ -11,7 +11,7 @@ objectives:
   - Learn object store basics
   - See some different object store technologies
   - Indentify the key metrics needed to decide on the appropriate storate solution
-time_estimation: "The rest of your life"
+time_estimation: "10y"
 key_points:
   - data can be stored anywhere
   - data can be stored in multiple locations at once
