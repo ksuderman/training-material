@@ -8,8 +8,9 @@ questions:
   - How does Galaxy store data in The Cloud?
   - What are my options?
 objectives:
-  - Learn gxadmin basics
-  - See some queries and learn how they help debug production issues
+  - Learn object store basics
+  - See some different object store technologies
+  - Indentify the key metrics needed to decide on the appropriate storate solution
 time_estimation: "The rest of your life"
 key_points:
   - data can be stored anywhere
