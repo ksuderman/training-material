@@ -5,7 +5,7 @@ GTN_CACHE="$(pwd)/.jekyll-cache/aws-polly/"
 mkdir -p "$GTN_CACHE"
 
 # Setup our Engine
-mozilla_port=$(ss -lptn 'sport = :5002' | wc -l)
+#mozilla_port=$(ss -lptn 'sport = :5002' | wc -l)
 if [[ -n "$AWS_ACCESS_KEY_ID" ]]; then
 	engine="aws"
 	echo "Using AWS for speech (this will cost money!)"
@@ -54,12 +54,15 @@ ruby bin/ari-extract-script.rb "$source" > "$script"
 
 # Now explode that into individual lines, synthesize, and re-assemble them into
 # our images.txt/sounds.txt scripts
+echo ruby bin/ari-prep-script.rb "${script}" "${build_dir}" "${engine}"
 ruby bin/ari-prep-script.rb "${script}" "${build_dir}" "${engine}"
 
 
 # Generate images for use.
 echo "  Extracting slides"
+echo convert -density 300 "${slides}" "${build_dir}/slides.%03d.png"
 convert -density 300 "${slides}" "${build_dir}/slides.%03d.png"
+exit
 
 # Generate a pause of 1 seconds, used after slides.
 sox -n -r 44100 -c 2 "${build_dir}/silence-unfixed.mp3" trim 0 1
@@ -92,9 +95,15 @@ ffmpeg -loglevel $ffmpeglog -f concat -i "$images" -pix_fmt yuv420p -vcodec h264
 
 # Mux it together
 echo "  Muxing"
+if [[ $(uname) = Darwin ]] ; then
+  ts=$(date -u +"%Y-%m-%d %H:%M:%S")
+else
+  ts=$(date --rfc-3339=seconds)
+fi
+
 ffmpeg -loglevel $ffmpeglog -i "${build_dir}/tmp.mp4" -i "${build_dir}/tmp.m4a" -i "${build_dir}/tmp.srt" \
 	-movflags +faststart \
-	-metadata comment="build-tag:$(date --rfc-3339=seconds)/$REVISION/$USER/$engine" \
+	-metadata comment="build-tag:$ts/$REVISION/$USER/$engine" \
 	-metadata network="Galaxy Training Network"\
 	-metadata artist="$meta_authors" \
 	-metadata title="$meta_title" \
@@ -104,9 +113,11 @@ ffmpeg -loglevel $ffmpeglog -i "${build_dir}/tmp.mp4" -i "${build_dir}/tmp.m4a" 
 	-b:a 192k "${build_dir}/out.mp4"
 
 # Check if output dir needs to be created
+echo "Creating dir $(dirname $output)"
 mkdir -p "$(dirname "$output")"
 
 # Copy our files over
+echo "Copying files"
 cp "${build_dir}/out.mp4" "$output"
 cp "${build_dir}/out.vtt" "$subtitles"
 cp "${build_dir}/slides.000.png" "$cover"

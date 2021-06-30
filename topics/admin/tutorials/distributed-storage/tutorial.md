@@ -1,7 +1,7 @@
 ---
 layout: tutorial_hands_on
 
-title: "Distributed Storage In Galaxy"
+title: "Keith's Distributed Object Storage"
 zenodo_link: ""
 questions:
   - Where does Galaxy store data?
@@ -11,7 +11,7 @@ objectives:
   - Learn object store basics
   - See some different object store technologies
   - Indentify the key metrics needed to decide on the appropriate storate solution
-time_estimation: "10y"
+time_estimation: "15m"
 key_points:
   - data can be stored anywhere
   - data can be stored in multiple locations at once
