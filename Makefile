@@ -50,7 +50,7 @@ install: clean create-env ## install dependencies
 
 bundle-install: clean  ## install gems if Ruby is already present (e.g. on gitpod.io)
 	bundle install
-.PHONE: bundle-install
+.PHONY: bundle-install
 
 serve: ## run a local server (You can specify PORT=, HOST=, and FLAGS= to set the port, host or to pass additional flags)
 	@echo "Tip: Want faster builds? Use 'serve-quick' in place of 'serve'."
