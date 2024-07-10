@@ -73,9 +73,19 @@ a Galaxy deployment on Kubernetes, including:
 ## Prerequisites
 This tutorial builds on the material of the previous
 [tutorial]({{ site.baseurl }}/topics/admin/tutorials/k8s-deploying-galaxy/tutorial.html)
-and we recommend following it first to setup the required environment.
+and we recommend following it first to set up the required environment.
 You must have some familiarity with Helm commands, know how to change values
 in a Helm Chart and how to use the `kubectl` command.
+
+## Assumptions
+This tutorial assumes:
+
+1. You have added the Galaxy Helm chart repository to your Helm installation
+   by running `helm repo add galaxy https://gxy.io/k8s/charts`
+2. Galaxy was installed using `galaxy` as the release name
+3. Galaxy was installed in the `galaxy` namespace
+
+Your `helm install` command should have been similar to: `helm install galaxy --namespace galaxy galaxy/galaxy --create-namespace --values custom-values.yaml`
 
 # Changing the configuration of a Galaxy instance
 We will start off by looking at how to change the configuration of a Galaxy
@@ -92,98 +102,50 @@ default configuration loads the full list of tools used by
 > <hands-on-title>Creating a custom tool set</hands-on-title>
 >
 > 1. First, let's create a simpler list of tools by saving the following tool
->    config as a file called `custom_tool_conf.xml`.
+>    config as a file called `custom_tool_conf.xml` in your local directory.
 >
 >    {% raw %}
 >    ```xml
->    <?xml version="1.0" ?>
->    <toolbox tool_path="/cvmfs/main.galaxyproject.org/shed_tools">
->        <section id="get_data" name="Get Data">
->            <tool file="data_source/upload.xml" />
->        </section>
->        <section id="chip_seq" name="ChIP-seq" version="">
->            <tool file="toolshed.g2.bx.psu.edu/repos/rnateam/chipseeker/1b9a9409831d/chipseeker/chipseeker.xml" guid="toolshed.g2.bx.psu.edu/repos/rnateam/chipseeker/chipseeker/1.18.0+galaxy1">
->                <tool_shed>toolshed.g2.bx.psu.edu</tool_shed>
->                <repository_name>chipseeker</repository_name>
->                <repository_owner>rnateam</repository_owner>
->                <installed_changeset_revision>1b9a9409831d</installed_changeset_revision>
->                <id>toolshed.g2.bx.psu.edu/repos/rnateam/chipseeker/chipseeker/1.18.0+galaxy1</id>
->                <version>1.18.0+galaxy1</version>
->            </tool>
->        </section>
->        <section id="fastq_quality_control" name="FASTQ Quality Control" version="">
->            <tool file="toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/51b771646466/trimmomatic/trimmomatic.xml" guid="toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.36.6">
->                <tool_shed>toolshed.g2.bx.psu.edu</tool_shed>
->                <repository_name>trimmomatic</repository_name>
->                <repository_owner>pjbriggs</repository_owner>
->                <installed_changeset_revision>51b771646466</installed_changeset_revision>
->                <id>toolshed.g2.bx.psu.edu/repos/pjbriggs/trimmomatic/trimmomatic/0.36.6</id>
->                <version>0.36.6</version>
->            </tool>
->        </section>
->        <section id="fastq_quality_control" name="FASTQ Quality Control" version="">
->            <tool file="toolshed.g2.bx.psu.edu/repos/devteam/fastqc/e7b2202befea/fastqc/rgFastQC.xml" guid="toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1">
->                <tool_shed>toolshed.g2.bx.psu.edu</tool_shed>
->                <repository_name>fastqc</repository_name>
->                <repository_owner>devteam</repository_owner>
->                <installed_changeset_revision>e7b2202befea</installed_changeset_revision>
->                <id>toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.72+galaxy1</id>
->                <version>0.72+galaxy1</version>
->            </tool>
->        </section>
+>    <?xml version='1.0' encoding='utf-8'?>
+>    <toolbox monitor="true">
+>      <section id="get_data" name="Get Data">
+>        <tool file="data_source/upload.xml" />
+>      </section>
+>      <section id="send" name="Send Data">
+>        <tool file="data_export/export_remote.xml" />
+>      </section>
+>      <section id="collection_operations" name="Collection Operations">
+>        <tool file="${model_tools_path}/unzip_collection.xml" />
+>        <tool file="${model_tools_path}/zip_collection.xml" />
+>      </section>
+>      <section id="expression_tools" name="Expression Tools">
+>        <tool file="expression_tools/parse_values_from_file.xml"/>
+>        <tool file="expression_tools/pick_value.xml"/>
+>      </section>
 >    </toolbox>
 >    ```
 >    {% endraw %}
 >
-> 2. Next, let's create a new `galaxy.yml` file that uses this `custom_tool_conf.xml`.
->
->    Note that the content below is the same as the `configs` section of
->    `values-cvmfs.yaml` file from the Galaxy Helm chart with one exception:
->    `tool_config_file` entry is pointing to our custom tool list instead of the
->    full list from CVMFS.
->
+> 2. Next, let's create a new values file, `custom_tool_conf.yml`, that overrides the `tool_config_file`
+>    entry in the `galaxy.yml` so it only loads our `custom_tool_conf.xml`.
+> 
 >    {% raw %}
 >    ```yaml
->    uwsgi:
->      virtualenv: /galaxy/server/.venv
->      processes: 1
->      http: 0.0.0.0:8080
->      static-map: /static/style=/galaxy/server/static/style/blue
->      static-map: /static=/galaxy/server/static
->      static-map: /favicon.ico=/galaxy/server/static/favicon.ico
->      pythonpath: /galaxy/server/lib
->      thunder-lock: true
->      manage-script-name: true
->      mount: {{.Values.ingress.path}}=galaxy.webapps.galaxy.buildapp:uwsgi_app()
->      buffer-size: 16384
->      offload-threads: 2
->      threads: 4
->      die-on-term: true
->      master: true
->      hook-master-start: unix_signal:2 gracefully_kill_them_all
->      enable-threads: true
->      py-call-osafterfork: true
->    galaxy:
->      database_connection: 'postgresql://{{.Values.postgresql.galaxyDatabaseUser}}:{{.Values.postgresql.galaxyDatabasePassword}}@{{ template "galaxy-postgresql.fullname" . }}/galaxy'
->      integrated_tool_panel_config: "/galaxy/server/config/mutable/integrated_tool_panel.xml"
->      sanitize_whitelist_file: "/galaxy/server/config/mutable/sanitize_whitelist.txt"
->      tool_config_file: "{{.Values.persistence.mountPath}}/config/editable_shed_tool_conf.xml,/galaxy/server/config/custom_tool_conf.xml"
->      tool_data_table_config_path: "{{ .Values.cvmfs.main.mountPath }}/config/shed_tool_data_table_conf.xml,{{.Values.cvmfs.data.mountPath}}/managed/location/tool_data_table_conf.xml,{{.Values.cvmfs.data.mountPath}}/byhand/location/tool_data_table_conf.xml"
->      tool_dependency_dir: "{{.Values.persistence.mountPath}}/deps"
->      builds_file_path: "{{.Values.cvmfs.data.mountPath}}/managed/location/builds.txt"
->      datatypes_config_file: "{{ .Values.cvmfs.main.mountPath }}/config/datatypes_conf.xml"
->      containers_resolvers_config_file: "/galaxy/server/config/container_resolvers_conf.xml"
->      workflow_schedulers_config_file: "/galaxy/server/config/workflow_schedulers_conf.xml"
->      build_sites_config_file: "/galaxy/server/config/build_sites.yml"
+>    configs:
+>      galaxy.yml:
+>        galaxy:
+>          tool_config_file: /galaxy/server/config/custom_tool_conf.xml
 >    ```
 >    {% endraw %}
 >
-> 3. Now, let's upgrade the chart to use `custom_tool_conf.xml` and
->    `galaxy.yml` by running the `helm upgrade` command.
+>    We could override the `tool_config_file` entry on the command line, but using
+>    a values file is more maintainable and allows for more modular configurations.
+>
+> 4. Now, let's upgrade the chart to use our `custom_tool_conf.xml` by running the `helm upgrade` command.
 >
 >    {% raw %}
 >    ```bash
->    helm upgrade --reuse-values --set-file "configs.custom_tool_conf\.xml"=custom_tool_conf.xml --set-file "configs.galaxy\.yml"=configs/galaxy.yml galaxy galaxy/galaxy
+>    helm upgrade galaxy -n galaxy galaxy/galaxy --reuse-values --set-file "configs.custom_tool_conf\.xml"=custom_tool_conf.xml --values custom_tool_conf.yml
 >    ```
 >    {% endraw %}
 >
@@ -191,16 +153,16 @@ default configuration loads the full list of tools used by
 >    previously set values, and apply the new ones on top.  The `--set-file`
 >    option will set the value of the `configs.custom_tool_conf.xml`
 >    key in your values file to the contents of the specified file, as a text
->    string. Each file under `configs` key in `values.yaml` is automatically
->    mapped into Galaxy's `config` directory within the running container.
+>    string. Each file under the `configs` key in `values.yaml` is automatically
+>    mapped into Galaxy's `config` directory.
 >
-> 4. Notice that while the chart is upgrading, the existing version continues
->    to function. The changeover will occur when the new container is online
+> 5. Notice that while the chart is upgrading, the existing version continues
+>    to function. The changeover will occur when the new containera are online
 >    and signals readiness to Kubernetes by responding to web requests on
 >    the relevant port. Log into the Kubernetes dashboard and watch the logs
 >    as the new pods come online.
 >
-> 5. List the installed helm charts again and note that the revision of the chart
+> 6. List the installed helm charts and note that the revision of the galaxy chart
 >    has changed. These revisions are useful because it allows us to rollback
 >    our changes if they are incorrect. This will be covered in a later section.
 >
@@ -208,17 +170,16 @@ default configuration loads the full list of tools used by
 >    ```bash
 >    helm list
 >    NAME  	REVISION	UPDATED                 	STATUS  	CHART                 	APP VERSION	NAMESPACE
->    cvmfs 	1       	Wed Jun 26 14:47:46 2019	DEPLOYED	galaxy-cvmfs-csi-1.0.1	1.0        	cvmfs
 >    galaxy	2       	Wed Jun 26 14:51:17 2019	DEPLOYED	galaxy-3.0.0          	v19.05     	default
 >    ```
 >    {% endraw %}
 >
-> 6. Let's now exec into the running container and check where the files were
+> 6. Let's now exec into the running container and check that the files were
 >    mapped in. First, let's get a list of running pods.
 >
 >    {% raw %}
 >    ```bash
->    kubectl get pods
+>    kubectl get pods -n galaxy
 >    NAME                          READY   STATUS    RESTARTS   AGE
 >    galaxy-galaxy-postgres-0      1/1     Running   0          2d6h
 >    galaxy-job-69864b6797-zs5mn   1/1     Running   0          2d6h
